@@ -1,0 +1,41 @@
+{
+ "LocaleLayout": {
+  "title": "Пример приложения с роутером"
+ } ,
+
+ "Manifest": {
+  "name": "Пример приложения с роутером"
+ },
+
+  "common": {
+   "buttons": {
+    "back": "Назад"
+   }
+ },
+
+  "LoginPage": {
+    "form": {
+      "title": "Добро пожаловать!",
+      "description": "Войдите в свой аккаунт GitHub",
+      "buttons": {
+        "github": "Войти c GitHub",
+        "email": "Продолжить по email"
+      },
+      "or": "Или продолжите"
+ },
+
+  "agreement": {
+      "text": "При регистрации вы соглашаетесь с <terms>Условиями использования</terms> и <privacy>Политикой конфиденциальности</privacy>."
+  }
+
+
+},
+
+  "ThemeToggle": {
+    "dark": "Темная",
+    "light": "Светлая",
+    "system": "Системная"
+ }
+
+
+}

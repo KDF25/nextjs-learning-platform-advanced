@@ -1,0 +1,39 @@
+{
+ "LocaleLayout": {
+  "title": "Example App Router"
+ },
+
+ "Manifest": {
+  "name": "Example App Router"
+ },
+
+ "common": {
+   "buttons": {
+    "back": "Back"
+   }
+ },
+
+ "LoginPage": {
+    "form": {
+      "title": "Welcome back!",
+      "description": "Login with your GitHub Account",
+      "buttons": {
+        "github": "Sign with GitHub",
+        "email": "Continue with email"
+      },
+      "or": "Or continue with"
+ },
+  "agreement": {
+    "text": "By signing up, you agree to our <terms>Terms of Service</terms> and <privacy>Privacy Policy</privacy>."
+  }
+
+
+},
+
+ "ThemeToggle": {
+    "dark": "Dark",
+    "light": "Light",
+    "system": "System"
+ }
+
+}
