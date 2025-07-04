@@ -1,7 +1,6 @@
-import { clsx } from "clsx";
 import { Locale, NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Inter } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import { notFound } from "next/navigation";
 import { ReactNode } from "react";
 
@@ -11,12 +10,20 @@ import Providers from "../__providers";
 
 import { routing } from "@/i18n/routing";
 
+const geistSans = Geist({
+	variable: "--font-geist-sans",
+	subsets: ["latin"]
+});
+
+const geistMono = Geist_Mono({
+	variable: "--font-geist-mono",
+	subsets: ["latin"]
+});
+
 type Props = {
 	children: ReactNode;
 	params: Promise<{ locale: Locale }>;
 };
-
-const inter = Inter({ subsets: ["latin"] });
 
 export function generateStaticParams() {
 	return routing.locales.map((locale) => ({ locale }));
@@ -44,7 +51,9 @@ export default async function LocaleLayout({ children, params }: Props) {
 
 	return (
 		<html className="h-full" lang={locale} suppressHydrationWarning>
-			<body className={clsx(inter.className, "flex h-full flex-col")}>
+			<body
+				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+			>
 				<Providers>
 					<NextIntlClientProvider>{children}</NextIntlClientProvider>
 				</Providers>

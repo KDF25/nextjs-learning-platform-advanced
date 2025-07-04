@@ -1,5 +1,6 @@
 export const ENUM_PATHS = {
 	MAIN: "/",
 	LOGIN: "/login",
-	REGISTER: "/register"
+	COURSES: "/courses",
+	DASHBOARD: "/dashboard"
 } as const;

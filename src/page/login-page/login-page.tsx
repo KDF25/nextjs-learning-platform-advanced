@@ -3,8 +3,9 @@ import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { FC } from "react";
 
-import { auth } from "@/shared/auth";
 import { ENUM_PATHS } from "@/shared/config";
+
+import { auth } from "@/entities/auth";
 
 import { LoginForm } from "@/widgets/auth";
 
