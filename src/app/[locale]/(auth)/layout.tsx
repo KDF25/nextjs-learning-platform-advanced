@@ -22,20 +22,6 @@ const Layout: FC<LayoutProps> = ({ children }) => {
 			</Button>
 			<div className="flex w-full max-w-sm flex-col gap-6">
 				{children}
-				<p className="text-balance text-center text-xs text-muted-foreground">
-					{t.rich("LoginPage.agreement.text", {
-						terms: (chunks: React.ReactNode) => (
-							<span className="hover:underline hover:text-primary">
-								{chunks}
-							</span>
-						),
-						privacy: (chunks: React.ReactNode) => (
-							<span className="hover:underline hover:text-primary">
-								{chunks}
-							</span>
-						)
-					})}
-				</p>
 			</div>
 		</div>
 	);

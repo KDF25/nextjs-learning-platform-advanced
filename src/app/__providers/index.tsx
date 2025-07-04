@@ -1,5 +1,7 @@
 import { ReactNode } from "react";
 
+import { Toaster } from "@/shared/ui";
+
 import { ThemeProvider } from "./withTheme";
 
 interface ProvidersProps {
@@ -15,6 +17,7 @@ const Providers = ({ children }: ProvidersProps) => {
 			disableTransitionOnChange
 		>
 			{children}
+			<Toaster />
 		</ThemeProvider>
 	);
 };

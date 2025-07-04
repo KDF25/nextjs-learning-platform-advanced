@@ -22,9 +22,14 @@ declare const messages: {
       "description": "Login with your GitHub Account",
       "buttons": {
         "github": "Sign with GitHub",
+        "load": "Loading ...",
         "email": "Continue with email"
       },
-      "or": "Or continue with"
+      "or": "Or continue with",
+      "signIn": {
+        "success": "Signed in with GitHub, you will be redirected ...",
+        "error": "Failed to sign in with GitHub, please try again later."
+      }
  },
   "agreement": {
     "text": "By signing up, you agree to our <terms>Terms of Service</terms> and <privacy>Privacy Policy</privacy>."

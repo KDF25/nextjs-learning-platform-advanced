@@ -1,4 +1,3 @@
-import { GithubIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { FC } from "react";
 
@@ -13,6 +12,8 @@ import {
 	Label
 } from "@/shared/ui";
 
+import { SignIn } from "@/features/sign-in";
+
 export const LoginForm: FC = ({}) => {
 	const t = useTranslations("LoginPage");
 	return (
@@ -22,10 +23,7 @@ export const LoginForm: FC = ({}) => {
 				<CardDescription>{t("form.description")}</CardDescription>
 			</CardHeader>
 			<CardContent className="grid gap-3">
-				<Button variant="outline" className="w-full">
-					<GithubIcon size={16} />
-					{t("form.buttons.github")}
-				</Button>
+				<SignIn />
 				<div className="relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t after:border-border">
 					<span className="relative z-10 bg-card px-2 text-muted-foreground">
 						{t("form.or")}
