@@ -9,6 +9,7 @@ export const ENUM_PATHS = {
 	ADMIN: {
 		ROOT: "/admin",
 		COURSES: "/admin/courses",
+		CREATE: "/admin/courses/create",
 		COURSE: "/admin/courses/:id"
 	}
 } as const;

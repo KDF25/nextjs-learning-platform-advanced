@@ -105,6 +105,80 @@ declare const messages: {
 		"buttons": {
 			"create": "Create Course"
 		}
+	},
+
+	"CreateCoursePage": {
+		"title": "Create Course",
+
+		"basicInfo": {
+			"form": {
+				"title": "Basic Information",
+				"description": "Provide some basic information about your course.",
+
+				"fields": {
+					"title": {
+						"label": "Title",
+						"placeholder": "Enter course title",
+						"min": "Title must be at least 3 characters",
+						"max": "Title must be less than 100 characters"
+					},
+					"description": {
+						"label": "Description",
+						"placeholder": "Enter course description",
+						"min": "Description must be at least 3 characters",
+						"max": "Description must be less than 1000 characters"
+					},
+					"fileKey": {
+						"label": "File",
+						"placeholder": "Select file",
+						"required": "File is required"
+					},
+					"price": {
+						"label": "Price (in USD)",
+						"placeholder": "Enter course price",
+						"min": "Price must be at least 1"
+					},
+					"duration": {
+						"label": "Duration (in hours)",
+						"placeholder": "Enter course duration",
+						"min": "Duration must be at least 1 hour",
+						"max": "Duration must be less than 500 hours"
+					},
+					"level": {
+						"label": "Level",
+						"placeholder": "Select course level",
+						"required": "Level is required"
+					},
+					"category": {
+						"label": "Category",
+						"placeholder": "Select course category",
+						"required": "Category is required"
+					},
+					"smallDescription": {
+						"label": "Small Description",
+						"placeholder": "Enter course small description",
+						"min": "Small description must be at least 3 characters",
+						"max": "Small description must be less than 200 characters"
+					},
+					"slug": {
+						"label": "Slug",
+						"placeholder": "Enter course slug",
+						"min": "Slug must be at least 3 characters",
+						"max": "Slug must be less than 100 characters"
+					},
+					"status": {
+						"label": "Status",
+						"placeholder": "Select course status",
+						"required": "Status is required"
+					}
+				},
+
+				"buttons": {
+					"generateSlug": "Generate Slug",
+					"create": "Create Course"
+				}
+			}
+		}
 	}
 };
 export default messages;

@@ -16,7 +16,7 @@ const Layout: FC<LayoutProps> = ({ children }) => {
 		<div className="relative flex min-h-svh flex-col items-center justify-center">
 			<Button asChild className="absolute top-4 left-4" variant="outline">
 				<Link href={ENUM_PATHS.MAIN}>
-					<ArrowLeft size={16} />
+					<ArrowLeft className="mr-2 h-4 w-4" />
 					{t("common.buttons.back")}
 				</Link>
 			</Button>
