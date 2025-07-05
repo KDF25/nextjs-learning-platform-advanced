@@ -9,10 +9,10 @@ export const NAVBAR_ITEMS_LIST: INavItem[] = [
 	},
 	{
 		name: "path.courses",
-		href: ENUM_PATHS.COURSES
+		href: ENUM_PATHS.COURSES.ROOT
 	},
 	{
 		name: "path.dashboard",
-		href: ENUM_PATHS.DASHBOARD
+		href: ENUM_PATHS.ADMIN.ROOT
 	}
 ];

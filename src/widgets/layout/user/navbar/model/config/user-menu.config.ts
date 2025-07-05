@@ -13,11 +13,11 @@ export const USER_MENU_ITEMS_LIST: IUserMenuItem[] = [
 	{
 		icon: BookOpenIcon,
 		name: "path.courses",
-		href: ENUM_PATHS.COURSES
+		href: ENUM_PATHS.COURSES.ROOT
 	},
 	{
 		icon: LayoutDashboardIcon,
 		name: "path.dashboard",
-		href: ENUM_PATHS.DASHBOARD
+		href: ENUM_PATHS.ADMIN.ROOT
 	}
 ];

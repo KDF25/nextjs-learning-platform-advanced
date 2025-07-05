@@ -93,5 +93,14 @@
 				"description": "Join a vibrant community of learners and instructors to collaborate and share knowledge."
 			}
 		]
+	},
+
+	"AdminCoursesPage": {
+		"title": "Your Courses",
+		"subtitle": "Here you can create and manage your courses.",
+
+		"buttons": {
+			"create": "Create Course"
+		}
 	}
 }

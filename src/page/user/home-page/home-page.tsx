@@ -28,7 +28,7 @@ export const HomePage: FC = async ({}) => {
 					</p>
 					<div className="flex flex-col sm:flex-row gap-4 mt-8">
 						<Button asChild size={"lg"}>
-							<Link href={ENUM_PATHS.COURSES}>
+							<Link href={ENUM_PATHS.COURSES.ROOT}>
 								{t("buttons.explore")}
 							</Link>
 						</Button>

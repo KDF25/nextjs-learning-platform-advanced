@@ -9,7 +9,7 @@ export const KeyFeatures: FC = ({}) => {
 	const keyFeatures = t.raw("keyFeatures") as IFeaturesCard[];
 
 	return (
-		<section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+		<section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-32">
 			{keyFeatures?.map((feature, index) => (
 				<FeaturesCard key={index} {...feature} />
 			))}
