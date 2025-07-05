@@ -14,6 +14,7 @@ import {
 	CardDescription,
 	CardHeader,
 	CardTitle,
+	Editor,
 	Form,
 	FormControl,
 	FormField,
@@ -160,13 +161,7 @@ export const CourseCreate: FC = ({}) => {
 										{t("fields.description.label")}
 									</FormLabel>
 									<FormControl>
-										<Textarea
-											placeholder={t(
-												"fields.description.placeholder"
-											)}
-											className="min-h-[120px]"
-											{...field}
-										/>
+										<Editor field={field} />
 									</FormControl>
 									<FormMessage className="absolute left-2 bottom-1" />
 								</FormItem>

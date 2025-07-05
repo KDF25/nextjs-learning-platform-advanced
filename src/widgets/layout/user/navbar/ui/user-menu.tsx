@@ -40,7 +40,9 @@ export const UserMenu: FC<IUserMenu> = ({ user: { name, email, image } }) => {
 				>
 					<Avatar>
 						<AvatarImage src={image || ""} alt="Profile image" />
-						<AvatarFallback>{name[0]}</AvatarFallback>
+						<AvatarFallback>
+							{name ? name[0] : email?.split("@")[0]}
+						</AvatarFallback>
 					</Avatar>
 					<ChevronDownIcon
 						size={16}
@@ -52,7 +54,7 @@ export const UserMenu: FC<IUserMenu> = ({ user: { name, email, image } }) => {
 			<DropdownMenuContent className="max-w-64" align="end">
 				<DropdownMenuLabel className="flex min-w-0 flex-col">
 					<span className="text-foreground truncate text-sm font-medium">
-						{name}
+						{name ? name : email?.split("@")}
 					</span>
 					<span className="text-muted-foreground truncate text-xs font-normal">
 						{email}
@@ -84,7 +86,7 @@ export const UserMenu: FC<IUserMenu> = ({ user: { name, email, image } }) => {
 							aria-hidden="true"
 						/>
 					)}
-					<span>Logout</span>
+					<span>{t("buttons.logout")}</span>
 				</DropdownMenuItem>
 			</DropdownMenuContent>
 		</DropdownMenu>

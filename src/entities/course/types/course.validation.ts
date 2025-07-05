@@ -23,17 +23,13 @@ export const courseSchema = z.object({
 			message: "CreateCoursePage.basicInfo.form.fields.description.max"
 		}),
 
-	fileKey: z
-		.string()
-		.min(1, {
-			message: "CreateCoursePage.basicInfo.form.fields.fileKey.required"
-		}),
+	fileKey: z.string().min(1, {
+		message: "CreateCoursePage.basicInfo.form.fields.fileKey.required"
+	}),
 
-	price: z.coerce
-		.number()
-		.min(1, {
-			message: "CreateCoursePage.basicInfo.form.fields.price.min"
-		}),
+	price: z.coerce.number().min(1, {
+		message: "CreateCoursePage.basicInfo.form.fields.price.min"
+	}),
 
 	duration: z.coerce
 		.number()
