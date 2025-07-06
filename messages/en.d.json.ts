@@ -158,10 +158,16 @@ declare const messages: {
 						"min": "Description must be at least 3 characters",
 						"max": "Description must be less than 1000 characters"
 					},
-					"fileKey": {
+					"image": {
 						"label": "File",
-						"placeholder": "Select file",
-						"required": "File is required"
+						"required": "File is required",
+						"recommendation": "16:9 aspect ratio recommended",
+
+						"buttons": {
+							"add": "Add",
+							"edit": "Edit",
+							"cancel": "Cancel"
+						}
 					},
 					"price": {
 						"label": "Price (in USD)",
@@ -205,7 +211,15 @@ declare const messages: {
 
 				"buttons": {
 					"generateSlug": "Generate Slug",
-					"create": "Create Course"
+					"create": "Create Course",
+					"creating": "Creating ..."
+				},
+
+				"toast": {
+					"success": "Course created successfully",
+					"error": "ERROR: Failed to create course",
+					"duplicate_slug": "ERROR: Slug already exists",
+					"invalid_form_data": "ERROR: Invalid form data"
 				}
 			}
 		}

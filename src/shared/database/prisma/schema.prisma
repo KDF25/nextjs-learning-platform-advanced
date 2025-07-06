@@ -74,10 +74,13 @@ model Course {
 
   title       String
   description String
-  fileKey     String
-  price       Int
-  duration    Int
-  level       CourseLevel @default(Beginner)
+
+  imageUrl String
+  imageKey String
+
+  price    Int
+  duration Int
+  level    CourseLevel @default(Beginner)
 
   category         String
   smallDescription String

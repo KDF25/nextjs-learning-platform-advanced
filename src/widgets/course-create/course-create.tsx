@@ -2,11 +2,14 @@
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Select } from "@radix-ui/react-select";
-import { PlusCircleIcon } from "lucide-react";
+import { Loader, PlusCircleIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { useRouter } from "next/navigation";
 import { FC } from "react";
 import { useForm } from "react-hook-form";
+import { toast } from "sonner";
 
+import { ENUM_PATHS } from "@/shared/config";
 import {
 	Button,
 	Card,
@@ -15,7 +18,6 @@ import {
 	CardHeader,
 	CardTitle,
 	Editor,
-	FileUpload,
 	Form,
 	FormControl,
 	FormField,
@@ -35,20 +37,27 @@ import {
 	ENUM_COURSE_CATEGORY,
 	ENUM_COURSE_LEVELS,
 	ENUM_COURSE_STATUS,
-	courseSchema
+	courseSchema,
+	useCourseCreate
 } from "@/entities/course";
+import { ENUM_CREATE_COURSE_ERRORS } from "@/entities/course/config";
 
 import { GenerateSlug } from "@/features/generate-slug";
 
+import { ImageSection } from "./ui";
+
 export const CourseCreate: FC = ({}) => {
 	const t = useTranslations("CreateCoursePage.basicInfo.form");
+	const { isPending, createCourse } = useCourseCreate();
+	const router = useRouter();
 
 	const form = useForm<CourseSchemaType>({
 		resolver: zodResolver(courseSchema),
 		defaultValues: {
 			title: "",
 			description: "",
-			fileKey: "",
+			imageUrl: "",
+			imageKey: "",
 			price: 0,
 			duration: 0,
 			level: ENUM_COURSE_LEVELS[0],
@@ -59,16 +68,38 @@ export const CourseCreate: FC = ({}) => {
 		}
 	});
 
-	const { watch, setValue, control } = form;
+	const { watch, setValue, control, handleSubmit, reset } = form;
 	const formState = watch();
 
-	const onSubmit = (data: CourseSchemaType) => {
-		console.log(data);
+	const onSubmit = async (data: CourseSchemaType) => {
+		const response = await createCourse(data);
+		if (response?.success) {
+			toast.success(t("toast.success"));
+			reset();
+			router.push(ENUM_PATHS.ADMIN.COURSES);
+		} else {
+			let message = "";
+
+			switch (response?.message) {
+				case ENUM_CREATE_COURSE_ERRORS.INVALID_FORM_DATA:
+					message = t("toast.invalid_form_data");
+					break;
+				case ENUM_CREATE_COURSE_ERRORS.DUPLICATE_SLUG:
+					message = t("toast.duplicate_slug");
+					break;
+				default:
+					message = t("toast.error");
+					break;
+			}
+
+			toast.error(message);
+		}
 	};
 
 	const handleGenerateSlug = (slug: string) => {
 		setValue("slug", slug);
 	};
+	console.log("formState", formState);
 
 	return (
 		<Card>
@@ -80,7 +111,7 @@ export const CourseCreate: FC = ({}) => {
 				<Form {...form}>
 					<form
 						className="space-y-6"
-						onSubmit={form.handleSubmit(onSubmit)}
+						onSubmit={handleSubmit(onSubmit)}
 					>
 						<FormField
 							name="title"
@@ -144,7 +175,7 @@ export const CourseCreate: FC = ({}) => {
 											placeholder={t(
 												"fields.smallDescription.placeholder"
 											)}
-											className="min-h-[120px]"
+											className="min-h-[120px] resize-none"
 											{...field}
 										/>
 									</FormControl>
@@ -170,17 +201,23 @@ export const CourseCreate: FC = ({}) => {
 						/>
 
 						<FormField
-							name="fileKey"
+							name="imageKey"
 							control={control}
 							render={({}) => (
 								<FormItem className="relative mb-0 pb-6">
 									<FormLabel className="ml-2">
-										{t("fields.fileKey.label")}
+										{t("fields.image.label")}
 									</FormLabel>
 									<FormControl>
-										<FileUpload
-											endpoint="courseImage"
-											onChange={() => {}}
+										<ImageSection
+											onChange={({
+												imageUrl,
+												imageKey
+											}) => {
+												setValue("imageUrl", imageUrl);
+												setValue("imageKey", imageKey);
+											}}
+											imageUrl={formState?.imageUrl}
 										/>
 									</FormControl>
 									<FormMessage className="absolute left-2 bottom-1" />
@@ -355,9 +392,24 @@ export const CourseCreate: FC = ({}) => {
 								</FormItem>
 							)}
 						/>
-						<Button>
-							{t("buttons.create")}
-							<PlusCircleIcon className="ml-2 h-4 w-4" />
+						<Button
+							className="flex gap-2 items-center w-[150px] justify-between"
+							disabled={isPending}
+						>
+							{isPending ? (
+								<>
+									{t("buttons.creating")}
+									<Loader
+										size={16}
+										className="animate-spin"
+									/>
+								</>
+							) : (
+								<>
+									{t("buttons.create")}
+									<PlusCircleIcon size={16} />
+								</>
+							)}
 						</Button>
 					</form>
 				</Form>

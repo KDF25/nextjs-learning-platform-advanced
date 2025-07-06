@@ -20,11 +20,7 @@ export const GenerateSlug: FC<IGenerateSlugProps> = ({ title, onChange }) => {
 	};
 
 	return (
-		<Button
-			onClick={handleOnClick}
-			type="button"
-			className="cursor-pointer"
-		>
+		<Button onClick={handleOnClick} type="button">
 			{t("buttons.generateSlug")}
 			<SparkleIcon className="ml-2 h-4 w-4" />
 		</Button>

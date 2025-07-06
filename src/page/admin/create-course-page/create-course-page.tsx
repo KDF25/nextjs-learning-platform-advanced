@@ -14,7 +14,7 @@ export const CreateCoursePage: FC = ({}) => {
 		<>
 			<div className="flex items-center gap-6">
 				<Button asChild size={"icon"} variant="outline">
-					<Link href={ENUM_PATHS.ADMIN.COURSE}>
+					<Link href={ENUM_PATHS.ADMIN.COURSES}>
 						<ArrowLeft className="h-4 w-4" />
 					</Link>
 				</Button>

@@ -22,7 +22,7 @@ export const FileUpload: FC<IFileUploadProps> = ({ onChange, endpoint }) => {
 			appearance={{
 				container: ({ isDragActive }) =>
 					cn(
-						"p-6 rounded-xl border-2 border-dashed transition-colors duration-300",
+						"h-full w-full p-6 rounded-xl border-2 border-dashed transition-colors duration-300",
 						"bg-white text-zinc-800 border-zinc-300",
 						"dark:bg-zinc-900 dark:text-zinc-100 dark:border-zinc-700",
 						isDragActive &&
@@ -32,7 +32,7 @@ export const FileUpload: FC<IFileUploadProps> = ({ onChange, endpoint }) => {
 					"bg-emerald-500 hover:bg-emerald-700 cursor-pointer w-[200px]",
 					"px-4 py-2 rounded-md transition-colors duration-200"
 				),
-				allowedContent: ""
+				allowedContent: "!display-none"
 			}}
 			onClientUploadComplete={(res) => {
 				onChange(res?.[0]);

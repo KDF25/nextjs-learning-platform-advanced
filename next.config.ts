@@ -4,9 +4,13 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const withNextIntl = createNextIntlPlugin({
   experimental: {
     createMessagesDeclaration: './messages/en.json'
-  }
+  },
 });
 
-const config: NextConfig = {};
+const config: NextConfig = {
+    images: {
+    domains: ["utfs.io"]
+  }
+};
 
 export default withNextIntl(config);

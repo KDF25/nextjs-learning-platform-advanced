@@ -24,7 +24,7 @@ export const Editor = <T extends FieldValues>({
 
 		editorProps: {
 			attributes: {
-				class: "min-h-[300px] p-4 rounded-t-lg prose prose-sm sm:prose lg:lg-prose-lg xl:prose-xl dark:prose-invert !w-full !max-w-none"
+				class: "flex-1 overflow-auto min-h-[290px] p-4 rounded-t-lg prose prose-sm sm:prose lg:lg-prose-lg xl:prose-xl dark:prose-invert !w-full !max-w-none"
 			}
 		},
 
@@ -40,8 +40,11 @@ export const Editor = <T extends FieldValues>({
 	});
 
 	return (
-		<div className="w-full border border-input rounded-lg overflow-hidden dark:bg-input/30">
-			<EditorContent editor={editor} />
+		<div className="w-full border border-input rounded-lg overflow-hidden dark:bg-input/30 min-h-[340px] flex flex-col  h-full">
+			<div className="flex-1 overflow-auto">
+				<EditorContent editor={editor} />
+			</div>
+
 			<MenuBar editor={editor} />
 		</div>
 	);

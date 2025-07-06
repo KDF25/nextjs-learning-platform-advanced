@@ -28,7 +28,7 @@ export const MenuBar: FC<IMenuBarProps> = ({ editor }) => {
 	const STARTER_LIST = EDITOR_STARTER_ITEMS_LIST(editor);
 	const TEXT_ALIGN_LIST = EDITOR_TEXT_ALIGN_ITEMS_LIST(editor);
 	return (
-		<div className="flex items-center flex-wrap gap-1 border border-input rounded-b-lg p-2 bg-card">
+		<div className="flex items-center flex-wrap gap-1 border-t border-input  p-2 bg-card  shrink-0">
 			<TooltipProvider>
 				<div className="flex items-center gap-1 flex-wrap">
 					{STARTER_LIST.map((item) => (

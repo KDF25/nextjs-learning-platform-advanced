@@ -1,3 +1,2 @@
 export * from "./course.enum";
 export * from "./course.types";
-export * from "../helpers/course.validation";
