@@ -1,5 +1,5 @@
 import z from "zod";
 
-import { courseSchema } from "./course.validation";
+import { courseSchema } from "../helpers";
 
 export type CourseSchemaType = z.infer<typeof courseSchema>;

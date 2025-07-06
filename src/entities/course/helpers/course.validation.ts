@@ -4,7 +4,7 @@ import {
 	ENUM_COURSE_CATEGORY,
 	ENUM_COURSE_LEVELS,
 	ENUM_COURSE_STATUS
-} from "./course.enum";
+} from "../types";
 
 export const courseSchema = z.object({
 	title: z

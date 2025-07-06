@@ -10,6 +10,36 @@
 	"common": {
 		"buttons": {
 			"back": "Back"
+		},
+
+		"upload": {
+			"text": "Drop your files here or <action>click to upload</action>",
+			"button": "Select",
+
+			"error": {
+				"title": "Upload Failed",
+				"text": "Something went wrong",
+				"button": "Retry"
+			},
+
+			"toast": {
+				"manyFiles": "Too many files, please upload a maximum of 1 files.",
+				"tooLarge": "File too large, please upload a file less than 5MB.",
+				"presignedUrl": "Failed to generate presigned URL, please try again.",
+				"upload": "File uploaded successfully"
+			},
+
+			"fields": {
+				"fileName": {
+					"required": "File name is required"
+				},
+				"contentType": {
+					"required": "Content type is required"
+				},
+				"size": {
+					"required": "File size is required"
+				}
+			}
 		}
 	},
 

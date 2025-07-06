@@ -15,6 +15,7 @@ import {
 	CardHeader,
 	CardTitle,
 	Editor,
+	FileUpload,
 	Form,
 	FormControl,
 	FormField,
@@ -171,17 +172,15 @@ export const CourseCreate: FC = ({}) => {
 						<FormField
 							name="fileKey"
 							control={control}
-							render={({ field }) => (
+							render={({}) => (
 								<FormItem className="relative mb-0 pb-6">
 									<FormLabel className="ml-2">
 										{t("fields.fileKey.label")}
 									</FormLabel>
 									<FormControl>
-										<Input
-											placeholder={t(
-												"fields.fileKey.placeholder"
-											)}
-											{...field}
+										<FileUpload
+											endpoint="courseImage"
+											onChange={() => {}}
 										/>
 									</FormControl>
 									<FormMessage className="absolute left-2 bottom-1" />
