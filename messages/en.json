@@ -150,85 +150,122 @@
 		"title": "Create Course",
 
 		"basicInfo": {
-			"form": {
-				"title": "Basic Information",
-				"description": "Provide some basic information about your course.",
+			"title": "Basic Information",
+			"description": "Provide some basic information about your course."
+		}
+	},
 
-				"fields": {
-					"title": {
-						"label": "Title",
-						"placeholder": "Enter course title",
-						"min": "Title must be at least 3 characters",
-						"max": "Title must be less than 100 characters"
-					},
-					"description": {
-						"label": "Description",
-						"placeholder": "Enter course description",
-						"min": "Description must be at least 3 characters",
-						"max": "Description must be less than 1000 characters"
-					},
-					"image": {
-						"label": "File",
-						"required": "File is required",
-						"recommendation": "16:9 aspect ratio recommended",
-
-						"buttons": {
-							"add": "Add",
-							"edit": "Edit",
-							"cancel": "Cancel"
-						}
-					},
-					"price": {
-						"label": "Price (in USD)",
-						"placeholder": "Enter course price",
-						"min": "Price must be at least 1"
-					},
-					"duration": {
-						"label": "Duration (in hours)",
-						"placeholder": "Enter course duration",
-						"min": "Duration must be at least 1 hour",
-						"max": "Duration must be less than 500 hours"
-					},
-					"level": {
-						"label": "Level",
-						"placeholder": "Select course level",
-						"required": "Level is required"
-					},
-					"category": {
-						"label": "Category",
-						"placeholder": "Select course category",
-						"required": "Category is required"
-					},
-					"smallDescription": {
-						"label": "Small Description",
-						"placeholder": "Enter course small description",
-						"min": "Small description must be at least 3 characters",
-						"max": "Small description must be less than 200 characters"
-					},
-					"slug": {
-						"label": "Slug",
-						"placeholder": "Enter course slug",
-						"min": "Slug must be at least 3 characters",
-						"max": "Slug must be less than 100 characters"
-					},
-					"status": {
-						"label": "Status",
-						"placeholder": "Select course status",
-						"required": "Status is required"
-					}
-				},
+	"CourseForm": {
+		"fields": {
+			"title": {
+				"label": "Title",
+				"placeholder": "Enter course title",
+				"min": "Title must be at least 3 characters",
+				"max": "Title must be less than 100 characters"
+			},
+			"description": {
+				"label": "Description",
+				"placeholder": "Enter course description",
+				"min": "Description must be at least 3 characters",
+				"max": "Description must be less than 1000 characters"
+			},
+			"image": {
+				"label": "File",
+				"required": "File is required",
+				"recommendation": "16:9 aspect ratio recommended",
 
 				"buttons": {
-					"generateSlug": "Generate Slug",
-					"create": "Create Course",
-					"creating": "Creating ..."
-				},
+					"add": "Add",
+					"edit": "Edit",
+					"cancel": "Cancel"
+				}
+			},
+			"price": {
+				"label": "Price (in USD)",
+				"placeholder": "Enter course price",
+				"min": "Price must be at least 1"
+			},
+			"duration": {
+				"label": "Duration (in hours)",
+				"placeholder": "Enter course duration",
+				"min": "Duration must be at least 1 hour",
+				"max": "Duration must be less than 500 hours"
+			},
+			"level": {
+				"label": "Level",
+				"placeholder": "Select course level",
+				"required": "Level is required"
+			},
+			"category": {
+				"label": "Category",
+				"placeholder": "Select course category",
+				"required": "Category is required"
+			},
+			"smallDescription": {
+				"label": "Small Description",
+				"placeholder": "Enter course small description",
+				"min": "Small description must be at least 3 characters",
+				"max": "Small description must be less than 200 characters"
+			},
+			"slug": {
+				"label": "Slug",
+				"placeholder": "Enter course slug",
+				"min": "Slug must be at least 3 characters",
+				"max": "Slug must be less than 100 characters"
+			},
+			"status": {
+				"label": "Status",
+				"placeholder": "Select course status",
+				"required": "Status is required"
+			}
+		},
 
-				"toast": {
-					"success": "Course created successfully",
-					"error": "ERROR: Failed to create course",
-					"duplicate_slug": "ERROR: Slug already exists",
-					"invalid_form_data": "ERROR: Invalid form data"
+		"buttons": {
+			"generateSlug": "Generate Slug",
+			"create": "Create Course",
+			"creating": "Creating ...",
+			"save": "Save Course",
+			"saving": "Saving"
+		},
+
+		"toast": {
+			"create": {
+				"success": "Course created successfully",
+				"error": "ERROR: Failed to create course"
+			},
+			"edit": {
+				"alert": "You need to make changes in the course",
+				"success": "Course edited successfully",
+				"error": "ERROR: Failed to edit course"
+			},
+			"duplicate_slug": "ERROR: Slug already exists",
+			"invalid_form_data": "ERROR: Invalid form data",
+			"not_found": "ERROR: Course not found"
+		}
+	},
+
+	"EditCoursePage": {
+		"title": "Edit Course",
+
+		"tabs": {
+			"basicInfo": "Basic Information",
+			"courseStructure": "Course Structure"
+		},
+
+		"basicInfo": {
+			"title": "Basic Info",
+			"description": "Provide some basic information about your course."
+		},
+
+		"courseStructure": {
+			"title": "Course Structure",
+			"description": "Define the structure of your course.",
+
+			"chapters": {
+				"title": "Chapters",
+
+				"buttons": {
+					"new_lesson": "Create New Lesson"
 				}
 			}
 		}

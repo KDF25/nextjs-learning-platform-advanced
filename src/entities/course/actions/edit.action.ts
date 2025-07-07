@@ -10,7 +10,7 @@ import { ENUM_CREATE_COURSE_ERRORS } from "../config";
 import { courseSchema } from "../helpers";
 import { CourseSchemaType } from "../types";
 
-export async function CreateCourse(data: CourseSchemaType) {
+export async function EditCourse(data: CourseSchemaType) {
 	try {
 		const session = await auth.api.getSession({ headers: await headers() });
 		const validation = courseSchema.safeParse(data);
@@ -22,23 +22,26 @@ export async function CreateCourse(data: CourseSchemaType) {
 			};
 		}
 
-		const slug = await prisma.course.findUnique({
+		const course = await prisma.course.findUnique({
 			where: {
-				slug: validation.data.slug
+				slug: data.slug,
+				userId: session?.user?.id
 			}
 		});
 
-		if (slug) {
+		if (!course) {
 			return {
 				success: false,
-				message: ENUM_CREATE_COURSE_ERRORS.DUPLICATE_SLUG
+				message: ENUM_CREATE_COURSE_ERRORS.NOT_FOUND
 			};
 		}
 
-		await prisma.course.create({
+		await prisma.course.update({
+			where: {
+				id: course.id
+			},
 			data: {
-				...validation.data,
-				userId: session?.user?.id
+				...validation.data
 			}
 		});
 
@@ -47,7 +50,7 @@ export async function CreateCourse(data: CourseSchemaType) {
 			message: ENUM_CREATE_COURSE_ERRORS.SUCCESS
 		};
 	} catch (error) {
-		console.error("[Create course error]", error);
+		console.error("[Edit course error]", error);
 
 		return {
 			success: false,

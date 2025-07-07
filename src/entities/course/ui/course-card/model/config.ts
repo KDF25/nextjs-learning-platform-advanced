@@ -10,7 +10,7 @@ export const DROPDOWN_MENU_ITEMS_LIST = (
 	{
 		name: "menu.edit",
 		icon: Pencil,
-		href: ENUM_PATHS.ADMIN.COURSE(courseId)
+		href: ENUM_PATHS.ADMIN.EDIT(courseId)
 	},
 	{
 		name: "menu.preview",

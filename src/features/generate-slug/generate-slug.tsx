@@ -11,7 +11,7 @@ interface IGenerateSlugProps {
 }
 
 export const GenerateSlug: FC<IGenerateSlugProps> = ({ title, onChange }) => {
-	const t = useTranslations("CreateCoursePage.basicInfo.form");
+	const t = useTranslations("CourseForm");
 
 	const handleOnClick = () => {
 		const slug = slugify(title);

@@ -11,6 +11,10 @@ export const ENUM_PATHS = {
 		COURSES: "/admin/courses",
 		CREATE: "/admin/courses/create",
 		COURSE: (courseId: string) => `/admin/courses/${courseId}`,
+		CHAPTER: (courseId: string, chapterId: string) =>
+			`/admin/courses/${courseId}/${chapterId}`,
+		LESSON: (courseId: string, chapterId: string, lessonId: string) =>
+			`/admin/courses/${courseId}/${chapterId}/${lessonId}`,
 		EDIT: (courseId: string) => `/admin/courses/${courseId}/edit`,
 		DELETE: (courseId: string) => `/admin/courses/${courseId}/delete`
 	}

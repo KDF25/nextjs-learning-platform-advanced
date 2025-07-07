@@ -8,7 +8,7 @@ import { ENUM_PATHS } from "@/shared/config";
 import { Button } from "@/shared/ui";
 
 import { auth } from "@/entities/auth";
-import { CourseService } from "@/entities/course/api/course.service";
+import { CourseTeacherService } from "@/entities/course";
 
 import { CoursesList } from "@/widgets/courses-list";
 
@@ -17,9 +17,7 @@ export const CoursesPage: FC = async ({}) => {
 	const session = await auth.api.getSession({
 		headers: await headers()
 	});
-	const courses = await CourseService.getTeacherCourses(
-		session?.user?.id || ""
-	);
+	const courses = await CourseTeacherService.getAll(session?.user?.id || "");
 
 	return (
 		<>

@@ -23,7 +23,7 @@ export const ImageSection: FC<IImageSectionProps> = ({
 	imageUrl,
 	onChange
 }) => {
-	const t = useTranslations("CreateCoursePage.basicInfo.form.fields.image");
+	const t = useTranslations("CourseForm.fields.image");
 	const [isEditing, setIsEditing] = useState<boolean>(false);
 
 	const handleImageChange = (data: UploadedFileData) => {

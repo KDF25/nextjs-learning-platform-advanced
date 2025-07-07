@@ -1,8 +1,6 @@
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Select } from "@radix-ui/react-select";
-import { Loader, PlusCircleIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { FC } from "react";
@@ -11,25 +9,11 @@ import { toast } from "sonner";
 
 import { ENUM_PATHS } from "@/shared/config";
 import {
-	Button,
 	Card,
 	CardContent,
 	CardDescription,
 	CardHeader,
-	CardTitle,
-	Editor,
-	Form,
-	FormControl,
-	FormField,
-	FormItem,
-	FormLabel,
-	FormMessage,
-	Input,
-	SelectContent,
-	SelectItem,
-	SelectTrigger,
-	SelectValue,
-	Textarea
+	CardTitle
 } from "@/shared/ui";
 
 import {
@@ -40,14 +24,12 @@ import {
 	courseSchema,
 	useCourseCreate
 } from "@/entities/course";
-import { ENUM_CREATE_COURSE_ERRORS } from "@/entities/course/config";
+import { ENUM_CREATE_COURSE_ERRORS } from "@/entities/course";
 
-import { GenerateSlug } from "@/features/generate-slug";
-
-import { ImageSection } from "./ui";
+import { CourseDataForm } from "../course-data-form";
 
 export const CourseCreate: FC = ({}) => {
-	const t = useTranslations("CreateCoursePage.basicInfo.form");
+	const t = useTranslations();
 	const { isPending, createCourse } = useCourseCreate();
 	const router = useRouter();
 
@@ -68,13 +50,12 @@ export const CourseCreate: FC = ({}) => {
 		}
 	});
 
-	const { watch, setValue, control, handleSubmit, reset } = form;
-	const formState = watch();
+	const { reset } = form;
 
 	const onSubmit = async (data: CourseSchemaType) => {
 		const response = await createCourse(data);
 		if (response?.success) {
-			toast.success(t("toast.success"));
+			toast.success(t("CourseForm.toast.create.success"));
 			reset();
 			router.push(ENUM_PATHS.ADMIN.COURSES);
 		} else {
@@ -82,13 +63,13 @@ export const CourseCreate: FC = ({}) => {
 
 			switch (response?.message) {
 				case ENUM_CREATE_COURSE_ERRORS.INVALID_FORM_DATA:
-					message = t("toast.invalid_form_data");
+					message = t("CourseForm.toast.invalid_form_data");
 					break;
 				case ENUM_CREATE_COURSE_ERRORS.DUPLICATE_SLUG:
-					message = t("toast.duplicate_slug");
+					message = t("CourseForm.toast.duplicate_slug");
 					break;
 				default:
-					message = t("toast.error");
+					message = t("CourseForm.toast.create.error");
 					break;
 			}
 
@@ -96,323 +77,20 @@ export const CourseCreate: FC = ({}) => {
 		}
 	};
 
-	const handleGenerateSlug = (slug: string) => {
-		setValue("slug", slug);
-	};
-	console.log("formState", formState);
-
 	return (
 		<Card>
 			<CardHeader>
-				<CardTitle>{t("title")}</CardTitle>
-				<CardDescription>{t("description")}</CardDescription>
+				<CardTitle>{t("CreateCoursePage.basicInfo.title")}</CardTitle>
+				<CardDescription>
+					{t("CreateCoursePage.basicInfo.description")}
+				</CardDescription>
 			</CardHeader>
 			<CardContent>
-				<Form {...form}>
-					<form
-						className="space-y-6"
-						onSubmit={handleSubmit(onSubmit)}
-					>
-						<FormField
-							name="title"
-							control={control}
-							render={({ field }) => (
-								<FormItem className="relative mb-0 pb-6">
-									<FormLabel className="ml-2">
-										{t("fields.title.label")}
-									</FormLabel>
-									<FormControl>
-										<Input
-											placeholder={t(
-												"fields.title.placeholder"
-											)}
-											{...field}
-										/>
-									</FormControl>
-									<FormMessage className="absolute left-2 bottom-1" />
-								</FormItem>
-							)}
-						/>
-
-						<FormField
-							name="slug"
-							control={control}
-							render={({ field }) => (
-								<FormItem className="w-full relative mb-0 pb-6">
-									<FormLabel className="ml-2">
-										{t("fields.slug.label")}
-									</FormLabel>
-									<div className="flex gap-4 items-end">
-										<FormControl>
-											<Input
-												placeholder={t(
-													"fields.slug.placeholder"
-												)}
-												{...field}
-											/>
-										</FormControl>
-										<GenerateSlug
-											title={formState?.title}
-											onChange={handleGenerateSlug}
-										/>
-									</div>
-
-									<FormMessage className="absolute left-2 bottom-1" />
-								</FormItem>
-							)}
-						/>
-
-						<FormField
-							name="smallDescription"
-							control={control}
-							render={({ field }) => (
-								<FormItem className="relative mb-0 pb-6">
-									<FormLabel className="ml-2">
-										{t("fields.smallDescription.label")}
-									</FormLabel>
-									<FormControl>
-										<Textarea
-											placeholder={t(
-												"fields.smallDescription.placeholder"
-											)}
-											className="min-h-[120px] resize-none"
-											{...field}
-										/>
-									</FormControl>
-									<FormMessage className="absolute left-2 bottom-1" />
-								</FormItem>
-							)}
-						/>
-
-						<FormField
-							name="description"
-							control={control}
-							render={({ field }) => (
-								<FormItem className="relative mb-0 pb-6">
-									<FormLabel className="ml-2">
-										{t("fields.description.label")}
-									</FormLabel>
-									<FormControl>
-										<Editor field={field} />
-									</FormControl>
-									<FormMessage className="absolute left-2 bottom-1" />
-								</FormItem>
-							)}
-						/>
-
-						<FormField
-							name="imageKey"
-							control={control}
-							render={({}) => (
-								<FormItem className="relative mb-0 pb-6">
-									<FormLabel className="ml-2">
-										{t("fields.image.label")}
-									</FormLabel>
-									<FormControl>
-										<ImageSection
-											onChange={({
-												imageUrl,
-												imageKey
-											}) => {
-												setValue("imageUrl", imageUrl);
-												setValue("imageKey", imageKey);
-											}}
-											imageUrl={formState?.imageUrl}
-										/>
-									</FormControl>
-									<FormMessage className="absolute left-2 bottom-1" />
-								</FormItem>
-							)}
-						/>
-
-						<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-							<FormField
-								name="category"
-								control={control}
-								render={({ field }) => (
-									<FormItem className="w-full relative mb-0 pb-6">
-										<FormLabel className="ml-2">
-											{t("fields.category.label")}
-										</FormLabel>
-										<Select
-											onValueChange={field.onChange}
-											defaultValue={field.value}
-										>
-											<FormControl>
-												<SelectTrigger className="w-full">
-													<SelectValue
-														placeholder={t(
-															"fields.category.placeholder"
-														)}
-													/>
-												</SelectTrigger>
-											</FormControl>
-
-											<SelectContent>
-												{ENUM_COURSE_CATEGORY.map(
-													(category) => (
-														<SelectItem
-															key={category}
-															value={category}
-														>
-															{category}
-														</SelectItem>
-													)
-												)}
-											</SelectContent>
-										</Select>
-
-										<FormMessage className="absolute left-2 bottom-1" />
-									</FormItem>
-								)}
-							/>
-
-							<FormField
-								name="level"
-								control={control}
-								render={({ field }) => (
-									<FormItem className="w-full relative mb-0 pb-6">
-										<FormLabel className="ml-2">
-											{t("fields.level.label")}
-										</FormLabel>
-										<Select
-											onValueChange={field.onChange}
-											defaultValue={field.value}
-										>
-											<FormControl>
-												<SelectTrigger className="w-full">
-													<SelectValue
-														placeholder={t(
-															"fields.level.placeholder"
-														)}
-													/>
-												</SelectTrigger>
-											</FormControl>
-
-											<SelectContent>
-												{ENUM_COURSE_LEVELS.map(
-													(category) => (
-														<SelectItem
-															key={category}
-															value={category}
-														>
-															{category}
-														</SelectItem>
-													)
-												)}
-											</SelectContent>
-										</Select>
-
-										<FormMessage className="absolute left-2 bottom-1" />
-									</FormItem>
-								)}
-							/>
-
-							<FormField
-								name="price"
-								control={control}
-								render={({ field }) => (
-									<FormItem className="relative mb-0 pb-6">
-										<FormLabel className="ml-2">
-											{t("fields.price.label")}
-										</FormLabel>
-										<FormControl>
-											<Input
-												type="number"
-												placeholder={t(
-													"fields.price.placeholder"
-												)}
-												{...field}
-											/>
-										</FormControl>
-										<FormMessage className="absolute left-2 bottom-1" />
-									</FormItem>
-								)}
-							/>
-
-							<FormField
-								name="duration"
-								control={control}
-								render={({ field }) => (
-									<FormItem className="relative mb-0 pb-6">
-										<FormLabel className="ml-2">
-											{t("fields.duration.label")}
-										</FormLabel>
-										<FormControl>
-											<Input
-												type="number"
-												placeholder={t(
-													"fields.duration.placeholder"
-												)}
-												{...field}
-											/>
-										</FormControl>
-										<FormMessage className="absolute left-2 bottom-1" />
-									</FormItem>
-								)}
-							/>
-						</div>
-						<FormField
-							name="status"
-							control={control}
-							render={({ field }) => (
-								<FormItem className="w-full relative mb-0 pb-6">
-									<FormLabel className="ml-2">
-										{t("fields.status.label")}
-									</FormLabel>
-									<Select
-										onValueChange={field.onChange}
-										defaultValue={field.value}
-									>
-										<FormControl>
-											<SelectTrigger className="w-full">
-												<SelectValue
-													placeholder={t(
-														"fields.status.placeholder"
-													)}
-												/>
-											</SelectTrigger>
-										</FormControl>
-
-										<SelectContent>
-											{ENUM_COURSE_STATUS.map(
-												(category) => (
-													<SelectItem
-														key={category}
-														value={category}
-													>
-														{category}
-													</SelectItem>
-												)
-											)}
-										</SelectContent>
-									</Select>
-
-									<FormMessage className="absolute left-2 bottom-1" />
-								</FormItem>
-							)}
-						/>
-						<Button
-							className="flex gap-2 items-center w-[150px] justify-between"
-							disabled={isPending}
-						>
-							{isPending ? (
-								<>
-									{t("buttons.creating")}
-									<Loader
-										size={16}
-										className="animate-spin"
-									/>
-								</>
-							) : (
-								<>
-									{t("buttons.create")}
-									<PlusCircleIcon size={16} />
-								</>
-							)}
-						</Button>
-					</form>
-				</Form>
+				<CourseDataForm
+					form={form}
+					onSubmit={onSubmit}
+					isPending={isPending}
+				/>
 			</CardContent>
 		</Card>
 	);
