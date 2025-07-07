@@ -134,6 +134,18 @@ declare const messages: {
 
 		"buttons": {
 			"create": "Create Course"
+		},
+
+		"card": {
+			"menu": {
+				"edit": "Edit",
+				"preview": "Preview",
+				"delete": "Delete"
+			},
+
+			"buttons": {
+				"edit": "Edit Course"
+			}
 		}
 	},
 

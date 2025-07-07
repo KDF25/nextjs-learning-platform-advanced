@@ -1,3 +1,5 @@
+"use client";
+
 import { useTransition } from "react";
 
 import { CreateCourse } from "../actions";
