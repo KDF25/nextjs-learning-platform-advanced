@@ -30,8 +30,7 @@ import {
 	IconGripVertical,
 	IconLayoutColumns,
 	IconLoader,
-	IconPlus,
-	IconTrendingUp
+	IconPlus
 } from "@tabler/icons-react";
 import {
 	ColumnDef,
@@ -49,21 +48,19 @@ import {
 	useReactTable
 } from "@tanstack/react-table";
 import * as React from "react";
-import { Area, AreaChart, CartesianGrid, XAxis } from "recharts";
 import { toast } from "sonner";
 import { z } from "zod";
 
 import { useIsMobile } from "@/shared/hooks/use-mobile";
-import { Badge } from "@/shared/ui/shadcn-ui/badge";
-import { Button } from "@/shared/ui/shadcn-ui/button";
+import { Badge, Button } from "@/shared/ui";
+// import {
+// 	ChartConfig,
+// 	ChartContainer,
+// 	ChartTooltip,
+// 	ChartTooltipContent
+// } from "@/shared/ui/shadcn-ui/chart";
 import {
-	ChartConfig,
-	ChartContainer,
-	ChartTooltip,
-	ChartTooltipContent
-} from "@/shared/ui/shadcn-ui/chart";
-import { Checkbox } from "@/shared/ui/shadcn-ui/checkbox";
-import {
+	Checkbox,
 	Drawer,
 	DrawerClose,
 	DrawerContent,
@@ -71,40 +68,31 @@ import {
 	DrawerFooter,
 	DrawerHeader,
 	DrawerTitle,
-	DrawerTrigger
-} from "@/shared/ui/shadcn-ui/drawer";
-import {
+	DrawerTrigger,
 	DropdownMenu,
 	DropdownMenuCheckboxItem,
 	DropdownMenuContent,
 	DropdownMenuItem,
 	DropdownMenuSeparator,
-	DropdownMenuTrigger
-} from "@/shared/ui/shadcn-ui/dropdown-menu";
-import { Input } from "@/shared/ui/shadcn-ui/input";
-import { Label } from "@/shared/ui/shadcn-ui/label";
-import {
+	DropdownMenuTrigger,
+	Input,
+	Label,
 	Select,
 	SelectContent,
 	SelectItem,
 	SelectTrigger,
-	SelectValue
-} from "@/shared/ui/shadcn-ui/select";
-import { Separator } from "@/shared/ui/shadcn-ui/separator";
-import {
+	SelectValue,
 	Table,
 	TableBody,
 	TableCell,
 	TableHead,
 	TableHeader,
-	TableRow
-} from "@/shared/ui/shadcn-ui/table";
-import {
+	TableRow,
 	Tabs,
 	TabsContent,
 	TabsList,
 	TabsTrigger
-} from "@/shared/ui/shadcn-ui/tabs";
+} from "@/shared/ui";
 
 export const schema = z.object({
 	id: z.number(),
@@ -687,25 +675,25 @@ export function DataTable({
 	);
 }
 
-const chartData = [
-	{ month: "January", desktop: 186, mobile: 80 },
-	{ month: "February", desktop: 305, mobile: 200 },
-	{ month: "March", desktop: 237, mobile: 120 },
-	{ month: "April", desktop: 73, mobile: 190 },
-	{ month: "May", desktop: 209, mobile: 130 },
-	{ month: "June", desktop: 214, mobile: 140 }
-];
+// const chartData = [
+// 	{ month: "January", desktop: 186, mobile: 80 },
+// 	{ month: "February", desktop: 305, mobile: 200 },
+// 	{ month: "March", desktop: 237, mobile: 120 },
+// 	{ month: "April", desktop: 73, mobile: 190 },
+// 	{ month: "May", desktop: 209, mobile: 130 },
+// 	{ month: "June", desktop: 214, mobile: 140 }
+// ];
 
-const chartConfig = {
-	desktop: {
-		label: "Desktop",
-		color: "var(--primary)"
-	},
-	mobile: {
-		label: "Mobile",
-		color: "var(--primary)"
-	}
-} satisfies ChartConfig;
+// const chartConfig = {
+// 	desktop: {
+// 		label: "Desktop",
+// 		color: "var(--primary)"
+// 	},
+// 	mobile: {
+// 		label: "Mobile",
+// 		color: "var(--primary)"
+// 	}
+// } satisfies ChartConfig;
 
 function TableCellViewer({ item }: { item: z.infer<typeof schema> }) {
 	const isMobile = useIsMobile();
@@ -728,7 +716,7 @@ function TableCellViewer({ item }: { item: z.infer<typeof schema> }) {
 					</DrawerDescription>
 				</DrawerHeader>
 				<div className="flex flex-col gap-4 overflow-y-auto px-4 text-sm">
-					{!isMobile && (
+					{/* {!isMobile && (
 						<>
 							<ChartContainer config={chartConfig}>
 								<AreaChart
@@ -789,7 +777,7 @@ function TableCellViewer({ item }: { item: z.infer<typeof schema> }) {
 							</div>
 							<Separator />
 						</>
-					)}
+					)} */}
 					<form className="flex flex-col gap-4">
 						<div className="flex flex-col gap-3">
 							<Label htmlFor="header">Header</Label>
