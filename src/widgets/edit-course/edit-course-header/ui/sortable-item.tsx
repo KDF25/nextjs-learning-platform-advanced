@@ -5,12 +5,17 @@ import React, { FC } from "react";
 
 import { cn } from "@/shared/lib";
 
+export enum ENUM_SORTABLE_ITEM_TYPE {
+	CHAPTER = "chapter",
+	LESSON = "lesson"
+}
+
 interface ISortableItemProps {
 	id: string;
 	children: (listeners: DraggableSyntheticListeners) => React.ReactNode;
 	className?: string;
 	data?: {
-		type: "chapter" | "lesson";
+		type: ENUM_SORTABLE_ITEM_TYPE;
 		chapterId?: string;
 	};
 }

@@ -37,9 +37,7 @@ export const CourseTeacherService = {
 						select: {
 							id: true,
 							title: true,
-							position: true
-						},
-						include: {
+							position: true,
 							lessons: {
 								select: {
 									id: true,

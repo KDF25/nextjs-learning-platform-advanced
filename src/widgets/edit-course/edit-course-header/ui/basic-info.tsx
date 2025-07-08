@@ -35,17 +35,17 @@ export const BasicInfo: FC<IBasicInfoProps> = ({ course }) => {
 	const router = useRouter();
 
 	const defaultValues = {
-		title: course.title,
-		description: course.description,
-		imageUrl: course.imageUrl,
-		imageKey: course.imageKey,
-		price: course.price,
-		duration: course.duration,
-		level: course.level,
-		category: course.category,
-		smallDescription: course.smallDescription,
-		slug: course.slug,
-		status: course.status
+		title: course?.title,
+		description: course?.description,
+		imageUrl: course?.imageUrl,
+		imageKey: course?.imageKey,
+		price: course?.price,
+		duration: course?.duration,
+		level: course?.level,
+		category: course?.category,
+		smallDescription: course?.smallDescription,
+		slug: course?.slug,
+		status: course?.status
 	} as CourseSchemaType;
 
 	const form = useForm<CourseSchemaType>({

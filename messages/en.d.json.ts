@@ -272,6 +272,15 @@ declare const messages: {
 				}
 			}
 		}
+	},
+
+	"DnDkit": {
+		"toast": {
+			"error": {
+				"moveLesson": "ERROR: Lesson move between chapters is not allowed",
+				"notFound": "ERROR: Lesson or chapter not found"
+			}
+		}
 	}
 };
 export default messages;
