@@ -17,6 +17,7 @@ import {
 } from "@/shared/ui";
 
 import {
+	CourseDataForm,
 	CourseSchemaType,
 	ENUM_COURSE_CATEGORY,
 	ENUM_COURSE_LEVELS,
@@ -26,7 +27,7 @@ import {
 } from "@/entities/course";
 import { ENUM_CREATE_COURSE_ERRORS } from "@/entities/course";
 
-import { CourseDataForm } from "../course-data-form";
+import { GenerateSlug } from "@/features/generate-slug";
 
 export const CourseCreate: FC = ({}) => {
 	const t = useTranslations();
@@ -50,7 +51,8 @@ export const CourseCreate: FC = ({}) => {
 		}
 	});
 
-	const { reset } = form;
+	const { reset, setValue, watch } = form;
+	const formState = watch();
 
 	const onSubmit = async (data: CourseSchemaType) => {
 		const response = await createCourse(data);
@@ -77,6 +79,10 @@ export const CourseCreate: FC = ({}) => {
 		}
 	};
 
+	const handleGenerateSlug = (slug: string) => {
+		setValue("slug", slug);
+	};
+
 	return (
 		<Card>
 			<CardHeader>
@@ -90,6 +96,12 @@ export const CourseCreate: FC = ({}) => {
 					form={form}
 					onSubmit={onSubmit}
 					isPending={isPending}
+					GenerateSlugBtn={
+						<GenerateSlug
+							onChange={handleGenerateSlug}
+							title={formState.title}
+						/>
+					}
 				/>
 			</CardContent>
 		</Card>

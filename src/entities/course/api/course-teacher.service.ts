@@ -43,6 +43,9 @@ export const CourseTeacherService = {
 									id: true,
 									title: true,
 									position: true
+								},
+								orderBy: {
+									position: "asc"
 								}
 							}
 						}

@@ -1,0 +1,79 @@
+"use server";
+
+import { revalidatePath } from "next/cache";
+
+import { ENUM_PATHS } from "@/shared/config";
+import { prisma } from "@/shared/database";
+
+import { authHandler } from "@/entities/auth";
+import { ownerHandler } from "@/entities/course";
+
+import { ENUM_CREATE_LESSON_ERRORS } from "../config";
+import { lessonSchema } from "../helpers";
+import { IActionResponse, LessonSchemaType } from "../types";
+
+export async function CreateLesson(
+	data: LessonSchemaType
+): Promise<IActionResponse> {
+	try {
+		const userId = await authHandler();
+		const validation = lessonSchema.safeParse(data);
+
+		if (!validation.success) {
+			return {
+				success: false,
+				message: ENUM_CREATE_LESSON_ERRORS.INVALID_FORM_DATA
+			};
+		}
+
+		const chapter = await prisma.chapter.findUnique({
+			where: {
+				id: data?.chapterId
+			}
+		});
+
+		if (!chapter?.courseId) {
+			return {
+				success: false,
+				message: ENUM_CREATE_LESSON_ERRORS.NOT_FOUND
+			};
+		}
+
+		ownerHandler(chapter?.courseId, userId);
+
+		await prisma.$transaction(async (tx) => {
+			const maxPos = await tx.lesson.findFirst({
+				where: {
+					chapterId: data?.chapterId
+				},
+				select: {
+					position: true
+				},
+				orderBy: {
+					position: "desc"
+				}
+			});
+
+			await tx.lesson.create({
+				data: {
+					position: maxPos?.position ? maxPos?.position + 1 : 0,
+					...data
+				}
+			});
+		});
+
+		revalidatePath(ENUM_PATHS.ADMIN.EDIT(chapter?.courseId));
+
+		return {
+			success: true,
+			message: ENUM_CREATE_LESSON_ERRORS.SUCCESS
+		};
+	} catch (error) {
+		console.error("[Create lesson error]", error);
+
+		return {
+			success: false,
+			message: ENUM_CREATE_LESSON_ERRORS.FAILED
+		};
+	}
+}

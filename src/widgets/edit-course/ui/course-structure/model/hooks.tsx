@@ -6,10 +6,10 @@ import { useTranslations } from "next-intl";
 import { toast } from "sonner";
 
 import {
-	ENUM_REORDER_COURSE_ERRORS,
-	ReorderChapters,
-	ReorderLessons
-} from "@/entities/course";
+	ENUM_REORDER_CHAPTER_ERRORS,
+	ReorderChapters
+} from "@/entities/chapter";
+import { ENUM_REORDER_LESSON_ERRORS, ReorderLessons } from "@/entities/lesson";
 
 import { ISortableChapterProps } from "../model";
 import { ENUM_SORTABLE_ITEM_TYPE } from "../ui";
@@ -87,10 +87,10 @@ export const useCourseStructure = (courseId: string | null | undefined) => {
 
 						let message = "";
 						switch (result?.message) {
-							case ENUM_REORDER_COURSE_ERRORS.ZERO_LENGTH:
+							case ENUM_REORDER_CHAPTER_ERRORS.ZERO_LENGTH:
 								message = t("toast.action.chapters.zeroLength");
 								break;
-							case ENUM_REORDER_COURSE_ERRORS.FAILED:
+							case ENUM_REORDER_CHAPTER_ERRORS.FAILED:
 								message = t("toast.action.chapters.error");
 								break;
 							default:
@@ -179,10 +179,10 @@ export const useCourseStructure = (courseId: string | null | undefined) => {
 
 						let message = "";
 						switch (result?.message) {
-							case ENUM_REORDER_COURSE_ERRORS.ZERO_LENGTH:
+							case ENUM_REORDER_LESSON_ERRORS.ZERO_LENGTH:
 								message = t("toast.action.lessons.zeroLength");
 								break;
-							case ENUM_REORDER_COURSE_ERRORS.FAILED:
+							case ENUM_REORDER_LESSON_ERRORS.FAILED:
 								message = t("toast.action.lessons.error");
 								break;
 							default:

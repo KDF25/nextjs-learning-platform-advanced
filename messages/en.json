@@ -170,8 +170,8 @@
 				"max": "Description must be less than 1000 characters"
 			},
 			"image": {
-				"label": "File",
-				"required": "File is required",
+				"label": "Image",
+				"required": "Image is required",
 				"recommendation": "16:9 aspect ratio recommended",
 
 				"buttons": {
@@ -264,10 +264,99 @@
 			"chapters": {
 				"title": "Chapters",
 
+				"add": {
+					"chapter": {
+						"title": "Create a new Chapter",
+						"description": "What would you like to call this chapter?"
+					},
+
+					"lesson": {
+						"title": "Create a new Lesson",
+						"description": "What would you like to call this lesson?"
+					}
+				},
+
 				"buttons": {
-					"new_lesson": "Create New Lesson"
+					"new_lesson": "Create New Lesson",
+					"new_chapter": "New Chapter"
 				}
 			}
+		}
+	},
+
+	"ChapterForm": {
+		"fields": {
+			"title": {
+				"label": "Title",
+				"placeholder": "Enter chapter title",
+				"min": "Title must be at least 3 characters",
+				"max": "Title must be less than 100 characters"
+			}
+		},
+		"buttons": {
+			"create": "Create Chapter",
+			"creating": "Creating ..."
+		},
+
+		"toast": {
+			"create": {
+				"success": "Chapter created successfully",
+				"error": "ERROR: Failed to create chapter"
+			},
+			"invalid_form_data": "ERROR: Invalid form data",
+			"not_found": "ERROR: Course not found"
+		}
+	},
+
+	"LessonForm": {
+		"fields": {
+			"title": {
+				"label": "Title",
+				"placeholder": "Enter lesson title",
+				"min": "Title must be at least 3 characters",
+				"max": "Title must be less than 100 characters"
+			},
+			"description": {
+				"label": "Description",
+				"placeholder": "Enter course description",
+				"min": "Description must be at least 3 characters",
+				"max": "Description must be less than 1000 characters"
+			},
+			"image": {
+				"label": "Image",
+				"required": "Image is required",
+				"recommendation": "16:9 aspect ratio recommended",
+
+				"buttons": {
+					"add": "Add",
+					"edit": "Edit",
+					"cancel": "Cancel"
+				}
+			},
+			"video": {
+				"label": "Image",
+				"required": "Image is required",
+				"recommendation": "16:9 aspect ratio recommended",
+
+				"buttons": {
+					"add": "Add",
+					"edit": "Edit",
+					"cancel": "Cancel"
+				}
+			}
+		},
+		"buttons": {
+			"create": "Create Lesson",
+			"creating": "Creating ..."
+		},
+
+		"toast": {
+			"create": {
+				"success": "Lesson created successfully",
+				"error": "ERROR: Failed to create lesson"
+			},
+			"invalid_form_data": "ERROR: Invalid form data",
+			"not_found": "ERROR: Chapter not found"
 		}
 	},
 

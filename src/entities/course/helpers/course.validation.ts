@@ -9,66 +9,64 @@ import {
 export const courseSchema = z.object({
 	title: z
 		.string()
-		.min(3, { message: "CreateCoursePage.basicInfo.form.fields.title.min" })
+		.min(3, { message: "CourseForm.fields.title.min" })
 		.max(100, {
-			message: "CreateCoursePage.basicInfo.form.fields.title.max"
+			message: "CourseForm.fields.title.max"
 		}),
 
 	description: z
 		.string()
 		.min(3, {
-			message: "CreateCoursePage.basicInfo.form.fields.description.min"
+			message: "CourseForm.fields.description.min"
 		})
 		.max(1000, {
-			message: "CreateCoursePage.basicInfo.form.fields.description.max"
+			message: "CourseForm.fields.description.max"
 		}),
 
 	imageUrl: z.string().min(1, {
-		message: "CreateCoursePage.basicInfo.form.fields.image.required"
+		message: "CourseForm.fields.image.required"
 	}),
 
 	imageKey: z.string().min(1),
 
 	price: z.coerce.number().min(1, {
-		message: "CreateCoursePage.basicInfo.form.fields.price.min"
+		message: "CourseForm.fields.price.min"
 	}),
 
 	duration: z.coerce
 		.number()
 		.min(1, {
-			message: "CreateCoursePage.basicInfo.form.fields.duration.min"
+			message: "CourseForm.fields.duration.min"
 		})
 		.max(500, {
-			message: "CreateCoursePage.basicInfo.form.fields.duration.max"
+			message: "CourseForm.fields.duration.max"
 		}),
 
 	level: z.enum(ENUM_COURSE_LEVELS, {
-		required_error: "CreateCoursePage.basicInfo.form.fields.level.required"
+		required_error: "CourseForm.fields.level.required"
 	}),
 
 	category: z.enum(ENUM_COURSE_CATEGORY, {
-		message: "CreateCoursePage.basicInfo.form.fields.category.required"
+		message: "CourseForm.fields.category.required"
 	}),
 
 	smallDescription: z
 		.string()
 		.min(3, {
-			message:
-				"CreateCoursePage.basicInfo.form.fields.smallDescription.min"
+			message: "CourseForm.fields.smallDescription.min"
 		})
 		.max(200, {
-			message:
-				"CreateCoursePage.basicInfo.form.fields.smallDescription.max"
+			message: "CourseForm.fields.smallDescription.max"
 		}),
 
 	slug: z
 		.string()
-		.min(3, { message: "CreateCoursePage.basicInfo.form.fields.slug.min" })
+		.min(3, { message: "CourseForm.fields.slug.min" })
 		.max(100, {
-			message: "CreateCoursePage.basicInfo.form.fields.slug.max"
+			message: "CourseForm.fields.slug.max"
 		}),
 
 	status: z.enum(ENUM_COURSE_STATUS, {
-		required_error: "CreateCoursePage.basicInfo.form.fields.status.required"
+		required_error: "CourseForm.fields.status.required"
 	})
 });

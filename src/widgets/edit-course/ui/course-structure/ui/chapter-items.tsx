@@ -5,7 +5,6 @@ import {
 	verticalListSortingStrategy
 } from "@dnd-kit/sortable";
 import { ChevronDown, ChevronRight, GripVertical, Trash2 } from "lucide-react";
-import { useTranslations } from "next-intl";
 import { FC } from "react";
 
 import {
@@ -15,6 +14,8 @@ import {
 	CollapsibleContent,
 	CollapsibleTrigger
 } from "@/shared/ui";
+
+import { AddNewLesson } from "@/features/add-new-lesson";
 
 import { ISortableChapterProps } from "../model";
 
@@ -32,7 +33,6 @@ export const ChapterItems: FC<IChapterItemsProps> = ({
 	chapters: items,
 	onOpenChange
 }) => {
-	const t = useTranslations("EditCoursePage.courseStructure.chapters");
 	return (
 		<SortableContext items={items} strategy={verticalListSortingStrategy}>
 			{items.map((item) => (
@@ -89,12 +89,9 @@ export const ChapterItems: FC<IChapterItemsProps> = ({
 											lessons={item?.lessons}
 										/>
 										<div className="p-2">
-											<Button
-												variant={"outline"}
-												className="w-full"
-											>
-												{t("buttons.new_lesson")}
-											</Button>
+											<AddNewLesson
+												chapterId={item?.id}
+											/>
 										</div>
 									</div>
 								</CollapsibleContent>

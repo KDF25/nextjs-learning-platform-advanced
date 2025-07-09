@@ -30,8 +30,6 @@ import {
 	ENUM_COURSE_STATUS
 } from "@/entities/course";
 
-import { GenerateSlug } from "@/features/generate-slug";
-
 import { ImageSection } from "./ui";
 
 interface ICourseDataFormProps {
@@ -39,20 +37,19 @@ interface ICourseDataFormProps {
 	onSubmit: (data: CourseSchemaType) => void;
 	isPending: boolean;
 	isEdit?: boolean;
+	GenerateSlugBtn: React.ReactNode;
 }
 
 export const CourseDataForm: FC<ICourseDataFormProps> = ({
 	form,
 	onSubmit,
 	isPending,
-	isEdit = false
+	isEdit = false,
+	GenerateSlugBtn
 }) => {
 	const t = useTranslations("CourseForm");
 	const { watch, setValue, control, handleSubmit } = form;
 	const formState = watch();
-	const handleGenerateSlug = (slug: string) => {
-		setValue("slug", slug);
-	};
 
 	return (
 		<Form {...form}>
@@ -93,10 +90,7 @@ export const CourseDataForm: FC<ICourseDataFormProps> = ({
 										{...field}
 									/>
 								</FormControl>
-								<GenerateSlug
-									title={formState?.title}
-									onChange={handleGenerateSlug}
-								/>
+								{GenerateSlugBtn}
 							</div>
 
 							<FormMessage className="absolute left-2 bottom-1" />
@@ -334,7 +328,7 @@ export const CourseDataForm: FC<ICourseDataFormProps> = ({
 					{isPending ? (
 						<>
 							{isEdit
-								? t("buttons.creating")
+								? t("buttons.saving")
 								: t("buttons.creating")}
 							<Loader size={16} className="animate-spin" />
 						</>

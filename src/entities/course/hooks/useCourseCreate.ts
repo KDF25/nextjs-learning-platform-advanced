@@ -2,24 +2,22 @@
 
 import { useTransition } from "react";
 
-import { EditCourse } from "../actions";
-import { CourseSchemaType } from "../types";
+import { CreateCourse } from "../actions";
+import { CourseSchemaType, IActionResponse } from "../types";
 
-export const useCourseEdit = () => {
+export const useCourseCreate = () => {
 	const [isPending, startTransition] = useTransition();
 
-	const editCourse = (
-		data: CourseSchemaType
-	): Promise<{ success: boolean; message: string }> => {
+	const createCourse = (data: CourseSchemaType): Promise<IActionResponse> => {
 		return new Promise((resolve, reject) => {
 			startTransition(() => {
-				EditCourse(data).then(resolve).catch(reject);
+				CreateCourse(data).then(resolve).catch(reject);
 			});
 		});
 	};
 
 	return {
 		isPending,
-		editCourse
+		createCourse
 	};
 };

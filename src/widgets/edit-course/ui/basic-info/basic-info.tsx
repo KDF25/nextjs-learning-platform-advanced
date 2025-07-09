@@ -22,8 +22,9 @@ import {
 	courseSchema,
 	useCourseEdit
 } from "@/entities/course";
+import { CourseDataForm } from "@/entities/course/ui/course-data-form";
 
-import { CourseDataForm } from "@/widgets/course-data-form";
+import { GenerateSlug } from "@/features/generate-slug";
 
 export interface IBasicInfoProps {
 	course: GetFullCourse;
@@ -55,9 +56,8 @@ export const BasicInfo: FC<IBasicInfoProps> = ({ course }) => {
 		}
 	});
 
-	console.log(defaultValues);
-
-	// const { reset } = form;
+	const { setValue, watch } = form;
+	const formState = watch();
 
 	const onSubmit = async (data: CourseSchemaType) => {
 		if (JSON.stringify(data) === JSON.stringify(defaultValues)) {
@@ -84,6 +84,11 @@ export const BasicInfo: FC<IBasicInfoProps> = ({ course }) => {
 			toast.error(message);
 		}
 	};
+
+	const handleGenerateSlug = (slug: string) => {
+		setValue("slug", slug);
+	};
+
 	return (
 		<Card>
 			<CardHeader>
@@ -98,6 +103,12 @@ export const BasicInfo: FC<IBasicInfoProps> = ({ course }) => {
 					onSubmit={onSubmit}
 					isPending={isPending}
 					isEdit
+					GenerateSlugBtn={
+						<GenerateSlug
+							onChange={handleGenerateSlug}
+							title={formState.title}
+						/>
+					}
 				/>
 			</CardContent>
 		</Card>

@@ -1,1 +1,2 @@
-export * from "./course-card/course-card";
+export * from "./course-card";
+export * from "./course-data-form";

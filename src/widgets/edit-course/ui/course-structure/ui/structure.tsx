@@ -17,8 +17,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/shared/ui";
 
 import { GetFullCourse } from "@/entities/course";
 
-import { ISortableChapterProps } from "../model";
-import { useCourseStructure } from "../model/hooks";
+import { AddNewChapter } from "@/features/add-new-chapter";
+
+import { ISortableChapterProps, useCourseStructure } from "../model";
 
 import { ChapterItems } from "./chapter-items";
 import { ENUM_SORTABLE_ITEM_TYPE } from "./sortable-item";
@@ -104,6 +105,7 @@ export const Structure: FC<IStructureProps> = ({ course }) => {
 			<Card>
 				<CardHeader className="flex flex-roe items-center justify-between border-b border-border">
 					<CardTitle>{t("title")}</CardTitle>
+					<AddNewChapter courseId={course?.id} />
 				</CardHeader>
 				<CardContent className="flex flex-col gap-4">
 					<ChapterItems

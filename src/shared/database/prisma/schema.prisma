@@ -128,13 +128,13 @@ model Lesson {
   id String @id @default(uuid())
 
   title       String
-  description String
+  description String?
   position    Int
 
-  imageUrl String
-  imageKey String
-  videoUrl String
-  videoKey String
+  imageUrl String?
+  imageKey String?
+  videoUrl String?
+  videoKey String?
 
   Chapter   Chapter? @relation(fields: [chapterId], references: [id])
   chapterId String?

@@ -1,6 +1,11 @@
+import { headers } from "next/headers";
+import { redirect } from "next/navigation";
 import { ReactNode } from "react";
 
+import { ENUM_PATHS } from "@/shared/config";
 import { SidebarInset, SidebarProvider } from "@/shared/ui";
+
+import { auth } from "@/entities/auth";
 
 import { AppSidebar, SiteHeader } from "@/widgets/layout";
 
@@ -9,7 +14,13 @@ type Props = {
 	// params: Promise<{ locale: Locale }>;
 };
 
-export default function AdminLayout({ children }: Props) {
+export default async function AdminLayout({ children }: Props) {
+	const session = await auth.api.getSession({ headers: await headers() });
+
+	if (!session) {
+		redirect(ENUM_PATHS.MAIN);
+	}
+
 	return (
 		<SidebarProvider
 			style={

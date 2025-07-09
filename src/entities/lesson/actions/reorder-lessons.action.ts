@@ -6,35 +6,35 @@ import { ENUM_PATHS } from "@/shared/config";
 import { prisma } from "@/shared/database";
 
 import { authHandler } from "@/entities/auth";
+import { ownerHandler } from "@/entities/course";
 
-import { ENUM_REORDER_COURSE_ERRORS } from "../config";
+import { ENUM_REORDER_LESSON_ERRORS } from "../config";
 import { IActionResponse } from "../types";
 
-import { ownerHandler } from "./owner.handler";
-
-export async function ReorderChapters(
+export async function ReorderLessons(
 	courseId: string,
-	chapter: { id: string; position: number }[]
+	chapterId: string,
+	lessons: { id: string; position: number }[]
 ): Promise<IActionResponse> {
 	try {
 		const userId = await authHandler();
 		ownerHandler(courseId, userId);
 
-		if (chapter.length === 0 || !chapter) {
+		if (lessons.length === 0 || !lessons) {
 			return {
 				success: false,
-				message: ENUM_REORDER_COURSE_ERRORS.ZERO_LENGTH
+				message: ENUM_REORDER_LESSON_ERRORS.ZERO_LENGTH
 			};
 		}
 
-		const updates = chapter.map((chapter) =>
-			prisma.chapter.update({
+		const updates = lessons.map((lesson) =>
+			prisma.lesson.update({
 				where: {
-					id: chapter.id,
-					courseId
+					id: lesson.id,
+					chapterId: chapterId
 				},
 				data: {
-					position: chapter.position
+					position: lesson.position
 				}
 			})
 		);
@@ -45,14 +45,14 @@ export async function ReorderChapters(
 
 		return {
 			success: true,
-			message: ENUM_REORDER_COURSE_ERRORS.SUCCESS
+			message: ENUM_REORDER_LESSON_ERRORS.SUCCESS
 		};
 	} catch (error) {
-		console.error("[Reorder chapters error]", error);
+		console.error("[Reorder lessons error]", error);
 
 		return {
 			success: false,
-			message: ENUM_REORDER_COURSE_ERRORS.FAILED
+			message: ENUM_REORDER_LESSON_ERRORS.FAILED
 		};
 	}
 }
