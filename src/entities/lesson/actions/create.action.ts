@@ -8,7 +8,7 @@ import { prisma } from "@/shared/database";
 import { authHandler } from "@/entities/auth";
 import { ownerHandler } from "@/entities/course";
 
-import { ENUM_CREATE_LESSON_ERRORS } from "../config";
+import { ENUM_CRUD_LESSON_ERRORS } from "../config";
 import { lessonSchema } from "../helpers";
 import { IActionResponse, LessonSchemaType } from "../types";
 
@@ -22,7 +22,7 @@ export async function CreateLesson(
 		if (!validation.success) {
 			return {
 				success: false,
-				message: ENUM_CREATE_LESSON_ERRORS.INVALID_FORM_DATA
+				message: ENUM_CRUD_LESSON_ERRORS.INVALID_FORM_DATA
 			};
 		}
 
@@ -35,7 +35,7 @@ export async function CreateLesson(
 		if (!chapter?.courseId) {
 			return {
 				success: false,
-				message: ENUM_CREATE_LESSON_ERRORS.NOT_FOUND
+				message: ENUM_CRUD_LESSON_ERRORS.NOT_FOUND
 			};
 		}
 
@@ -66,14 +66,14 @@ export async function CreateLesson(
 
 		return {
 			success: true,
-			message: ENUM_CREATE_LESSON_ERRORS.SUCCESS
+			message: ENUM_CRUD_LESSON_ERRORS.CREATE
 		};
 	} catch (error) {
 		console.error("[Create lesson error]", error);
 
 		return {
 			success: false,
-			message: ENUM_CREATE_LESSON_ERRORS.FAILED
+			message: ENUM_CRUD_LESSON_ERRORS.FAILED
 		};
 	}
 }

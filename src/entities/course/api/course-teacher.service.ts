@@ -48,6 +48,9 @@ export const CourseTeacherService = {
 									position: "asc"
 								}
 							}
+						},
+						orderBy: {
+							position: "asc"
 						}
 					}
 				}

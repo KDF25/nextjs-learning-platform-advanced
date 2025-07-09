@@ -8,7 +8,7 @@ import { prisma } from "@/shared/database";
 import { authHandler } from "@/entities/auth";
 import { ownerHandler } from "@/entities/course";
 
-import { ENUM_CREATE_CHAPTER_ERRORS } from "../config";
+import { ENUM_CRUD_CHAPTER_ERRORS } from "../config";
 import { chapterSchema } from "../helpers";
 import { ChapterSchemaType, IActionResponse } from "../types";
 
@@ -22,7 +22,7 @@ export async function CreateChapter(
 		if (!validation.success) {
 			return {
 				success: false,
-				message: ENUM_CREATE_CHAPTER_ERRORS.INVALID_FORM_DATA
+				message: ENUM_CRUD_CHAPTER_ERRORS.INVALID_FORM_DATA
 			};
 		}
 
@@ -54,14 +54,14 @@ export async function CreateChapter(
 
 		return {
 			success: true,
-			message: ENUM_CREATE_CHAPTER_ERRORS.SUCCESS
+			message: ENUM_CRUD_CHAPTER_ERRORS.CREATE
 		};
 	} catch (error) {
 		console.error("[Create chapter error]", error);
 
 		return {
 			success: false,
-			message: ENUM_CREATE_CHAPTER_ERRORS.FAILED
+			message: ENUM_CRUD_CHAPTER_ERRORS.FAILED
 		};
 	}
 }

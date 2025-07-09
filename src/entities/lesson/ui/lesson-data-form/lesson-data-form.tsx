@@ -57,7 +57,11 @@ export const LessonDataForm: FC<ILessonDataFormProps> = ({
 				/>
 
 				<DialogFooter>
-					<Button type="submit" disabled={isPending}>
+					<Button
+						type="submit"
+						disabled={isPending}
+						className="gap-1"
+					>
 						{isPending ? (
 							<>
 								{t("buttons.creating")}

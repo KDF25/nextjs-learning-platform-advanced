@@ -4,7 +4,7 @@ import {
 	SortableContext,
 	verticalListSortingStrategy
 } from "@dnd-kit/sortable";
-import { ChevronDown, ChevronRight, GripVertical, Trash2 } from "lucide-react";
+import { ChevronDown, ChevronRight, GripVertical } from "lucide-react";
 import { FC } from "react";
 
 import {
@@ -16,6 +16,7 @@ import {
 } from "@/shared/ui";
 
 import { AddNewLesson } from "@/features/add-new-lesson";
+import { DeleteChapter } from "@/features/delete-chapter";
 
 import { ISortableChapterProps } from "../model";
 
@@ -30,12 +31,15 @@ interface IChapterItemsProps {
 
 export const ChapterItems: FC<IChapterItemsProps> = ({
 	courseId,
-	chapters: items,
+	chapters,
 	onOpenChange
 }) => {
 	return (
-		<SortableContext items={items} strategy={verticalListSortingStrategy}>
-			{items.map((item) => (
+		<SortableContext
+			items={chapters}
+			strategy={verticalListSortingStrategy}
+		>
+			{chapters.map((item) => (
 				<SortableItem
 					key={item.id}
 					id={item?.id}
@@ -77,9 +81,10 @@ export const ChapterItems: FC<IChapterItemsProps> = ({
 											{item?.title}
 										</p>
 									</div>
-									<Button size={"icon"}>
-										<Trash2 size={16} />
-									</Button>
+									<DeleteChapter
+										courseId={courseId}
+										chapterId={item?.id}
+									/>
 								</div>
 								<CollapsibleContent>
 									<div className="p-1  border-t border-border">

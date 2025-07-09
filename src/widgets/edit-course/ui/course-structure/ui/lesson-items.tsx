@@ -4,12 +4,14 @@ import {
 	SortableContext,
 	verticalListSortingStrategy
 } from "@dnd-kit/sortable";
-import { FileTextIcon, GripVertical, Trash2 } from "lucide-react";
+import { FileTextIcon, GripVertical } from "lucide-react";
 import Link from "next/link";
 import { FC } from "react";
 
 import { ENUM_PATHS } from "@/shared/config";
 import { Button } from "@/shared/ui";
+
+import { DeleteLesson } from "@/features/delete-lesson";
 
 import { ISortableLessonProps } from "../model";
 
@@ -61,9 +63,11 @@ export const LessonItems: FC<ILessonItemsProps> = ({
 									{lesson?.title}
 								</Link>
 							</div>
-							<Button size={"icon"} variant={"outline"}>
-								<Trash2 size={16} />
-							</Button>
+							<DeleteLesson
+								courseId={courseId}
+								chapterId={chapterId}
+								lessonId={lesson?.id}
+							/>
 						</div>
 					)}
 				</SortableItem>

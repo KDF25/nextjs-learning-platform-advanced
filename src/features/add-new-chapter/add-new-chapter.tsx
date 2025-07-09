@@ -20,7 +20,7 @@ import {
 import {
 	ChapterDataForm,
 	ChapterSchemaType,
-	ENUM_CREATE_CHAPTER_ERRORS,
+	ENUM_CRUD_CHAPTER_ERRORS,
 	chapterSchema,
 	useChapterCreate
 } from "@/entities/chapter";
@@ -48,8 +48,8 @@ export const AddNewChapter: FC<IAddNewChapterProps> = ({ courseId }) => {
 	};
 
 	const onSubmit = async (data: ChapterSchemaType) => {
-		console.log("data", data);
 		const response = await createChapter(data);
+
 		if (response?.success) {
 			toast.success(t("ChapterForm.toast.create.success"));
 			reset();
@@ -57,10 +57,10 @@ export const AddNewChapter: FC<IAddNewChapterProps> = ({ courseId }) => {
 			let message = "";
 
 			switch (response?.message) {
-				case ENUM_CREATE_CHAPTER_ERRORS.INVALID_FORM_DATA:
+				case ENUM_CRUD_CHAPTER_ERRORS.INVALID_FORM_DATA:
 					message = t("ChapterForm.toast.invalid_form_data");
 					break;
-				case ENUM_CREATE_CHAPTER_ERRORS.NOT_FOUND:
+				case ENUM_CRUD_CHAPTER_ERRORS.NOT_FOUND:
 					message = t("ChapterForm.toast.not_found");
 					break;
 				default:

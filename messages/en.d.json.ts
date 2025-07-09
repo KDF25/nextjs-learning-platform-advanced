@@ -279,9 +279,24 @@ declare const messages: {
 					}
 				},
 
+				"delete": {
+					"chapter": {
+						"title": "Are you sure you want to delete this chapter?",
+						"description": "This action cannot be undone. All lessons within this chapter will also be deleted."
+					},
+
+					"lesson": {
+						"title": "Are you sure you want to delete this lesson?",
+						"description": "This action cannot be undone."
+					}
+				},
+
 				"buttons": {
 					"new_lesson": "Create New Lesson",
-					"new_chapter": "New Chapter"
+					"new_chapter": "New Chapter",
+					"cancel": "Cancel",
+					"delete": "Delete",
+					"deleting": "Deleting ..."
 				}
 			}
 		}
@@ -305,6 +320,10 @@ declare const messages: {
 			"create": {
 				"success": "Chapter created successfully",
 				"error": "ERROR: Failed to create chapter"
+			},
+			"delete": {
+				"success": "Chapter deleted successfully",
+				"error": "ERROR: Failed to delete chapter"
 			},
 			"invalid_form_data": "ERROR: Invalid form data",
 			"not_found": "ERROR: Course not found"
@@ -357,6 +376,10 @@ declare const messages: {
 			"create": {
 				"success": "Lesson created successfully",
 				"error": "ERROR: Failed to create lesson"
+			},
+			"delete": {
+				"success": "Lesson deleted successfully",
+				"error": "ERROR: Failed to delete lesson"
 			},
 			"invalid_form_data": "ERROR: Invalid form data",
 			"not_found": "ERROR: Chapter not found"

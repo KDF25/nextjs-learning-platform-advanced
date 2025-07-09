@@ -18,7 +18,7 @@ import {
 } from "@/shared/ui";
 
 import {
-	ENUM_CREATE_LESSON_ERRORS,
+	ENUM_CRUD_LESSON_ERRORS,
 	LessonDataForm,
 	LessonSchemaType,
 	lessonSchema,
@@ -48,8 +48,8 @@ export const AddNewLesson: FC<IAddNewLessonProps> = ({ chapterId }) => {
 	};
 
 	const onSubmit = async (data: LessonSchemaType) => {
-		console.log("data", data);
 		const response = await createLesson(data);
+
 		if (response?.success) {
 			toast.success(t("LessonForm.toast.create.success"));
 			reset();
@@ -57,10 +57,10 @@ export const AddNewLesson: FC<IAddNewLessonProps> = ({ chapterId }) => {
 			let message = "";
 
 			switch (response?.message) {
-				case ENUM_CREATE_LESSON_ERRORS.INVALID_FORM_DATA:
+				case ENUM_CRUD_LESSON_ERRORS.INVALID_FORM_DATA:
 					message = t("LessonForm.toast.invalid_form_data");
 					break;
-				case ENUM_CREATE_LESSON_ERRORS.NOT_FOUND:
+				case ENUM_CRUD_LESSON_ERRORS.NOT_FOUND:
 					message = t("LessonForm.toast.not_found");
 					break;
 				default:
