@@ -1,7 +1,7 @@
 import { MoreVertical } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
-import { FC } from "react";
+import React, { FC } from "react";
 
 import { cn } from "@/shared/lib";
 import {
@@ -24,15 +24,15 @@ export const Menu: FC<IMenuProps> = ({ courseId }) => {
 	const MENU = DROPDOWN_MENU_ITEMS_LIST(courseId);
 	return (
 		<DropdownMenu>
-			<DropdownMenuTrigger>
+			<DropdownMenuTrigger asChild>
 				<Button variant={"secondary"} size={"icon"}>
 					<MoreVertical size={16} />
 				</Button>
 			</DropdownMenuTrigger>
 			<DropdownMenuContent align="end" className="w-48">
 				{MENU.map((item) => (
-					<>
-						<DropdownMenuItem asChild key={item?.name}>
+					<React.Fragment key={item?.name}>
+						<DropdownMenuItem asChild>
 							<Link
 								href={item.href}
 								className={cn(
@@ -48,7 +48,7 @@ export const Menu: FC<IMenuProps> = ({ courseId }) => {
 							</Link>
 						</DropdownMenuItem>
 						{item?.needSeparator && <DropdownMenuSeparator />}
-					</>
+					</React.Fragment>
 				))}
 			</DropdownMenuContent>
 		</DropdownMenu>

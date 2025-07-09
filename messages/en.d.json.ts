@@ -279,6 +279,21 @@ declare const messages: {
 			"error": {
 				"moveLesson": "ERROR: Lesson move between chapters is not allowed",
 				"notFound": "ERROR: Lesson or chapter not found"
+			},
+
+			"action": {
+				"lessons": {
+					"loading": "Lessons reorder ...",
+					"zeroLength": "ERROR: No lessons to reorder",
+					"error": "ERROR: Lessons reorder failed",
+					"success": "Lessons reorder success"
+				},
+				"chapters": {
+					"loading": "Chapters reorder ...",
+					"zeroLength": "ERROR: No chapters to reorder",
+					"error": "ERROR: Chapters reorder failed",
+					"success": "Chapters reorder success"
+				}
 			}
 		}
 	}

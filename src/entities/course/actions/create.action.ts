@@ -1,18 +1,18 @@
 "use server";
 
-import { headers } from "next/headers";
-
 import { prisma } from "@/shared/database";
 
-import { auth } from "@/entities/auth";
+import { authHandler } from "@/entities/auth";
 
 import { ENUM_CREATE_COURSE_ERRORS } from "../config";
 import { courseSchema } from "../helpers";
-import { CourseSchemaType } from "../types";
+import { CourseSchemaType, IActionResponse } from "../types";
 
-export async function CreateCourse(data: CourseSchemaType) {
+export async function CreateCourse(
+	data: CourseSchemaType
+): Promise<IActionResponse> {
 	try {
-		const session = await auth.api.getSession({ headers: await headers() });
+		const userId = await authHandler();
 		const validation = courseSchema.safeParse(data);
 
 		if (!validation.success) {
@@ -38,7 +38,7 @@ export async function CreateCourse(data: CourseSchemaType) {
 		await prisma.course.create({
 			data: {
 				...validation.data,
-				userId: session?.user?.id
+				userId
 			}
 		});
 

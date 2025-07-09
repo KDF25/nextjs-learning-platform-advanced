@@ -1,1 +1,1 @@
-export * from "./edit-course-header";
+export * from "./edit-course";

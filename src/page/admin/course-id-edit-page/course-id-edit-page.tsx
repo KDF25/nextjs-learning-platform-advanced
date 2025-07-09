@@ -4,7 +4,7 @@ import { FC } from "react";
 import { auth } from "@/entities/auth";
 import { CourseTeacherService, GetFullCourse } from "@/entities/course";
 
-import { EditCourseHeader } from "@/widgets/edit-course";
+import { EditCourse } from "@/widgets/edit-course";
 
 interface ICourseIdEditPageProps {
 	courseId: string;
@@ -23,7 +23,7 @@ export const CourseIdEditPage: FC<ICourseIdEditPageProps> = async ({
 	)) as GetFullCourse;
 	return (
 		<>
-			<EditCourseHeader course={course} />
+			<EditCourse course={course} />
 		</>
 	);
 };

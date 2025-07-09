@@ -9,7 +9,7 @@ const withNextIntl = createNextIntlPlugin({
 
 const config: NextConfig = {
     images: {
-    domains: ["utfs.io", "nui4ea25hw.ufs.sh"]
+    domains: ["utfs.io", "nui4ea25hw.ufs.sh", "example.com"]
   }
 };
 

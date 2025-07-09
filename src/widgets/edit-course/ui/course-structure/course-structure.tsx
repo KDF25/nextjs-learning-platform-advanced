@@ -11,7 +11,7 @@ import {
 
 import { GetFullCourse } from "@/entities/course";
 
-import { Structure } from "./structure";
+import { Structure } from "./ui";
 
 export interface ICourseStructureProps {
 	course: GetFullCourse;

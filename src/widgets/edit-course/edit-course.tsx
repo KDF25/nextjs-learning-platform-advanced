@@ -7,11 +7,11 @@ import { GetFullCourse } from "@/entities/course";
 
 import { ENUM_TAB_VALUES, TABS_LIST } from "./model";
 
-interface IEditCourseHeaderProps {
+interface IEditCourseProps {
 	course: GetFullCourse;
 }
 
-export const EditCourseHeader: FC<IEditCourseHeaderProps> = ({ course }) => {
+export const EditCourse: FC<IEditCourseProps> = ({ course }) => {
 	const t = useTranslations("EditCoursePage");
 	return (
 		<div className="flex flex-col gap-4">
