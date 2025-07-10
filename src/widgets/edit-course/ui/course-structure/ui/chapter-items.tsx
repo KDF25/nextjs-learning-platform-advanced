@@ -95,6 +95,7 @@ export const ChapterItems: FC<IChapterItemsProps> = ({
 										/>
 										<div className="p-2">
 											<AddNewLesson
+												courseId={courseId}
 												chapterId={item?.id}
 											/>
 										</div>

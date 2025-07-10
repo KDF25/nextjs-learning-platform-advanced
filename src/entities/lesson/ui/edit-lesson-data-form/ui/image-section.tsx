@@ -23,7 +23,7 @@ export const ImageSection: FC<IImageSectionProps> = ({
 	imageUrl,
 	onChange
 }) => {
-	const t = useTranslations("CourseForm.fields.image");
+	const t = useTranslations("LessonForm.fields.image");
 	const [isEditing, setIsEditing] = useState<boolean>(false);
 
 	const handleImageChange = (data: UploadedFileData) => {
@@ -35,7 +35,7 @@ export const ImageSection: FC<IImageSectionProps> = ({
 	};
 
 	return (
-		<Card className="p-0 relative h-80 overflow-hidden">
+		<Card className="relative p-0 overflow-hidden h-64 sm:h-72 md:h-96 lg:h-[480px] xl:h-[600px]">
 			<div className="font-medium flex items-center justify-between absolute top-4 right-4 z-20">
 				<Button
 					className="flex flex-row gap-1 w-[120px]"

@@ -7,17 +7,15 @@ const f = createUploadthing();
 // };
 
 export const ourFileRouter = {
-	courseImage: f({ image: { maxFileSize: "4MB", maxFileCount: 1 } })
+	sectionImage: f({ image: { maxFileSize: "4MB", maxFileCount: 1 } })
 		// .middleware(() => handleAuth())
 		.onUploadComplete(() => {}),
 
-	courseAttachment: f(["text", "image", "video", "audio", "pdf"])
-		// .middleware(() => handleAuth())
-		.onUploadComplete(() => {}),
-
-	chapterVideo: f({ video: { maxFileSize: "128MB", maxFileCount: 1 } })
+	sectionVideo: f({ video: { maxFileSize: "128MB", maxFileCount: 1 } })
 		// .middleware(() => handleAuth())
 		.onUploadComplete(() => {})
 } satisfies FileRouter;
 
 export type OurFileRouter = typeof ourFileRouter;
+
+export type OurFileEndpoint = keyof typeof ourFileRouter;

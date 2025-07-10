@@ -4,7 +4,7 @@ import { prisma } from "@/shared/database";
 
 import { authHandler } from "@/entities/auth";
 
-import { ENUM_CREATE_COURSE_ERRORS } from "../config";
+import { ENUM_CRUD_COURSE_ERRORS } from "../config";
 import { courseSchema } from "../helpers";
 import { CourseSchemaType, IActionResponse } from "../types";
 
@@ -18,7 +18,7 @@ export async function EditCourse(
 		if (!validation.success) {
 			return {
 				success: false,
-				message: ENUM_CREATE_COURSE_ERRORS.INVALID_FORM_DATA
+				message: ENUM_CRUD_COURSE_ERRORS.INVALID_FORM_DATA
 			};
 		}
 
@@ -32,7 +32,7 @@ export async function EditCourse(
 		if (!course) {
 			return {
 				success: false,
-				message: ENUM_CREATE_COURSE_ERRORS.NOT_FOUND
+				message: ENUM_CRUD_COURSE_ERRORS.NOT_FOUND
 			};
 		}
 
@@ -47,14 +47,14 @@ export async function EditCourse(
 
 		return {
 			success: true,
-			message: ENUM_CREATE_COURSE_ERRORS.SUCCESS
+			message: ENUM_CRUD_COURSE_ERRORS.CREATE
 		};
 	} catch (error) {
 		console.error("[Edit course error]", error);
 
 		return {
 			success: false,
-			message: ENUM_CREATE_COURSE_ERRORS.FAILED
+			message: ENUM_CRUD_COURSE_ERRORS.FAILED
 		};
 	}
 }

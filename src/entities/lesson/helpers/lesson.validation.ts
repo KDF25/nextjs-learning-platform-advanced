@@ -7,7 +7,9 @@ export const lessonSchema = z.object({
 		.max(100, {
 			message: "LessonForm.fields.title.max"
 		}),
+	lessonId: z.string().min(1).optional(),
 	chapterId: z.string().min(1),
+	courseId: z.string().min(1),
 	description: z
 		.string()
 		.min(3, {

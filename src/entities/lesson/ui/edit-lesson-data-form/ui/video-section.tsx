@@ -1,41 +1,40 @@
 "use client";
 
-import { CircleX, ImageIcon, PenIcon, PlusCircle } from "lucide-react";
+import { CircleX, PenIcon, PlusCircle, VideoIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
 import { FC, useState } from "react";
 import { UploadedFileData } from "uploadthing/types";
 
 import { Button, Card, FileUpload } from "@/shared/ui";
 
-interface IImageSectionProps {
-	imageUrl?: string;
+interface IVideoSectionProps {
+	videoUrl?: string;
 	onChange: ({
-		imageUrl,
-		imageKey
+		videoUrl,
+		videoKey
 	}: {
-		imageUrl: string;
-		imageKey: string;
+		videoUrl: string;
+		videoKey: string;
 	}) => void;
 }
 
-export const ImageSection: FC<IImageSectionProps> = ({
-	imageUrl,
+export const VideoSection: FC<IVideoSectionProps> = ({
+	videoUrl,
 	onChange
 }) => {
-	const t = useTranslations("CourseForm.fields.image");
+	const t = useTranslations("LessonForm.fields.video");
 	const [isEditing, setIsEditing] = useState<boolean>(false);
 
-	const handleImageChange = (data: UploadedFileData) => {
+	const handleVideoChange = (data: UploadedFileData) => {
 		onChange({
-			imageUrl: data.url,
-			imageKey: data.key
+			videoUrl: data.url,
+			videoKey: data.key
 		});
 		setIsEditing(false);
 	};
 
 	return (
-		<Card className="p-0 relative h-80 overflow-hidden">
+		<Card className="relative p-0 overflow-hidden h-64 sm:h-72 md:h-96 lg:h-[480px] xl:h-[600px]">
 			<div className="font-medium flex items-center justify-between absolute top-4 right-4 z-20">
 				<Button
 					className="flex flex-row gap-1 w-[120px]"
@@ -49,14 +48,14 @@ export const ImageSection: FC<IImageSectionProps> = ({
 						</>
 					)}
 
-					{!isEditing && !imageUrl && (
+					{!isEditing && !videoUrl && (
 						<>
 							<PlusCircle size={12} />
 							{t("buttons.add")}
 						</>
 					)}
 
-					{!isEditing && imageUrl && (
+					{!isEditing && videoUrl && (
 						<>
 							<PenIcon size={12} />
 							{t("buttons.edit")}
@@ -66,28 +65,28 @@ export const ImageSection: FC<IImageSectionProps> = ({
 			</div>
 
 			{!isEditing &&
-				(!imageUrl ? (
+				(!videoUrl ? (
 					<div className="flex items-center justify-center h-full w-full">
-						<ImageIcon size={40} />
+						<VideoIcon size={40} />
 					</div>
 				) : (
-					<div className="relative aspect-video h-[inherit]">
-						<Image
-							alt="Upload"
-							fill
-							className="object-contain p-4"
-							src={imageUrl}
-						/>
+					<div className="relative aspect-video h-[inherit] flex items-center justify-center">
+						<video
+							src={videoUrl}
+							controls
+							width="auto"
+							className="p-4 h-[inherit]"
+						></video>
 					</div>
 				))}
 
 			{isEditing && (
 				<div className="flex flex-col gap-2 p-2 h-full">
 					<FileUpload
-						endpoint={"sectionImage"}
+						endpoint="sectionVideo"
 						onChange={(data) => {
 							if (data?.url) {
-								handleImageChange(data);
+								handleVideoChange(data);
 							}
 						}}
 					/>

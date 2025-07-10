@@ -5,7 +5,7 @@ import Link from "next/link";
 import { FC } from "react";
 
 import { ENUM_PATHS } from "@/shared/config";
-import { Button } from "@/shared/ui";
+import { Button, EmptyCardList } from "@/shared/ui";
 
 import { auth } from "@/entities/auth";
 import { CourseTeacherService } from "@/entities/course";
@@ -33,7 +33,22 @@ export const CoursesPage: FC = async ({}) => {
 			<div>
 				<h1>{t("subtitle")}</h1>
 			</div>
-			<CoursesList courses={courses} />
+			{!courses?.length ? (
+				<EmptyCardList
+					title={t("empty.title")}
+					description={t("empty.description")}
+					button={
+						<Button asChild>
+							<Link href={ENUM_PATHS.ADMIN.CREATE}>
+								<PlusCircleIcon className="mr-2 h-4 w-4" />
+								{t("buttons.create")}
+							</Link>
+						</Button>
+					}
+				/>
+			) : (
+				<CoursesList courses={courses} />
+			)}
 		</>
 	);
 };

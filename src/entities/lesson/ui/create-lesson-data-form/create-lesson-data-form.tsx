@@ -19,13 +19,13 @@ import {
 
 import { LessonSchemaType } from "../../types";
 
-interface ILessonDataFormProps {
+interface ICreateLessonDataFormProps {
 	form: UseFormReturn<LessonSchemaType>;
 	onSubmit: (data: LessonSchemaType) => void;
 	isPending: boolean;
 }
 
-export const LessonDataForm: FC<ILessonDataFormProps> = ({
+export const CreateLessonDataForm: FC<ICreateLessonDataFormProps> = ({
 	form,
 	onSubmit,
 	isPending

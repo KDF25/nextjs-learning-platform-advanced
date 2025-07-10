@@ -18,18 +18,22 @@ import {
 } from "@/shared/ui";
 
 import {
+	CreateLessonDataForm,
 	ENUM_CRUD_LESSON_ERRORS,
-	LessonDataForm,
 	LessonSchemaType,
 	lessonSchema,
 	useLessonCreate
 } from "@/entities/lesson";
 
 interface IAddNewLessonProps {
+	courseId: string;
 	chapterId: string;
 }
 
-export const AddNewLesson: FC<IAddNewLessonProps> = ({ chapterId }) => {
+export const AddNewLesson: FC<IAddNewLessonProps> = ({
+	courseId,
+	chapterId
+}) => {
 	const [isOpen, setIsOpen] = useState<boolean>(false);
 	const t = useTranslations();
 	const { isPending, createLesson } = useLessonCreate();
@@ -37,6 +41,7 @@ export const AddNewLesson: FC<IAddNewLessonProps> = ({ chapterId }) => {
 		resolver: zodResolver(lessonSchema),
 		defaultValues: {
 			title: "",
+			courseId,
 			chapterId
 		}
 	});
@@ -100,7 +105,7 @@ export const AddNewLesson: FC<IAddNewLessonProps> = ({ chapterId }) => {
 						)}
 					</DialogDescription>
 				</DialogHeader>
-				<LessonDataForm
+				<CreateLessonDataForm
 					form={form}
 					onSubmit={onSubmit}
 					isPending={isPending}

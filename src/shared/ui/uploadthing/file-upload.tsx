@@ -6,13 +6,13 @@ import { UploadedFileData } from "uploadthing/types";
 
 import { cn } from "@/shared/lib";
 
-import { ourFileRouter } from "@/app/api/uploadthing/core";
+import { OurFileEndpoint } from "@/app/api/uploadthing/core";
 
 import { UploadDropzone } from "./uploadthing";
 
 interface IFileUploadProps {
 	onChange: (data?: UploadedFileData) => void;
-	endpoint: keyof typeof ourFileRouter;
+	endpoint: OurFileEndpoint;
 }
 
 export const FileUpload: FC<IFileUploadProps> = ({ onChange, endpoint }) => {

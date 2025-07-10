@@ -21,7 +21,7 @@ export const DROPDOWN_MENU_ITEMS_LIST = (
 	{
 		name: "menu.delete",
 		icon: Trash,
-		href: ENUM_PATHS.ADMIN.COURSE(courseId),
+		href: ENUM_PATHS.ADMIN.DELETE(courseId),
 		className: "text-destructive"
 	}
 ];

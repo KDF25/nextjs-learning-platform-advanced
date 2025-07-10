@@ -132,6 +132,11 @@ declare const messages: {
 		"title": "Your Courses",
 		"subtitle": "Here you can create and manage your courses.",
 
+		"empty": {
+			"title": "No Courses",
+			"description": "You have not created any courses yet."
+		},
+
 		"buttons": {
 			"create": "Create Course"
 		},
@@ -302,6 +307,28 @@ declare const messages: {
 		}
 	},
 
+	"DeleteCoursePage": {
+		"title": "Delete Course",
+		"description": "Are you sure you want to delete this course? This action cannot be undone.",
+		"buttons": {
+			"cancel": "Cancel",
+			"delete": "Delete",
+			"deleting": "Deleting ..."
+		},
+
+		"toast": {
+			"success": "Course deleted successfully",
+			"error": "ERROR: Failed to delete course"
+		}
+	},
+
+	"EditLessonPage": {
+		"title": "Edit Lesson",
+		"buttons": {
+			"back": "Back"
+		}
+	},
+
 	"ChapterForm": {
 		"fields": {
 			"title": {
@@ -331,6 +358,8 @@ declare const messages: {
 	},
 
 	"LessonForm": {
+		"title": "Lesson Configuration",
+		"description": "Configure your lesson. You can add a video, image, or both.",
 		"fields": {
 			"title": {
 				"label": "Title",
@@ -356,8 +385,8 @@ declare const messages: {
 				}
 			},
 			"video": {
-				"label": "Image",
-				"required": "Image is required",
+				"label": "Video",
+				"required": "Video is required",
 				"recommendation": "16:9 aspect ratio recommended",
 
 				"buttons": {
@@ -369,7 +398,9 @@ declare const messages: {
 		},
 		"buttons": {
 			"create": "Create Lesson",
-			"creating": "Creating ..."
+			"creating": "Creating ...",
+			"save": "Save Lesson",
+			"saving": "Saving"
 		},
 
 		"toast": {
@@ -380,6 +411,11 @@ declare const messages: {
 			"delete": {
 				"success": "Lesson deleted successfully",
 				"error": "ERROR: Failed to delete lesson"
+			},
+			"edit": {
+				"alert": "You need to make changes in the lesson",
+				"success": "Lesson edited successfully",
+				"error": "ERROR: Failed to edit lesson"
 			},
 			"invalid_form_data": "ERROR: Invalid form data",
 			"not_found": "ERROR: Chapter not found"

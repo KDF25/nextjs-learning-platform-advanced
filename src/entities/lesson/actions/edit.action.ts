@@ -12,7 +12,7 @@ import { ENUM_CRUD_LESSON_ERRORS } from "../config";
 import { lessonSchema } from "../helpers";
 import { IActionResponse, LessonSchemaType } from "../types";
 
-export async function CreateLesson(
+export async function EditLesson(
 	data: LessonSchemaType
 ): Promise<IActionResponse> {
 	try {
@@ -28,30 +28,33 @@ export async function CreateLesson(
 
 		ownerHandler(data?.courseId, userId);
 
-		await prisma.$transaction(async (tx) => {
-			const maxPos = await tx.lesson.findFirst({
-				where: {
-					chapterId: data?.chapterId
-				},
-				select: {
-					position: true
-				},
-				orderBy: {
-					position: "desc"
-				}
-			});
+		const lesson = await prisma?.lesson?.findUnique({
+			where: {
+				id: data?.lessonId,
+				chapterId: data?.chapterId
+			}
+		});
 
-			await tx.lesson.create({
-				data: {
-					position: maxPos?.position ? maxPos?.position + 1 : 0,
-					title: data?.title,
-					description: data?.description,
-					imageUrl: data?.imageUrl,
-					imageKey: data?.imageKey,
-					videoUrl: data?.videoUrl,
-					videoKey: data?.videoKey
-				}
-			});
+		if (!lesson) {
+			return {
+				success: false,
+				message: ENUM_CRUD_LESSON_ERRORS.NOT_FOUND
+			};
+		}
+
+		await prisma.lesson.update({
+			where: {
+				id: data?.lessonId,
+				chapterId: data?.chapterId
+			},
+			data: {
+				title: data?.title,
+				description: data?.description,
+				imageUrl: data?.imageUrl,
+				imageKey: data?.imageKey,
+				videoUrl: data?.videoUrl,
+				videoKey: data?.videoKey
+			}
 		});
 
 		revalidatePath(ENUM_PATHS.ADMIN.EDIT(data?.courseId));

@@ -92,6 +92,7 @@ export const DeleteChapter: FC<IDeleteChapterProps> = ({
 						disabled={isPending}
 						onClick={handleDelete}
 						className="gap-1"
+						variant="destructive"
 					>
 						{isPending ? (
 							<>

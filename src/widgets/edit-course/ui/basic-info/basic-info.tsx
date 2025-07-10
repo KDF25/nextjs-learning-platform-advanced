@@ -1,6 +1,7 @@
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
+import isEqual from "lodash/isEqual";
 import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { FC } from "react";
@@ -17,7 +18,7 @@ import {
 
 import {
 	CourseSchemaType,
-	ENUM_CREATE_COURSE_ERRORS,
+	ENUM_CRUD_COURSE_ERRORS,
 	GetFullCourse,
 	courseSchema,
 	useCourseEdit
@@ -60,7 +61,7 @@ export const BasicInfo: FC<IBasicInfoProps> = ({ course }) => {
 	const formState = watch();
 
 	const onSubmit = async (data: CourseSchemaType) => {
-		if (JSON.stringify(data) === JSON.stringify(defaultValues)) {
+		if (isEqual(data, defaultValues)) {
 			toast.warning(t("CourseForm.toast.edit.alert"));
 			return;
 		}
@@ -71,10 +72,10 @@ export const BasicInfo: FC<IBasicInfoProps> = ({ course }) => {
 		} else {
 			let message = "";
 			switch (response?.message) {
-				case ENUM_CREATE_COURSE_ERRORS.INVALID_FORM_DATA:
+				case ENUM_CRUD_COURSE_ERRORS.INVALID_FORM_DATA:
 					message = t("CourseForm.toast.invalid_form_data");
 					break;
-				case ENUM_CREATE_COURSE_ERRORS.NOT_FOUND:
+				case ENUM_CRUD_COURSE_ERRORS.NOT_FOUND:
 					message = t("CourseForm.toast.not_found");
 					break;
 				default:

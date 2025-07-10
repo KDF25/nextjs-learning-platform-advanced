@@ -25,7 +25,7 @@ import {
 	courseSchema,
 	useCourseCreate
 } from "@/entities/course";
-import { ENUM_CREATE_COURSE_ERRORS } from "@/entities/course";
+import { ENUM_CRUD_COURSE_ERRORS } from "@/entities/course";
 
 import { GenerateSlug } from "@/features/generate-slug";
 
@@ -64,10 +64,10 @@ export const CourseCreate: FC = ({}) => {
 			let message = "";
 
 			switch (response?.message) {
-				case ENUM_CREATE_COURSE_ERRORS.INVALID_FORM_DATA:
+				case ENUM_CRUD_COURSE_ERRORS.INVALID_FORM_DATA:
 					message = t("CourseForm.toast.invalid_form_data");
 					break;
-				case ENUM_CREATE_COURSE_ERRORS.DUPLICATE_SLUG:
+				case ENUM_CRUD_COURSE_ERRORS.DUPLICATE_SLUG:
 					message = t("CourseForm.toast.duplicate_slug");
 					break;
 				default:
