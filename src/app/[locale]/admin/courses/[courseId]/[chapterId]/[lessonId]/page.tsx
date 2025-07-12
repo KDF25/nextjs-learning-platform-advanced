@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import { LessonIdEditPage } from "@/page/admin";
+import { LessonIdEditPage } from "@/page/teacher";
 
 interface IPageProps {
 	params: Promise<{ courseId: string; chapterId: string; lessonId: string }>;

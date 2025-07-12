@@ -4,7 +4,7 @@ export const ENUM_PATHS = {
 	COURSES: {
 		ROOT: "/courses",
 		CREATE: "/courses/create",
-		COURSE: (courseId: string) => `/courses/${courseId}`
+		COURSE: (slug: string) => `/courses/${slug}`
 	},
 	ADMIN: {
 		ROOT: "/admin",

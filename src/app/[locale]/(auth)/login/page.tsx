@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import { LoginPage } from "@/page/user";
+import { LoginPage } from "@/page/student";
 
 const Page: FC = ({}) => {
 	return <LoginPage />;

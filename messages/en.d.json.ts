@@ -422,6 +422,28 @@ declare const messages: {
 		}
 	},
 
+	"UserCoursesPage": {
+		"title": "Explore Courses",
+		"description": "Discover a wide range of carefully curated courses designed by industry experts. From programming to design, we have something for everyone.",
+
+		"empty": {
+			"title": "No Courses",
+			"description": "You haven't enrolled in any courses yet. Start learning today!"
+		},
+
+		"card": {
+			"menu": {
+				"edit": "Edit",
+				"preview": "Preview",
+				"delete": "Delete"
+			},
+
+			"buttons": {
+				"more": "Learn More"
+			}
+		}
+	},
+
 	"DnDkit": {
 		"toast": {
 			"error": {

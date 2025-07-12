@@ -1,0 +1,26 @@
+import { getTranslations } from "next-intl/server";
+import React, { FC } from "react";
+
+import { EmptyCardList } from "@/shared/ui";
+
+import { GetPublicCourses } from "@/entities/course";
+
+import { CoursesCardList } from "./ui";
+
+export const CoursesList: FC = async ({}) => {
+	const t = await getTranslations("UserCoursesPage");
+	const courses = await GetPublicCourses();
+	return (
+		<>
+			{!courses?.length ? (
+				<EmptyCardList
+					title={t("empty.title")}
+					description={t("empty.description")}
+					button={<React.Fragment />}
+				/>
+			) : (
+				<CoursesCardList courses={courses} />
+			)}
+		</>
+	);
+};

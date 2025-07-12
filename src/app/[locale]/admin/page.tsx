@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import { DashboardPage } from "@/page/admin";
+import { DashboardPage } from "@/page/teacher";
 
 const Page: FC = () => {
 	return <DashboardPage />;

@@ -10,3 +10,8 @@ export type GetFullCourse = Course & {
 		lessons: Pick<Lesson, "id" | "title" | "position">[];
 	})[];
 };
+
+export type GetCourse = Omit<
+	Course,
+	"userId" | "status" | "createdAt" | "updatedAt" | "description" | "imageKey"
+>;
