@@ -24,6 +24,7 @@ export const CoursesPage: FC = ({}) => {
 			<div>
 				<h1>{t("subtitle")}</h1>
 			</div>
+			<CoursesCardListSkeleton />
 			<Suspense fallback={<CoursesCardListSkeleton />}>
 				<CoursesList />
 			</Suspense>
