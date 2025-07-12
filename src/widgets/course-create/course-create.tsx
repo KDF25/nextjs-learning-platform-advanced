@@ -8,6 +8,7 @@ import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 
 import { ENUM_PATHS } from "@/shared/config";
+import { useConfetti } from "@/shared/hooks";
 import {
 	Card,
 	CardContent,
@@ -32,6 +33,7 @@ import { GenerateSlug } from "@/features/generate-slug";
 export const CourseCreate: FC = ({}) => {
 	const t = useTranslations();
 	const { isPending, createCourse } = useCourseCreate();
+	const { triggerConfetti } = useConfetti();
 	const router = useRouter();
 
 	const form = useForm<CourseSchemaType>({
@@ -57,6 +59,7 @@ export const CourseCreate: FC = ({}) => {
 	const onSubmit = async (data: CourseSchemaType) => {
 		const response = await createCourse(data);
 		if (response?.success) {
+			triggerConfetti();
 			toast.success(t("CourseForm.toast.create.success"));
 			reset();
 			router.push(ENUM_PATHS.ADMIN.COURSES);

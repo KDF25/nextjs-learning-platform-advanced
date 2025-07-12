@@ -1,18 +1,36 @@
-import { Course } from "@prisma/client";
+import { PlusCircleIcon } from "lucide-react";
+import { getTranslations } from "next-intl/server";
+import Link from "next/link";
 import { FC } from "react";
 
-import { CourseCard } from "@/entities/course";
+import { ENUM_PATHS } from "@/shared/config";
+import { Button, EmptyCardList } from "@/shared/ui";
 
-interface ICoursesListProps {
-	courses: Course[];
-}
+import { GetAllTeacherCourses } from "@/entities/course";
 
-export const CoursesList: FC<ICoursesListProps> = ({ courses }) => {
+import { CoursesCardList } from "./ui";
+
+export const CoursesList: FC = async ({}) => {
+	const t = await getTranslations("AdminCoursesPage");
+	const courses = await GetAllTeacherCourses();
 	return (
-		<div className="grid grid-cols-1 sm:grid-cols2 md:grid-cols-1 lg:grid-cols-2 gap-7">
-			{courses?.map((course) => (
-				<CourseCard key={course.id} course={course} />
-			))}
-		</div>
+		<>
+			{!courses?.length ? (
+				<EmptyCardList
+					title={t("empty.title")}
+					description={t("empty.description")}
+					button={
+						<Button asChild>
+							<Link href={ENUM_PATHS.ADMIN.CREATE}>
+								<PlusCircleIcon className="mr-2 h-4 w-4" />
+								{t("buttons.create")}
+							</Link>
+						</Button>
+					}
+				/>
+			) : (
+				<CoursesCardList courses={courses} />
+			)}
+		</>
 	);
 };
