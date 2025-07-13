@@ -19,7 +19,7 @@ import {
 import {
 	CourseSchemaType,
 	ENUM_CRUD_COURSE_ERRORS,
-	GetFullCourse,
+	TGetFullCourse,
 	courseSchema,
 	useCourseEdit
 } from "@/entities/course";
@@ -28,7 +28,7 @@ import { CourseDataForm } from "@/entities/course/ui/course-data-form";
 import { GenerateSlug } from "@/features/generate-slug";
 
 export interface IBasicInfoProps {
-	course: GetFullCourse;
+	course: TGetFullCourse;
 }
 
 export const BasicInfo: FC<IBasicInfoProps> = ({ course }) => {

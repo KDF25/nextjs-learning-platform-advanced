@@ -444,6 +444,70 @@ declare const messages: {
 		}
 	},
 
+	"UserCoursePage": {
+		"preview": {
+			"fields": {
+				"description": {
+					"title": "Course Description"
+				},
+				"content": {
+					"title": "Course Content"
+				},
+				"duration": {
+					"count": "hours"
+				},
+				"chapter": {
+					"count": "chapters"
+				},
+				"lesson": {
+					"title": "Lesson",
+					"count": "lessons"
+				}
+			}
+		},
+
+		"paymentCard": {
+			"price": {
+				"title": "Price"
+			},
+			"learn": {
+				"title": "What you'll learn",
+				"duration": {
+					"title": "Course Duration",
+					"count": "hours"
+				},
+				"level": {
+					"title": "Difficulty Level"
+				},
+				"category": {
+					"title": "Category"
+				},
+				"lessons": {
+					"title": "Total Lessons",
+					"count": "lessons"
+				}
+			},
+
+			"includes": {
+				"title": "This Course Includes",
+				"parameters": [
+					{ "title": "Full lifetime access" },
+					{ "title": "Access to all chapters and lessons" },
+					{ "title": "Certificate of completion" }
+				]
+			},
+
+			"moneyBack": {
+				"title": "30-day Money-Back Guarantee",
+				"description": "If you're not satisfied with your purchase, we'll refund your money within 30 days."
+			},
+
+			"buttons": {
+				"enroll": "Enroll Now"
+			}
+		}
+	},
+
 	"DnDkit": {
 		"toast": {
 			"error": {

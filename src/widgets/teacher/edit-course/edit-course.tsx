@@ -3,12 +3,12 @@ import { FC } from "react";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/shared/ui";
 
-import { GetFullCourse } from "@/entities/course";
+import { TGetFullCourse } from "@/entities/course";
 
 import { ENUM_TAB_VALUES, TABS_LIST } from "./model";
 
 interface IEditCourseProps {
-	course: GetFullCourse;
+	course: TGetFullCourse;
 }
 
 export const EditCourse: FC<IEditCourseProps> = ({ course }) => {

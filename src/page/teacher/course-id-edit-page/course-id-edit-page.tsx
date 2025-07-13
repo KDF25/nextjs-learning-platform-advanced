@@ -2,7 +2,7 @@ import { headers } from "next/headers";
 import { FC } from "react";
 
 import { auth } from "@/entities/auth";
-import { CourseTeacherService, GetFullCourse } from "@/entities/course";
+import { CourseTeacherService, TGetFullCourse } from "@/entities/course";
 
 import { EditCourse } from "@/widgets/teacher";
 
@@ -20,7 +20,7 @@ export const CourseIdEditPage: FC<ICourseIdEditPageProps> = async ({
 	const course = (await CourseTeacherService.getById(
 		courseId,
 		session?.user?.id || ""
-	)) as GetFullCourse;
+	)) as TGetFullCourse;
 	return (
 		<>
 			<EditCourse course={course} />

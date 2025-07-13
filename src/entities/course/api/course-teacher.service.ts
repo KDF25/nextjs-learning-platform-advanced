@@ -2,7 +2,7 @@ import { Course } from "@prisma/client";
 
 import { prisma } from "@/shared/database";
 
-import { GetFullCourse } from "../types";
+import { TGetFullCourse } from "../types";
 
 export const CourseTeacherService = {
 	async getAll(userId: string): Promise<Course[]> {
@@ -25,7 +25,7 @@ export const CourseTeacherService = {
 	async getById(
 		courseId: string,
 		userId: string
-	): Promise<GetFullCourse | null> {
+	): Promise<TGetFullCourse | null> {
 		try {
 			const course = await prisma.course.findFirst({
 				where: {

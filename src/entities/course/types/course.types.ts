@@ -5,13 +5,22 @@ import { courseSchema } from "../helpers";
 
 export type CourseSchemaType = z.infer<typeof courseSchema>;
 
-export type GetFullCourse = Course & {
+export type TGetFullCourse = Course & {
 	chapters: (Pick<Chapter, "id" | "title" | "position"> & {
 		lessons: Pick<Lesson, "id" | "title" | "position">[];
 	})[];
 };
 
-export type GetCourse = Omit<
+export type TGetPublicCourse = Omit<
 	Course,
 	"userId" | "status" | "createdAt" | "updatedAt" | "description" | "imageKey"
 >;
+
+export type TGetPublicCourseBySlug = Omit<
+	Course,
+	"userId" | "status" | "createdAt" | "updatedAt" | "imageKey"
+> & {
+	chapters: (Pick<Chapter, "id" | "title" | "position"> & {
+		lessons: Pick<Lesson, "id" | "title" | "position">[];
+	})[];
+};

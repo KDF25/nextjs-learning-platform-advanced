@@ -15,7 +15,7 @@ import { FC, useEffect, useState } from "react";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/shared/ui";
 
-import { GetFullCourse } from "@/entities/course";
+import { TGetFullCourse } from "@/entities/course";
 
 import { AddNewChapter } from "@/features/add-new-chapter";
 
@@ -25,7 +25,7 @@ import { ChapterItems } from "./chapter-items";
 import { ENUM_SORTABLE_ITEM_TYPE } from "./sortable-item";
 
 interface IStructureProps {
-	course: GetFullCourse;
+	course: TGetFullCourse;
 }
 
 export interface IData {

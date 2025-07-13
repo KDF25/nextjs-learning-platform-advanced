@@ -1,9 +1,9 @@
 import { FC } from "react";
 
-import { GetCourse, PublicCourseCard } from "@/entities/course";
+import { PublicCourseCard, TGetPublicCourse } from "@/entities/course";
 
 interface ICoursesCardListProps {
-	courses: GetCourse[];
+	courses: TGetPublicCourse[];
 }
 
 export const CoursesCardList: FC<ICoursesCardListProps> = ({ courses }) => {

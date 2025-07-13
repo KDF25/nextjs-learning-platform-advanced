@@ -9,12 +9,12 @@ import {
 	CardTitle
 } from "@/shared/ui";
 
-import { GetFullCourse } from "@/entities/course";
+import { TGetFullCourse } from "@/entities/course";
 
 import { Structure } from "./ui";
 
 export interface ICourseStructureProps {
-	course: GetFullCourse;
+	course: TGetFullCourse;
 }
 
 export const CourseStructure: FC<ICourseStructureProps> = ({ course }) => {

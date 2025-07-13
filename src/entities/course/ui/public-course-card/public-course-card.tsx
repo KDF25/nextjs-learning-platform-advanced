@@ -7,10 +7,10 @@ import { FC } from "react";
 import { ENUM_PATHS } from "@/shared/config";
 import { Badge, Button, Card, CardContent } from "@/shared/ui";
 
-import { GetCourse } from "../../types";
+import { TGetPublicCourse } from "../../types";
 
 interface IPublicCourseCardProps {
-	course: GetCourse;
+	course: TGetPublicCourse;
 }
 
 export const PublicCourseCard: FC<IPublicCourseCardProps> = ({ course }) => {

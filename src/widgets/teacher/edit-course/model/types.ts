@@ -1,11 +1,11 @@
 import { FC } from "react";
 
-import { GetFullCourse } from "@/entities/course";
+import { TGetFullCourse } from "@/entities/course";
 
 export interface ITabItem {
 	value: string;
 	name: string;
-	content: FC<{ course: GetFullCourse }>;
+	content: FC<{ course: TGetFullCourse }>;
 }
 
 export const ENUM_TAB_VALUES = {
