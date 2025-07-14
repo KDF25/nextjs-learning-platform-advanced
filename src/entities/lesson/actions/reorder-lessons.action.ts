@@ -17,7 +17,7 @@ export async function ReorderLessons(
 	lessons: { id: string; position: number }[]
 ): Promise<IActionResponse> {
 	try {
-		const userId = await authHandler();
+		const { userId } = await authHandler();
 		ownerHandler(courseId, userId);
 
 		if (lessons.length === 0 || !lessons) {

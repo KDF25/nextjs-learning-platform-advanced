@@ -11,12 +11,12 @@ import { IncludeRow, LearnRow } from "./ui";
 
 interface ICoursePaymentCardProps {
 	course: TGetPublicCourseBySlug;
-	EnrollBtn: React.ReactNode;
+	ActionBtn: React.ReactNode;
 }
 
 export const CoursePaymentCard: FC<ICoursePaymentCardProps> = ({
 	course,
-	EnrollBtn
+	ActionBtn
 }) => {
 	const t = useTranslations("UserCoursePage.paymentCard");
 	const INCLUDE_ROW_LIST = t.raw("includes.parameters") as {
@@ -53,7 +53,7 @@ export const CoursePaymentCard: FC<ICoursePaymentCardProps> = ({
 						))}
 					</ul>
 				</div>
-				{EnrollBtn}
+				{ActionBtn}
 				<div className="flex flex-col gap-1 text-center items-center justify-center">
 					<p className="text-sm text-muted-foreground">
 						{t("moneyBack.title")}

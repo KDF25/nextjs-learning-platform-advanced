@@ -4,7 +4,7 @@ import Link from "next/link";
 import { FC } from "react";
 
 import { ENUM_PATHS } from "@/shared/config";
-import { Button, EmptyCardList } from "@/shared/ui";
+import { Button, InfoCardList } from "@/shared/ui";
 
 import { GetAllTeacherCourses } from "@/entities/course";
 
@@ -16,7 +16,7 @@ export const CoursesList: FC = async ({}) => {
 	return (
 		<>
 			{!courses?.length ? (
-				<EmptyCardList
+				<InfoCardList
 					title={t("empty.title")}
 					description={t("empty.description")}
 					button={

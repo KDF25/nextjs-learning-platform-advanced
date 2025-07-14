@@ -8,7 +8,7 @@ import { authHandler } from "@/entities/auth";
 
 export async function GetAllTeacherCourses(): Promise<Course[]> {
 	try {
-		const userId = await authHandler();
+		const { userId } = await authHandler();
 		const courses = await prisma.course.findMany({
 			where: {
 				userId

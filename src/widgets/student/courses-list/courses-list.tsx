@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import React, { FC } from "react";
 
-import { EmptyCardList } from "@/shared/ui";
+import { InfoCardList } from "@/shared/ui";
 
 import { GetPublicCourses } from "@/entities/course";
 
@@ -13,7 +13,7 @@ export const CoursesList: FC = async ({}) => {
 	return (
 		<>
 			{!courses?.length ? (
-				<EmptyCardList
+				<InfoCardList
 					title={t("empty.title")}
 					description={t("empty.description")}
 					button={<React.Fragment />}

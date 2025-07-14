@@ -13,7 +13,7 @@ export async function getLesson(data: {
 	chapterId: string;
 	lessonId: string;
 }): Promise<Lesson> {
-	const userId = await authHandler();
+	const { userId } = await authHandler();
 	ownerHandler(data?.courseId, userId);
 
 	const lesson = await prisma.lesson.findUnique({

@@ -16,7 +16,7 @@ export async function CreateLesson(
 	data: LessonSchemaType
 ): Promise<IActionResponse> {
 	try {
-		const userId = await authHandler();
+		const { userId } = await authHandler();
 		const validation = lessonSchema.safeParse(data);
 
 		if (!validation.success) {

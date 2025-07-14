@@ -16,7 +16,7 @@ export async function ReorderChapters(
 	chapter: { id: string; position: number }[]
 ): Promise<IActionResponse> {
 	try {
-		const userId = await authHandler();
+		const { userId } = await authHandler();
 		ownerHandler(courseId, userId);
 
 		if (chapter.length === 0 || !chapter) {

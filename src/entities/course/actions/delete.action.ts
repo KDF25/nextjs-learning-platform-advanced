@@ -13,7 +13,7 @@ export async function DeleteCourse(data: {
 	courseId: string;
 }): Promise<IActionResponse> {
 	try {
-		const userId = await authHandler();
+		const { userId } = await authHandler();
 
 		ownerHandler(data?.courseId, userId);
 

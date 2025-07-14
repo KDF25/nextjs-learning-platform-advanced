@@ -16,7 +16,7 @@ export async function CreateChapter(
 	data: ChapterSchemaType
 ): Promise<IActionResponse> {
 	try {
-		const userId = await authHandler();
+		const { userId } = await authHandler();
 		const validation = chapterSchema.safeParse(data);
 
 		if (!validation.success) {

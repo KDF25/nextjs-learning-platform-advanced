@@ -503,8 +503,34 @@ declare const messages: {
 			},
 
 			"buttons": {
-				"enroll": "Enroll Now"
+				"enroll": "Enroll Now",
+				"enrolling": "Enrolling ...",
+				"watch": "Watch Now"
 			}
+		},
+
+		"toast": {
+			"redirecting": "Redirecting ...",
+			"error": "ERROR: Failed to redirect",
+			"not_found": "ERROR: Course not found",
+
+			"enroll": {
+				"success": "Course created successfully",
+				"error": "ERROR: Failed to enroll course"
+			}
+		}
+	},
+
+	"PaymentPage": {
+		"success": {
+			"title": "Payment Success",
+			"description": "Your payment was successful. You can now continue to the course.",
+			"button": "Go to Dashboard"
+		},
+		"error": {
+			"title": "Payment Failed",
+			"description": "No worries! You will be charged the full amount later. Please try again.",
+			"button": "Go Back to Homepage"
 		}
 	},
 

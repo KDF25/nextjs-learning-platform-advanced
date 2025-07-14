@@ -1,17 +1,18 @@
 "use server";
 
 import { headers } from "next/headers";
-import { NextResponse } from "next/server";
+import { notFound } from "next/navigation";
 
 import { auth } from "./auth";
 
 export const authHandler = async () => {
 	const session = await auth.api.getSession({ headers: await headers() });
 	const userId = session?.user?.id;
+	const email = session?.user?.email;
 
 	if (!userId) {
-		throw new NextResponse("Unauthenticated", { status: 401 });
+		return notFound();
 	}
 
-	return userId;
+	return { userId, email };
 };

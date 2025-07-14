@@ -3,7 +3,9 @@ import { FC } from "react";
 import {
 	CoursePaymentCard,
 	GetPublicCourseBySlug,
-	PublicCoursePreview
+	PublicCoursePreview,
+	WatchCourse,
+	checkCourseBought
 } from "@/entities/course";
 
 import { EnrollCourse } from "@/features/enroll-course";
@@ -14,6 +16,8 @@ interface ICourseSlugPageProps {
 
 export const CourseSlugPage: FC<ICourseSlugPageProps> = async ({ slug }) => {
 	const course = await GetPublicCourseBySlug(slug);
+	const isEnrolled = await checkCourseBought(course?.id);
+
 	return (
 		<div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
 			<div className="order-1 lg:col-span-2">
@@ -23,7 +27,13 @@ export const CourseSlugPage: FC<ICourseSlugPageProps> = async ({ slug }) => {
 				<div className="sticky top-20">
 					<CoursePaymentCard
 						course={course}
-						EnrollBtn={<EnrollCourse courseId={course?.id} />}
+						ActionBtn={
+							isEnrolled ? (
+								<WatchCourse courseId={course?.id} />
+							) : (
+								<EnrollCourse courseId={course?.id} />
+							)
+						}
 					/>
 				</div>
 			</div>

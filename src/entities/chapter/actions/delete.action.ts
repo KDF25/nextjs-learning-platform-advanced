@@ -16,7 +16,7 @@ export async function DeleteChapter(data: {
 	chapterId: string;
 }): Promise<IActionResponse> {
 	try {
-		const userId = await authHandler();
+		const { userId } = await authHandler();
 
 		if (!data?.courseId || !data?.chapterId) {
 			return {

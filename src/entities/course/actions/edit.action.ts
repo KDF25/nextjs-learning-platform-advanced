@@ -12,7 +12,7 @@ export async function EditCourse(
 	data: CourseSchemaType
 ): Promise<IActionResponse> {
 	try {
-		const userId = await authHandler();
+		const { userId } = await authHandler();
 		const validation = courseSchema.safeParse(data);
 
 		if (!validation.success) {

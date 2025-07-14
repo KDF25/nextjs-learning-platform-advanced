@@ -17,7 +17,7 @@ export async function DeleteLesson(data: {
 	lessonId: string;
 }): Promise<IActionResponse> {
 	try {
-		const userId = await authHandler();
+		const { userId } = await authHandler();
 
 		if (!data?.courseId || !data?.chapterId || !data?.lessonId) {
 			return {
