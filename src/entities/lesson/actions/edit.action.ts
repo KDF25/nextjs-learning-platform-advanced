@@ -57,7 +57,7 @@ export async function EditLesson(
 			}
 		});
 
-		revalidatePath(ENUM_PATHS.ADMIN.EDIT(data?.courseId));
+		revalidatePath(ENUM_PATHS.TEACHER.EDIT(data?.courseId));
 
 		return {
 			success: true,

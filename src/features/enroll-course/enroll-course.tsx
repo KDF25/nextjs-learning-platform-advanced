@@ -14,7 +14,7 @@ interface IEnrollCourseProps {
 }
 
 export const EnrollCourse: FC<IEnrollCourseProps> = ({ courseId }) => {
-	const t = useTranslations("UserCoursePage");
+	const t = useTranslations("StudentCoursePage");
 
 	const { isPending, enrollCourse } = useCourseEnroll();
 

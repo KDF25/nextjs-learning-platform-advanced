@@ -13,7 +13,7 @@ import {
 } from "@/widgets/teacher";
 
 export const DashboardPage: FC = ({}) => {
-	const t = useTranslations("AdminDashboardPage");
+	const t = useTranslations("TeacherDashboardPage");
 	return (
 		<>
 			<DashboardTrendList />
@@ -24,7 +24,7 @@ export const DashboardPage: FC = ({}) => {
 						{t("recent.title")}
 					</h2>
 					<Button asChild variant={"outline"}>
-						<Link href={ENUM_PATHS.ADMIN.COURSES}>
+						<Link href={ENUM_PATHS.TEACHER.COURSES}>
 							{t("recent.buttons.view")}
 						</Link>
 					</Button>

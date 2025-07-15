@@ -34,12 +34,12 @@ const data = {
 	navMain: [
 		{
 			title: "Dashboard",
-			url: ENUM_PATHS.ADMIN.ROOT,
+			url: ENUM_PATHS.TEACHER.ROOT,
 			icon: IconDashboard
 		},
 		{
 			title: "Courses",
-			url: ENUM_PATHS.ADMIN.COURSES,
+			url: ENUM_PATHS.TEACHER.COURSES,
 			icon: IconListDetails
 		},
 		{
@@ -125,7 +125,9 @@ const data = {
 	]
 };
 
-export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+export function TeacherSidebar({
+	...props
+}: React.ComponentProps<typeof Sidebar>) {
 	return (
 		<Sidebar collapsible="offcanvas" {...props}>
 			<SidebarHeader>

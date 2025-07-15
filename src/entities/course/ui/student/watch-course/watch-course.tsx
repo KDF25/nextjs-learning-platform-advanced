@@ -10,7 +10,7 @@ interface IWatchCourseProps {
 }
 
 export const WatchCourse: FC<IWatchCourseProps> = ({}) => {
-	const t = useTranslations("UserCoursePage.paymentCard");
+	const t = useTranslations("StudentCoursePage.paymentCard");
 	return (
 		<Button asChild>
 			<Link href={ENUM_PATHS.MAIN}>{t("buttons.watch")}</Link>

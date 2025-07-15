@@ -4,7 +4,7 @@ import { FC, Suspense } from "react";
 import { CoursesCardListSkeleton, CoursesList } from "@/widgets/student";
 
 export const CoursesPage: FC = ({}) => {
-	const t = useTranslations("UserCoursesPage");
+	const t = useTranslations("StudentCoursesPage");
 	return (
 		<>
 			<div className="flex flex-col space-y-2 mb-10">

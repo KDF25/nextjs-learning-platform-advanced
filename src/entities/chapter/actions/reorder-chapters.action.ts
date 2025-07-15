@@ -40,7 +40,7 @@ export async function ReorderChapters(
 
 		await prisma.$transaction(updates);
 
-		revalidatePath(ENUM_PATHS.ADMIN.EDIT(courseId));
+		revalidatePath(ENUM_PATHS.TEACHER.EDIT(courseId));
 
 		return {
 			success: true,

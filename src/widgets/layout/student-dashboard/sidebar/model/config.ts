@@ -14,7 +14,7 @@ export const ADMIN_NAV_USER_LIST: IAdminNavItem[] = [
 	{
 		name: "path.dashboard",
 		icon: IconDashboard,
-		href: ENUM_PATHS.ADMIN.ROOT
+		href: ENUM_PATHS.TEACHER.ROOT
 	},
 	{
 		name: "path.courses",

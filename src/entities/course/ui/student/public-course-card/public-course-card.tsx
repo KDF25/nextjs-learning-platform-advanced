@@ -14,7 +14,7 @@ interface IPublicCourseCardProps {
 }
 
 export const PublicCourseCard: FC<IPublicCourseCardProps> = ({ course }) => {
-	const t = useTranslations("UserCoursesPage");
+	const t = useTranslations("StudentCoursesPage");
 	return (
 		<Card className="group relative pt-0">
 			<Badge className="absolute top-2 right-2">{course?.category}</Badge>

@@ -13,6 +13,6 @@ export const NAVBAR_ITEMS_LIST: INavItem[] = [
 	},
 	{
 		name: "path.dashboard",
-		href: ENUM_PATHS.ADMIN.ROOT
+		href: ENUM_PATHS.TEACHER.ROOT
 	}
 ];

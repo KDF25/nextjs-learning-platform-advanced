@@ -37,7 +37,7 @@ export const CourseIdDeletePage: FC<ICourseIdDeletePageProps> = ({
 		});
 		if (response?.success) {
 			toast.success(t("toast.success"));
-			router.push(ENUM_PATHS.ADMIN.COURSES);
+			router.push(ENUM_PATHS.TEACHER.COURSES);
 		} else {
 			toast.error(t("toast.error"));
 		}
@@ -52,7 +52,7 @@ export const CourseIdDeletePage: FC<ICourseIdDeletePageProps> = ({
 				</CardHeader>
 				<CardContent className="flex justify-end gap-4">
 					<Button asChild variant="outline">
-						<Link href={ENUM_PATHS.ADMIN.COURSES}>
+						<Link href={ENUM_PATHS.TEACHER.COURSES}>
 							{t("buttons.cancel")}
 						</Link>
 					</Button>

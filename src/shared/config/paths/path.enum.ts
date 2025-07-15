@@ -11,16 +11,16 @@ export const ENUM_PATHS = {
 		CREATE: "/courses/create",
 		COURSE: (slug: string) => `/courses/${slug}`
 	},
-	ADMIN: {
-		ROOT: "/admin",
-		COURSES: "/admin/courses",
-		CREATE: "/admin/courses/create",
-		COURSE: (courseId: string) => `/admin/courses/${courseId}`,
+	TEACHER: {
+		ROOT: "/teacher",
+		COURSES: "/teacher/courses",
+		CREATE: "/teacher/courses/create",
+		COURSE: (courseId: string) => `/teacher/courses/${courseId}`,
 		CHAPTER: (courseId: string, chapterId: string) =>
-			`/admin/courses/${courseId}/${chapterId}`,
+			`/teacher/courses/${courseId}/${chapterId}`,
 		LESSON: (courseId: string, chapterId: string, lessonId: string) =>
-			`/admin/courses/${courseId}/${chapterId}/${lessonId}`,
-		EDIT: (courseId: string) => `/admin/courses/${courseId}/edit`,
-		DELETE: (courseId: string) => `/admin/courses/${courseId}/delete`
+			`/teacher/courses/${courseId}/${chapterId}/${lessonId}`,
+		EDIT: (courseId: string) => `/teacher/courses/${courseId}/edit`,
+		DELETE: (courseId: string) => `/teacher/courses/${courseId}/delete`
 	}
 } as const;

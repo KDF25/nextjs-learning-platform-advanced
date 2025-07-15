@@ -62,7 +62,7 @@ export const CourseCreate: FC = ({}) => {
 			triggerConfetti();
 			toast.success(t("CourseForm.toast.create.success"));
 			reset();
-			router.push(ENUM_PATHS.ADMIN.COURSES);
+			router.push(ENUM_PATHS.TEACHER.COURSES);
 		} else {
 			let message = "";
 

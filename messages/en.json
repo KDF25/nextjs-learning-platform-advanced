@@ -125,7 +125,7 @@
 		]
 	},
 
-	"AdminCoursesPage": {
+	"TeacherCoursesPage": {
 		"title": "Your Courses",
 		"subtitle": "Here you can create and manage your courses.",
 
@@ -151,7 +151,7 @@
 		}
 	},
 
-	"AdminDashboardPage": {
+	"TeacherDashboardPage": {
 		"cards": {
 			"signups": {
 				"header": "Total Signups",
@@ -462,7 +462,7 @@
 		}
 	},
 
-	"UserCoursesPage": {
+	"StudentCoursesPage": {
 		"title": "Explore Courses",
 		"description": "Discover a wide range of carefully curated courses designed by industry experts. From programming to design, we have something for everyone.",
 
@@ -484,7 +484,7 @@
 		}
 	},
 
-	"UserCoursePage": {
+	"StudentCoursePage": {
 		"preview": {
 			"fields": {
 				"description": {

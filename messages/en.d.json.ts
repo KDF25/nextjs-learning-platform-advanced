@@ -128,7 +128,7 @@ declare const messages: {
 		]
 	},
 
-	"AdminCoursesPage": {
+	"TeacherCoursesPage": {
 		"title": "Your Courses",
 		"subtitle": "Here you can create and manage your courses.",
 
@@ -154,7 +154,7 @@ declare const messages: {
 		}
 	},
 
-	"AdminDashboardPage": {
+	"TeacherDashboardPage": {
 		"cards": {
 			"signups": {
 				"header": "Total Signups",
@@ -465,7 +465,7 @@ declare const messages: {
 		}
 	},
 
-	"UserCoursesPage": {
+	"StudentCoursesPage": {
 		"title": "Explore Courses",
 		"description": "Discover a wide range of carefully curated courses designed by industry experts. From programming to design, we have something for everyone.",
 
@@ -487,7 +487,7 @@ declare const messages: {
 		}
 	},
 
-	"UserCoursePage": {
+	"StudentCoursePage": {
 		"preview": {
 			"fields": {
 				"description": {

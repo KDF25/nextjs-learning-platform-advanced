@@ -24,7 +24,7 @@ export const ChapterPreview: FC<IChapterPreviewProps> = ({
 	chapter,
 	index
 }) => {
-	const t = useTranslations("UserCoursePage.preview.fields");
+	const t = useTranslations("StudentCoursePage.preview.fields");
 	return (
 		<Collapsible key={chapter?.id} defaultOpen={index === 0}>
 			<Card className="p-0 overflow-hidden border-2 transition-all duration-200 hover:shadow-md gap-0">

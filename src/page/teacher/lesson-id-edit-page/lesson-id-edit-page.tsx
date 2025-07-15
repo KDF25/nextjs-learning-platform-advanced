@@ -29,7 +29,7 @@ export const LessonIdEditPage: FC<ILessonIdEditPageProps> = async ({
 			<div className="flex items-center gap-6">
 				<Button asChild variant="outline">
 					<Link
-						href={ENUM_PATHS.ADMIN.EDIT(courseId)}
+						href={ENUM_PATHS.TEACHER.EDIT(courseId)}
 						className="gap-2"
 					>
 						<ArrowLeft className="h-4 w-4" />

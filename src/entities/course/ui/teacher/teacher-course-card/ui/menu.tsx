@@ -20,7 +20,7 @@ interface IMenuProps {
 }
 
 export const Menu: FC<IMenuProps> = ({ courseId }) => {
-	const t = useTranslations("AdminCoursesPage.card");
+	const t = useTranslations("TeacherCoursesPage.card");
 	const MENU = DROPDOWN_MENU_ITEMS_LIST(courseId);
 	return (
 		<DropdownMenu>

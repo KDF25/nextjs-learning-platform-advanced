@@ -16,7 +16,7 @@ interface IPublicCoursePreviewProps {
 export const PublicCoursePreview: FC<IPublicCoursePreviewProps> = ({
 	course
 }) => {
-	const t = useTranslations("UserCoursePage.preview");
+	const t = useTranslations("StudentCoursePage.preview");
 	return (
 		<>
 			<div className="relative aspect-video w-full overflow-hidden rounded-xl shadow-lg ">

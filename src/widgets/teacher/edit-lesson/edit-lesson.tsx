@@ -72,7 +72,7 @@ export const EditLesson: FC<IEditLessonProps> = ({
 		if (response?.success) {
 			toast.success(t("LessonForm.toast.edit.success"));
 			reset();
-			router.push(ENUM_PATHS.ADMIN.EDIT(courseId));
+			router.push(ENUM_PATHS.TEACHER.EDIT(courseId));
 		} else {
 			let message = "";
 			switch (response?.message) {

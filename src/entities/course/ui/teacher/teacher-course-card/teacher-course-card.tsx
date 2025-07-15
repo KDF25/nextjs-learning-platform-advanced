@@ -15,7 +15,7 @@ interface ITeacherCourseCardProps {
 }
 
 export const TeacherCourseCard: FC<ITeacherCourseCardProps> = ({ course }) => {
-	const t = useTranslations("AdminCoursesPage");
+	const t = useTranslations("TeacherCoursesPage");
 	return (
 		<Card className="group relative pt-0">
 			<div className="absolute top-2 right-2">
@@ -30,7 +30,7 @@ export const TeacherCourseCard: FC<ITeacherCourseCardProps> = ({ course }) => {
 			/>
 			<CardContent className="flex flex-col gap-4 relative">
 				<Link
-					href={ENUM_PATHS.ADMIN.COURSE(course?.id)}
+					href={ENUM_PATHS.TEACHER.COURSE(course?.id)}
 					className="font-medium text-lg line-clamp-2 hover:underline group-hover:text-primary transition-colors"
 				>
 					{course?.title}
@@ -56,7 +56,7 @@ export const TeacherCourseCard: FC<ITeacherCourseCardProps> = ({ course }) => {
 				</div>
 
 				<Button asChild>
-					<Link href={ENUM_PATHS.ADMIN.EDIT(course?.id)}>
+					<Link href={ENUM_PATHS.TEACHER.EDIT(course?.id)}>
 						{t("card.buttons.edit")}
 						<ArrowRight className="ml-2 h-4 w-4" />
 					</Link>

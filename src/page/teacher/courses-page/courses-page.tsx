@@ -9,13 +9,13 @@ import { Button } from "@/shared/ui";
 import { CoursesCardListSkeleton, CoursesList } from "@/widgets/teacher";
 
 export const CoursesPage: FC = ({}) => {
-	const t = useTranslations("AdminCoursesPage");
+	const t = useTranslations("TeacherCoursesPage");
 	return (
 		<>
 			<div className="flex items-center justify-between">
 				<h1 className="text-2xl font-bold">{t("title")}</h1>
 				<Button asChild>
-					<Link href={ENUM_PATHS.ADMIN.CREATE}>
+					<Link href={ENUM_PATHS.TEACHER.CREATE}>
 						<PlusCircleIcon className="mr-2 h-4 w-4" />
 						{t("buttons.create")}
 					</Link>

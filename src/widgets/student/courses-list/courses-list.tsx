@@ -8,7 +8,7 @@ import { GetPublicCourses } from "@/entities/course";
 import { CoursesCardList } from "./ui";
 
 export const CoursesList: FC = async ({}) => {
-	const t = await getTranslations("UserCoursesPage");
+	const t = await getTranslations("StudentCoursesPage");
 	const courses = await GetPublicCourses();
 	return (
 		<>

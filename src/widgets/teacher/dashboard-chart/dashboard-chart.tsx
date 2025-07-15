@@ -128,7 +128,7 @@ const chartConfig = {
 } satisfies ChartConfig;
 
 export const DashboardChart: React.FC = () => {
-	const t = useTranslations("AdminDashboardPage.chart");
+	const t = useTranslations("TeacherDashboardPage.chart");
 	const isMobile = useIsMobile();
 	const [timeRange, setTimeRange] = React.useState<ENUM_CHART_TOGGLE>(
 		ENUM_CHART_TOGGLE.DAYS_90

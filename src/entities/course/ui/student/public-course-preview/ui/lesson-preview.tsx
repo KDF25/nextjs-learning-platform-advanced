@@ -10,7 +10,7 @@ interface ILessonPreviewProps {
 }
 
 export const LessonPreview: FC<ILessonPreviewProps> = ({ lesson, index }) => {
-	const t = useTranslations("UserCoursePage.preview.fields");
+	const t = useTranslations("StudentCoursePage.preview.fields");
 	return (
 		<div
 			key={lesson?.id}

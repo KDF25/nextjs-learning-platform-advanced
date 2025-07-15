@@ -10,7 +10,7 @@ export const DROPDOWN_MENU_ITEMS_LIST = (
 	{
 		name: "menu.edit",
 		icon: Pencil,
-		href: ENUM_PATHS.ADMIN.EDIT(courseId)
+		href: ENUM_PATHS.TEACHER.EDIT(courseId)
 	},
 	{
 		name: "menu.preview",
@@ -21,7 +21,7 @@ export const DROPDOWN_MENU_ITEMS_LIST = (
 	{
 		name: "menu.delete",
 		icon: Trash,
-		href: ENUM_PATHS.ADMIN.DELETE(courseId),
+		href: ENUM_PATHS.TEACHER.DELETE(courseId),
 		className: "text-destructive"
 	}
 ];

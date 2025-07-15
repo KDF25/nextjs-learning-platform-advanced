@@ -15,7 +15,7 @@ interface ICoursesListProps {
 }
 
 export const CoursesList: FC<ICoursesListProps> = async ({ count }) => {
-	const t = await getTranslations("AdminCoursesPage");
+	const t = await getTranslations("TeacherCoursesPage");
 	const courses = await GetAllTeacherCourses(count);
 	return (
 		<>
@@ -25,7 +25,7 @@ export const CoursesList: FC<ICoursesListProps> = async ({ count }) => {
 					description={t("empty.description")}
 					button={
 						<Button asChild>
-							<Link href={ENUM_PATHS.ADMIN.CREATE}>
+							<Link href={ENUM_PATHS.TEACHER.CREATE}>
 								<PlusCircleIcon className="mr-2 h-4 w-4" />
 								{t("buttons.create")}
 							</Link>

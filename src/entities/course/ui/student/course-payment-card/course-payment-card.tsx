@@ -18,7 +18,7 @@ export const CoursePaymentCard: FC<ICoursePaymentCardProps> = ({
 	course,
 	ActionBtn
 }) => {
-	const t = useTranslations("UserCoursePage.paymentCard");
+	const t = useTranslations("StudentCoursePage.paymentCard");
 	const INCLUDE_ROW_LIST = t.raw("includes.parameters") as {
 		title: string;
 	}[];

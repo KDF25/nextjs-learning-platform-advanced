@@ -54,7 +54,7 @@ export const LessonItems: FC<ILessonItemsProps> = ({
 								</Button>
 								<FileTextIcon size={16} />
 								<Link
-									href={ENUM_PATHS.ADMIN.LESSON(
+									href={ENUM_PATHS.TEACHER.LESSON(
 										courseId,
 										chapterId,
 										lesson?.id
