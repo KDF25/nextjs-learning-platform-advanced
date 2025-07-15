@@ -10,9 +10,13 @@ import { GetAllTeacherCourses } from "@/entities/course";
 
 import { CoursesCardList } from "./ui";
 
-export const CoursesList: FC = async ({}) => {
+interface ICoursesListProps {
+	count?: number;
+}
+
+export const CoursesList: FC<ICoursesListProps> = async ({ count }) => {
 	const t = await getTranslations("AdminCoursesPage");
-	const courses = await GetAllTeacherCourses();
+	const courses = await GetAllTeacherCourses(count);
 	return (
 		<>
 			{!courses?.length ? (

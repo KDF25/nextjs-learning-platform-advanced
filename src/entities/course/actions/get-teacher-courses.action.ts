@@ -6,18 +6,30 @@ import { prisma } from "@/shared/database";
 
 import { authHandler } from "@/entities/auth";
 
-export async function GetAllTeacherCourses(): Promise<Course[]> {
+export async function GetAllTeacherCourses(count?: number): Promise<Course[]> {
 	try {
 		const { userId } = await authHandler();
-		const courses = await prisma.course.findMany({
-			where: {
-				userId
-			},
-			orderBy: {
-				createdAt: "desc"
-			}
-		});
-		return courses;
+
+		if (count) {
+			return prisma.course.findMany({
+				where: {
+					userId
+				},
+				orderBy: {
+					createdAt: "desc"
+				},
+				take: count
+			});
+		} else {
+			return await prisma.course.findMany({
+				where: {
+					userId
+				},
+				orderBy: {
+					createdAt: "desc"
+				}
+			});
+		}
 	} catch (error) {
 		console.log("[Get all teacher courses error]", error);
 		return [];

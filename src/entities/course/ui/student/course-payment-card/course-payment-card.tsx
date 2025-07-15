@@ -4,7 +4,7 @@ import React, { FC } from "react";
 import { formatPrice } from "@/shared/lib";
 import { Card, CardContent } from "@/shared/ui";
 
-import { TGetPublicCourseBySlug } from "../../types";
+import { TGetPublicCourseBySlug } from "@/entities/course";
 
 import { LEARN_ROW_LIST } from "./model";
 import { IncludeRow, LearnRow } from "./ui";

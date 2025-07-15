@@ -23,7 +23,7 @@ import {
 	courseSchema,
 	useCourseEdit
 } from "@/entities/course";
-import { CourseDataForm } from "@/entities/course/ui/course-data-form";
+import { CourseDataForm } from "@/entities/course/ui/teacher/course-data-form";
 
 import { GenerateSlug } from "@/features/generate-slug";
 

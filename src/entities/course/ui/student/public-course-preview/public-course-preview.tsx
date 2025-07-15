@@ -5,7 +5,7 @@ import { FC } from "react";
 
 import { Badge, Previewer, Separator } from "@/shared/ui";
 
-import { TGetPublicCourseBySlug } from "../../types";
+import { TGetPublicCourseBySlug } from "../../../types";
 
 import { ChapterPreview } from "./ui";
 

@@ -154,6 +154,49 @@ declare const messages: {
 		}
 	},
 
+	"AdminDashboardPage": {
+		"cards": {
+			"signups": {
+				"header": "Total Signups",
+				"title": "Registered users on the platform",
+				"description": "Indicates how many users have created accounts, regardless of activity."
+			},
+			"customers": {
+				"header": "Total Customers",
+				"title": "Users who have enrolled in courses",
+				"description": "Reflects users who have completed a purchase or joined a course."
+			},
+			"courses": {
+				"header": "Total Courses",
+				"title": "Available courses on the platform",
+				"description": "Shows the number of active and published courses users can access."
+			},
+			"lessons": {
+				"header": "Total Lessons",
+				"title": "Total learning content available",
+				"description": "Represents all lessons included across published courses."
+			}
+		},
+
+		"chart": {
+			"title": "Total Enrollments",
+			"description": "Total for the last 3 months",
+			"smallDescription": "Last 3 months",
+			"toggle": {
+				"7d": "Last 7 days",
+				"30d": "Last 30 days",
+				"90d": "Last 3 months"
+			}
+		},
+
+		"recent": {
+			"title": "Recent Courses",
+			"buttons": {
+				"view": "View All Courses"
+			}
+		}
+	},
+
 	"CreateCoursePage": {
 		"title": "Create Course",
 

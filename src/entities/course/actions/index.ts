@@ -7,3 +7,4 @@ export * from "./get-public-course-by-slug.action";
 export * from "./get-public-courses.action";
 export * from "./get-teacher-courses.action";
 export * from "./owner.handler";
+export * from "./stats-dashboard.action";
