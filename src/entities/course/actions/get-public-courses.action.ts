@@ -2,9 +2,7 @@
 
 import { prisma } from "@/shared/database";
 
-import { TGetPublicCourse } from "../types";
-
-export async function GetPublicCourses(): Promise<TGetPublicCourse[]> {
+export async function GetPublicCourses() {
 	try {
 		const courses = await prisma.course.findMany({
 			where: {

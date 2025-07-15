@@ -570,6 +570,19 @@
 		}
 	},
 
+	"EnrollCourseSidebar": {
+		"progress": {
+			"title": "Прогресс",
+			"lessons": "уроков",
+			"completed": "завершено"
+		},
+		"lessons": {
+			"title": "урок",
+			"completed": "Завершено",
+			"watching": "Сейчас смотрите"
+		}
+	},
+
 	"DnDkit": {
 		"toast": {
 			"error": {

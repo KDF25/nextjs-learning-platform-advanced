@@ -597,6 +597,19 @@ declare const messages: {
 		}
 	},
 
+	"EnrollCourseSidebar": {
+		"progress": {
+			"title": "Progress",
+			"lessons": "lessons",
+			"completed": "completed"
+		},
+		"lessons": {
+			"title": "lesson",
+			"completed": "Completed",
+			"watching": "Currently Watching"
+		}
+	},
+
 	"DnDkit": {
 		"toast": {
 			"error": {

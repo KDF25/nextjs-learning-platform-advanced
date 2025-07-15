@@ -5,3 +5,4 @@ export * from "./theme-toggle";
 export * from "./lang-toggle";
 export * from "./uploadthing";
 export * from "./custom-title";
+export * from "./video-player";

@@ -1,11 +1,14 @@
-"use server";
-
+import { EnrollmentStatus } from "@prisma/client";
 import { notFound } from "next/navigation";
 
 import { prisma } from "@/shared/database";
 
-export async function GetPublicCourseBySlug(slug: string) {
+import { authHandler } from "@/entities/auth";
+
+export const GetCourseSidebarData = async (slug: string) => {
 	try {
+		const { userId } = await authHandler();
+
 		const course = await prisma.course.findUnique({
 			where: {
 				slug
@@ -13,15 +16,11 @@ export async function GetPublicCourseBySlug(slug: string) {
 			select: {
 				id: true,
 				title: true,
-				smallDescription: true,
-				description: true,
-				price: true,
 				imageUrl: true,
-				slug: true,
-				status: true,
-				level: true,
 				duration: true,
+				level: true,
 				category: true,
+				slug: true,
 				chapters: {
 					select: {
 						id: true,
@@ -31,6 +30,7 @@ export async function GetPublicCourseBySlug(slug: string) {
 							select: {
 								id: true,
 								title: true,
+								description: true,
 								position: true
 							},
 							orderBy: {
@@ -49,9 +49,25 @@ export async function GetPublicCourseBySlug(slug: string) {
 			return notFound();
 		}
 
+		const enrolled = await prisma.enrollment.findUnique({
+			where: {
+				userId_courseId: {
+					userId,
+					courseId: course.id
+				}
+			},
+			select: {
+				status: true
+			}
+		});
+
+		if (!enrolled || enrolled?.status !== EnrollmentStatus.Active) {
+			return notFound();
+		}
+
 		return course;
 	} catch (error) {
-		console.log("[Get public course by slug error]", error);
-		return notFound();
+		console.log("[Get course sidebar data error]", error);
+		return null;
 	}
-}
+};

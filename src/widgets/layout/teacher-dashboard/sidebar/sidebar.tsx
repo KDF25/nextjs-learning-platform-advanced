@@ -125,7 +125,7 @@ const data = {
 	]
 };
 
-export function TeacherSidebar({
+export function TeacherDashboardSidebar({
 	...props
 }: React.ComponentProps<typeof Sidebar>) {
 	return (
