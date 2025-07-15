@@ -1,22 +1,32 @@
-import { getTranslations } from "next-intl/server";
 import React, { FC } from "react";
 
 import { InfoCardList } from "@/shared/ui";
 
-import { GetPublicCourses } from "@/entities/course";
+import { TGetPublicCourse } from "@/entities/course";
 
 import { CoursesCardList } from "./ui";
 
-export const CoursesList: FC = async ({}) => {
-	const t = await getTranslations("StudentCoursesPage");
-	const courses = await GetPublicCourses();
+interface ICoursesListProps {
+	emptyTitle: string;
+	emptyDescription: string;
+	emptyButton?: React.ReactNode;
+	getCourses: () => Promise<TGetPublicCourse[]>;
+}
+
+export const CoursesList: FC<ICoursesListProps> = async ({
+	emptyTitle,
+	emptyDescription,
+	emptyButton: Button = null,
+	getCourses
+}) => {
+	const courses = await getCourses();
 	return (
 		<>
 			{!courses?.length ? (
 				<InfoCardList
-					title={t("empty.title")}
-					description={t("empty.description")}
-					button={<React.Fragment />}
+					title={emptyTitle}
+					description={emptyDescription}
+					button={Button}
 				/>
 			) : (
 				<CoursesCardList courses={courses} />

@@ -19,7 +19,7 @@ export const InfoCardList: FC<Props> = ({
 	classNameIcon = ""
 }) => {
 	return (
-		<div className="flex flex-col flex-1 h-full items-center justify-center rounded-md border-dashed border p-8 text-center animate-in fade-in-50">
+		<div className="flex flex-col flex-1 h-full items-center justify-center rounded-md border-dashed border p-8 text-center animate-in fade-in-50 min-h-[400px]">
 			<div className="flex size-20 items-center justify-center rounded-full bg-primary/10">
 				<Icon className={cn("size-10 text-primary", classNameIcon)} />
 			</div>

@@ -1,20 +1,23 @@
 import { useTranslations } from "next-intl";
 import { FC, Suspense } from "react";
 
+import { CustomTitle } from "@/shared/ui";
+
+import { GetPublicCourses } from "@/entities/course";
+
 import { CoursesCardListSkeleton, CoursesList } from "@/widgets/student";
 
 export const CoursesPage: FC = ({}) => {
 	const t = useTranslations("StudentCoursesPage");
 	return (
 		<>
-			<div className="flex flex-col space-y-2 mb-10">
-				<h1 className="text-3xl md:text-4xl font-bold tracking-tighter">
-					{t("title")}
-				</h1>
-				<p className="text-muted-foreground">{t("description")}</p>
-			</div>
+			<CustomTitle title={t("title")} description={t("description")} />
 			<Suspense fallback={<CoursesCardListSkeleton />}>
-				<CoursesList />
+				<CoursesList
+					emptyTitle={t("empty.title")}
+					emptyDescription={t("empty.description")}
+					getCourses={GetPublicCourses}
+				/>
 			</Suspense>
 		</>
 	);

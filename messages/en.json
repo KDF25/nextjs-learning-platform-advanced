@@ -574,6 +574,26 @@
 		}
 	},
 
+	"StudentDashboardPage": {
+		"enroll": {
+			"title": "Enrolled Courses",
+			"description": "View and manage your enrolled courses.",
+			"empty": {
+				"title": "No Courses",
+				"description": "You haven't enrolled in any courses yet. Start learning today!"
+			}
+		},
+
+		"available": {
+			"title": "Available Courses",
+			"description": "Discover a wide range of carefully curated courses designed by industry experts. From programming to design, we have something for everyone.",
+			"empty": {
+				"title": "No Available Courses",
+				"description": "There are currently no available courses. Check back later for new courses!"
+			}
+		}
+	},
+
 	"DnDkit": {
 		"toast": {
 			"error": {

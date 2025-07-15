@@ -7,11 +7,13 @@ import { SidebarInset, SidebarProvider } from "@/shared/ui";
 
 import { auth } from "@/entities/auth";
 
-import { TeacherHeader, TeacherSidebar } from "@/widgets/layout";
+import {
+	StudentDashboardHeader,
+	StudentDashboardSidebar
+} from "@/widgets/layout";
 
 type Props = {
 	children: ReactNode;
-	// params: Promise<{ locale: Locale }>;
 };
 
 export default async function AdminLayout({ children }: Props) {
@@ -30,9 +32,9 @@ export default async function AdminLayout({ children }: Props) {
 				} as React.CSSProperties
 			}
 		>
-			<TeacherSidebar variant="inset" />
+			<StudentDashboardSidebar variant="inset" />
 			<SidebarInset>
-				<TeacherHeader />
+				<StudentDashboardHeader />
 				<div className="flex flex-1 flex-col">
 					<div className="@container/main flex flex-1 flex-col gap-2">
 						<div className="flex flex-col gap-4 py-4 md:gap-6 md:py-6 px-4 lg:px-6">

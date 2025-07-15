@@ -28,7 +28,7 @@ import {
 	SidebarMenuItem
 } from "@/shared/ui";
 
-import { NavMain, NavSecondary, NavUser } from "@/widgets/layout";
+import { NavMain, NavSecondary, NavUser } from "./ui";
 
 const data = {
 	navMain: [
