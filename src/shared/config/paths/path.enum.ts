@@ -13,7 +13,7 @@ export const ENUM_PATHS = {
 	},
 	DASHBOARD: {
 		ROOT: "/dashboard",
-		SLUG: (slug: string) => `/dashboard/${slug}`,
+		COURSE: (slug: string) => `/dashboard/${slug}`,
 		LESSON: (slug: string, lessonId: string) =>
 			`/dashboard/${slug}/${lessonId}`
 	},

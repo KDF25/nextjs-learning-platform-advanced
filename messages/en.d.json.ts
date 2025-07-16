@@ -482,7 +482,14 @@ declare const messages: {
 			},
 
 			"buttons": {
-				"more": "Learn More"
+				"more": "Learn More",
+				"continue": "Continue"
+			},
+
+			"progress": {
+				"title": "Progress",
+				"lessons": "lessons",
+				"completed": "completed"
 			}
 		}
 	},

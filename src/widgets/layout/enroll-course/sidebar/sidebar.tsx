@@ -1,12 +1,10 @@
 import { Play } from "lucide-react";
-import { useTranslations } from "next-intl";
 import { FC } from "react";
 
-import { Progress } from "@/shared/ui";
+import { LessonProgress } from "@/shared/ui";
 
 import { TGetCourseSidebarType } from "@/entities/course";
 
-import { useCourseProgress } from "./model";
 import { SidebarItem } from "./ui";
 
 interface IEnrollCourseSidebarProps {
@@ -16,10 +14,6 @@ interface IEnrollCourseSidebarProps {
 export const EnrollCourseSidebar: FC<IEnrollCourseSidebarProps> = ({
 	course
 }) => {
-	const t = useTranslations("EnrollCourseSidebar");
-	const { totalLessons, completeLessons, progressLessons } =
-		useCourseProgress(course);
-
 	return (
 		<div className="flex flex-col h-full">
 			<div className="pb-4 pr-4 border-b border-border">
@@ -36,22 +30,7 @@ export const EnrollCourseSidebar: FC<IEnrollCourseSidebarProps> = ({
 						</p>
 					</div>
 				</div>
-
-				<div className="space-y-2">
-					<div className="flex justify-between text-xs">
-						<span className="text-muted-foreground">
-							{t("progress.title")}
-						</span>
-						<span className="font-medium">
-							{completeLessons}/{totalLessons}{" "}
-							{t("progress.lessons")}
-						</span>
-					</div>
-					<Progress value={progressLessons} className="h-1.5" />
-					<p className="text-xs text-muted-foreground">
-						{progressLessons}% {t("progress.completed")}
-					</p>
-				</div>
+				<LessonProgress course={course} />
 			</div>
 			<div className="py-4 pr-4 space-y-3">
 				{course?.chapters?.map((chapter, index) => (

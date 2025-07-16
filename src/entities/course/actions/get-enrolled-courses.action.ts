@@ -6,9 +6,7 @@ import { prisma } from "@/shared/database";
 
 import { authHandler } from "@/entities/auth";
 
-import { TGetPublicCourse } from "../types";
-
-export async function GetEnrolledCourses(): Promise<TGetPublicCourse[]> {
+export async function GetEnrolledCourses() {
 	try {
 		const { userId } = await authHandler();
 
@@ -29,16 +27,38 @@ export async function GetEnrolledCourses(): Promise<TGetPublicCourse[]> {
 						status: true,
 						level: true,
 						duration: true,
-						category: true
+						category: true,
+						chapters: {
+							select: {
+								id: true,
+								title: true,
+								position: true,
+								lessons: {
+									select: {
+										id: true,
+										title: true,
+										position: true,
+										lessonProgress: {
+											where: {
+												userId
+											},
+											select: {
+												lessonId: true,
+												completed: true
+											}
+										}
+									}
+								}
+							}
+						}
 					}
 				}
 			}
 		});
 		return (
-			courses?.reduce<TGetPublicCourse[]>((acc, item) => {
-				if (item.Course) acc.push(item.Course);
-				return acc;
-			}, []) || []
+			courses
+				?.map((item) => item?.Course)
+				?.filter((course) => !!course) || []
 		);
 	} catch (error) {
 		console.log("[Get enrolled courses error]", error);

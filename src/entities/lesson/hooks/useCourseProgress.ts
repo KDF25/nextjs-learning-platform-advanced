@@ -1,10 +1,10 @@
-"use client";
-
 import { useMemo } from "react";
 
-import { TGetCourseSidebarType } from "@/entities/course";
+import { TGetCourseSidebarType, TGetEnrolledCourse } from "@/entities/course";
 
-export const useCourseProgress = (course?: TGetCourseSidebarType) => {
+export const useCourseProgress = (
+	course?: TGetCourseSidebarType | TGetEnrolledCourse
+) => {
 	return useMemo(() => {
 		if (!course) {
 			return {

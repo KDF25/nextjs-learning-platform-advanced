@@ -6,3 +6,4 @@ export * from "./lang-toggle";
 export * from "./uploadthing";
 export * from "./custom-title";
 export * from "./video-player";
+export * from "./lesson-progress";

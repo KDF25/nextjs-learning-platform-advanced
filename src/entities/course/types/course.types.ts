@@ -4,6 +4,7 @@ import z from "zod";
 import {
 	GetCourseLesson,
 	GetCourseSidebarData,
+	GetEnrolledCourses,
 	GetPublicCourseBySlug,
 	GetPublicCourses
 } from "../actions";
@@ -19,6 +20,10 @@ export type TGetFullCourse = Course & {
 
 export type TGetPublicCourse = Awaited<
 	ReturnType<typeof GetPublicCourses>
+>[number];
+
+export type TGetEnrolledCourse = Awaited<
+	ReturnType<typeof GetEnrolledCourses>
 >[number];
 
 export type TGetPublicCourseBySlug = Awaited<

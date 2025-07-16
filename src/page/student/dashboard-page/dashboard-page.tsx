@@ -5,7 +5,12 @@ import { CustomTitle } from "@/shared/ui";
 
 import { GetEnrolledCourses, GetPublicCourses } from "@/entities/course";
 
-import { CoursesCardListSkeleton, CoursesList } from "@/widgets/student";
+import {
+	CoursesCardListSkeleton,
+	CoursesList,
+	EnrolledCoursesCardListSkeleton,
+	EnrolledCoursesList
+} from "@/widgets/student";
 
 export const DashboardPage: FC = ({}) => {
 	const t = useTranslations("StudentDashboardPage");
@@ -15,8 +20,9 @@ export const DashboardPage: FC = ({}) => {
 				title={t("enroll.title")}
 				description={t("enroll.description")}
 			/>
-			<Suspense fallback={<CoursesCardListSkeleton />}>
-				<CoursesList
+			<EnrolledCoursesCardListSkeleton />
+			<Suspense fallback={<EnrolledCoursesCardListSkeleton />}>
+				<EnrolledCoursesList
 					emptyTitle={t("enroll.empty.title")}
 					emptyDescription={t("enroll.empty.description")}
 					getCourses={GetEnrolledCourses}
