@@ -597,6 +597,22 @@ declare const messages: {
 		}
 	},
 
+	"StudentDashboardLessonPage": {
+		"buttons": {
+			"complete": "Complete",
+			"incomplete": "Incomplete ...",
+			"mark": "Mark as Complete",
+			"marking": "Marking ..."
+		},
+
+		"toast": {
+			"complete": "Lesson marked as complete",
+			"incomplete": "Lesson marked as incomplete",
+			"not_found": "ERROR: Lesson not found",
+			"error": "ERROR: Failed to mark lesson as complete"
+		}
+	},
+
 	"EnrollCourseSidebar": {
 		"progress": {
 			"title": "Progress",

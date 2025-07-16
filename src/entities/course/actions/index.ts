@@ -3,6 +3,7 @@ export * from "./create.action";
 export * from "./delete.action";
 export * from "./edit.action";
 export * from "./enroll.action";
+export * from "./enrolled.handler";
 export * from "./get-course-lesson.action";
 export * from "./get-course-sidebar-data.action";
 export * from "./get-enrolled-courses.action";

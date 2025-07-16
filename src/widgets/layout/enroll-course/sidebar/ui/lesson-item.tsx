@@ -12,22 +12,23 @@ import { TGetCourseSidebarType } from "@/entities/course";
 interface ILessonItemProps {
 	slug: string;
 	lesson: NonNullable<TGetCourseSidebarType>["chapters"][number]["lessons"][number];
-	isActive?: boolean;
+	completed: boolean;
+	isActive: boolean;
 }
 
 export const LessonItem: FC<ILessonItemProps> = ({
 	slug,
 	lesson,
+	completed = false,
 	isActive = false
 }) => {
-	const completed = true;
 	const t = useTranslations("EnrollCourseSidebar");
 	return (
 		<Button
 			asChild
 			variant={completed ? "secondary" : "outline"}
 			className={cn(
-				"w-full p-2.5 h-auto justify-start transition-all",
+				"w-full p-2.5 min-h-[52px] justify-start transition-all",
 				completed &&
 					"bg-green-100 dark:bg-green-900/30 border-green-300 dark:border-green-700 hover:bg-green-200 dark:hover:bg-green-900/50 text-green-800 dark:text-green-200",
 				isActive &&

@@ -57,6 +57,11 @@ export const SidebarItem: FC<ISidebarItemProps> = ({
 						key={lesson?.id}
 						lesson={lesson}
 						slug={slug}
+						completed={
+							lesson?.lessonProgress?.find(
+								(progress) => progress?.lessonId === lesson?.id
+							)?.completed || false
+						}
 						isActive={lesson?.id === currentLessonId}
 					/>
 				))}

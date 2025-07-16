@@ -570,6 +570,21 @@
 		}
 	},
 
+	"StudentDashboardLessonPage": {
+		"buttons": {
+			"complete": "Завершен",
+			"incomplete": "Не завершен ...",
+			"mark": "Завершить",
+			"marking": "Завершаем ..."
+		},
+		"toast": {
+			"complete": "Урок отмечен как завершённый",
+			"incomplete": "Урок отмечен как незавершённый",
+			"not_found": "ОШИБКА: Урок не найден",
+			"error": "ОШИБКА: Не удалось отметить урок как завершённый"
+		}
+	},
+
 	"EnrollCourseSidebar": {
 		"progress": {
 			"title": "Прогресс",

@@ -16,7 +16,6 @@ export const GenerateSlug: FC<IGenerateSlugProps> = ({ title, onChange }) => {
 	const handleOnClick = () => {
 		const slug = slugify(title);
 		onChange(slug);
-		console.log(slug, title);
 	};
 
 	return (

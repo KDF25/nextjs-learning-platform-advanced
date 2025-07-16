@@ -6,6 +6,7 @@ import { Progress } from "@/shared/ui";
 
 import { TGetCourseSidebarType } from "@/entities/course";
 
+import { useCourseProgress } from "./model";
 import { SidebarItem } from "./ui";
 
 interface IEnrollCourseSidebarProps {
@@ -16,6 +17,9 @@ export const EnrollCourseSidebar: FC<IEnrollCourseSidebarProps> = ({
 	course
 }) => {
 	const t = useTranslations("EnrollCourseSidebar");
+	const { totalLessons, completeLessons, progressLessons } =
+		useCourseProgress(course);
+
 	return (
 		<div className="flex flex-col h-full">
 			<div className="pb-4 pr-4 border-b border-border">
@@ -39,12 +43,13 @@ export const EnrollCourseSidebar: FC<IEnrollCourseSidebarProps> = ({
 							{t("progress.title")}
 						</span>
 						<span className="font-medium">
-							4/10 {t("progress.lessons")}
+							{completeLessons}/{totalLessons}{" "}
+							{t("progress.lessons")}
 						</span>
 					</div>
-					<Progress value={55} className="h-1.5" />
+					<Progress value={progressLessons} className="h-1.5" />
 					<p className="text-xs text-muted-foreground">
-						55% {t("progress.completed")}
+						{progressLessons}% {t("progress.completed")}
 					</p>
 				</div>
 			</div>

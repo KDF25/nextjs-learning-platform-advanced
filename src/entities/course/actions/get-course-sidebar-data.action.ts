@@ -1,9 +1,10 @@
-import { EnrollmentStatus } from "@prisma/client";
 import { notFound } from "next/navigation";
 
 import { prisma } from "@/shared/database";
 
 import { authHandler } from "@/entities/auth";
+
+import { enrolledHandler } from "./enrolled.handler";
 
 export const GetCourseSidebarData = async (slug: string) => {
 	try {
@@ -31,7 +32,16 @@ export const GetCourseSidebarData = async (slug: string) => {
 								id: true,
 								title: true,
 								description: true,
-								position: true
+								position: true,
+								lessonProgress: {
+									where: {
+										userId
+									},
+									select: {
+										completed: true,
+										lessonId: true
+									}
+								}
 							},
 							orderBy: {
 								position: "asc"
@@ -49,21 +59,7 @@ export const GetCourseSidebarData = async (slug: string) => {
 			return notFound();
 		}
 
-		const enrolled = await prisma.enrollment.findUnique({
-			where: {
-				userId_courseId: {
-					userId,
-					courseId: course.id
-				}
-			},
-			select: {
-				status: true
-			}
-		});
-
-		if (!enrolled || enrolled?.status !== EnrollmentStatus.Active) {
-			return notFound();
-		}
+		await enrolledHandler(course.id, userId);
 
 		return course;
 	} catch (error) {

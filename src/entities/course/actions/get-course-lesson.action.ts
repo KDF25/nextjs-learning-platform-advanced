@@ -1,9 +1,10 @@
-import { EnrollmentStatus } from "@prisma/client";
 import { notFound } from "next/navigation";
 
 import { prisma } from "@/shared/database";
 
 import { authHandler } from "@/entities/auth";
+
+import { enrolledHandler } from "./enrolled.handler";
 
 export const GetCourseLesson = async (id: string) => {
 	try {
@@ -23,6 +24,16 @@ export const GetCourseLesson = async (id: string) => {
 					select: {
 						courseId: true
 					}
+				},
+				lessonProgress: {
+					where: {
+						userId,
+						lessonId: id
+					},
+					select: {
+						lessonId: true,
+						completed: true
+					}
 				}
 			}
 		});
@@ -31,21 +42,7 @@ export const GetCourseLesson = async (id: string) => {
 			return notFound();
 		}
 
-		const enrolled = await prisma.enrollment.findUnique({
-			where: {
-				userId_courseId: {
-					userId,
-					courseId: lesson?.Chapter?.courseId
-				}
-			},
-			select: {
-				status: true
-			}
-		});
-
-		if (!enrolled || enrolled?.status !== EnrollmentStatus.Active) {
-			return notFound();
-		}
+		await enrolledHandler(lesson?.Chapter?.courseId, userId);
 
 		return lesson;
 	} catch (error) {
