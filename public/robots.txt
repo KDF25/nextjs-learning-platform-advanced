@@ -1,0 +1,10 @@
+User-agent: *
+
+# Запрещаем служебные роуты
+Disallow: /_next/
+Disallow: /api/
+Disallow: /static/
+Disallow: /preview/
+
+# Указываем карту сайта, которая генерируется sitemap.ts
+Sitemap: https://mindshift-site.vercel.app/sitemap.xml

@@ -38,9 +38,9 @@ export const ChapterPreview: FC<IChapterPreviewProps> = ({
 									</p>
 
 									<div className="flex flex-col gap-1 text-left">
-										<h3 className="text-xl font-semibold">
+										<h2 className="text-xl font-semibold">
 											{chapter?.title}
-										</h3>
+										</h2>
 										<p className="text-sm text-muted-foreground">
 											{chapter?.lessons?.length}{" "}
 											{t("lesson.count")}

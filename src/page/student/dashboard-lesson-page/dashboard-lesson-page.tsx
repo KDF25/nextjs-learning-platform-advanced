@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import { Previewer, VideoPlayer } from "@/shared/ui";
+import { Previewer, VideoPlayerClient } from "@/shared/ui";
 
 import { GetCourseLesson } from "@/entities/course";
 
@@ -19,7 +19,7 @@ export const DashboardLessonPage: FC<IDashboardLessonPageProps> = async ({
 
 	return (
 		<div className="flex flex-col h-full bg-background space-y-2">
-			<VideoPlayer
+			<VideoPlayerClient
 				videoUrl={lesson?.videoUrl || ""}
 				imageUrl={lesson?.imageUrl || ""}
 			/>

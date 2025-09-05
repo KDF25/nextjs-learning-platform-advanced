@@ -22,13 +22,16 @@ export async function generateMetadata(props: Omit<Props, "children">) {
 	const { locale } = await props.params;
 	const t = await getTranslations({ locale, namespace: "LocaleLayout" });
 
+	const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "";
+	const ogImage = `${baseUrl}/images/og-image.jpg`;
+
 	return {
 		title: {
 			default: t("title"),
 			template: `%s | ${t("siteName")}`
 		},
 		manifest: "/manifest.json",
-		metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || ""),
+		metadataBase: new URL(baseUrl),
 		description: t("description"),
 		keywords: t("keywords"),
 		authors: [{ name: "Mindshift Team" }],
@@ -44,15 +47,28 @@ export async function generateMetadata(props: Omit<Props, "children">) {
 			siteName: t("siteName"),
 			images: [
 				{
-					url: "images/og-image.jpg",
+					url: ogImage,
 					width: 1200,
 					height: 630,
 					alt: t("siteName")
 				}
 			]
 		},
+		twitter: {
+			card: "summary_large_image",
+			title: t("title"),
+			description: t("description"),
+			images: [ogImage]
+		},
 		icons: {
 			icon: "/icons/icon-512.png"
+		},
+		alternates: {
+			canonical: baseUrl,
+			languages: {
+				en: `${baseUrl}/en`,
+				ru: `${baseUrl}/ru`
+			}
 		}
 	};
 }

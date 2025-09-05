@@ -12,9 +12,9 @@ export const FooterSection: FC<IFooterSectionProps> = ({ section }) => {
 	const t = useTranslations();
 	return (
 		<div>
-			<h3 className="text-sm font-semibold text-foreground mb-4">
+			<h2 className="text-sm font-semibold text-foreground mb-4">
 				{t(section.title)}
-			</h3>
+			</h2>
 			<div className="flex flex-col gap-2">
 				{section.items.map((item) => (
 					<Link

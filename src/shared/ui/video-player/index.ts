@@ -1,1 +1,1 @@
-export * from "./video-player";
+export * from "./client-wrapper";

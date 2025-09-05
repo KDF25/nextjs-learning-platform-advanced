@@ -23,5 +23,6 @@ export default withNextIntl(
     disable: false,
     register: true,
     skipWaiting: true,
+    clientsClaim: true,
   })(config) as NextConfig
 );
