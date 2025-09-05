@@ -12,7 +12,7 @@ export const FooterSection: FC<IFooterSectionProps> = ({ section }) => {
 	const t = useTranslations();
 	return (
 		<div>
-			<h3 className="text-sm font-semibold text-gray-900 mb-4">
+			<h3 className="text-sm font-semibold text-foreground mb-4">
 				{t(section.title)}
 			</h3>
 			<div className="flex flex-col gap-2">
@@ -20,7 +20,7 @@ export const FooterSection: FC<IFooterSectionProps> = ({ section }) => {
 					<Link
 						key={item.label}
 						href={item.href}
-						className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+						className="text-sm text-muted-foreground hover:text-foreground transition-colors"
 					>
 						{t(item.label)}
 					</Link>

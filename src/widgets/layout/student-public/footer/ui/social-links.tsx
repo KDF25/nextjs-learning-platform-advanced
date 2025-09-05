@@ -10,7 +10,7 @@ export const SocialLinks: FC = ({}) => {
 				<Link
 					key={social.label}
 					href={social.href}
-					className="text-gray-400 hover:text-gray-600 transition-colors"
+					className="text-muted-foreground hover:text-foreground transition-colors"
 					aria-label={social.label}
 				>
 					<social.icon className="w-6 h-6" />
