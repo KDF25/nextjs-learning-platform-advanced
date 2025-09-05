@@ -20,7 +20,6 @@ export const DashboardPage: FC = ({}) => {
 				title={t("enroll.title")}
 				description={t("enroll.description")}
 			/>
-			<EnrolledCoursesCardListSkeleton />
 			<Suspense fallback={<EnrolledCoursesCardListSkeleton />}>
 				<EnrolledCoursesList
 					emptyTitle={t("enroll.empty.title")}

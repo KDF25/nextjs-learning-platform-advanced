@@ -8,11 +8,6 @@ import { Badge, Button } from "@/shared/ui";
 import { KeyFeatures } from "@/widgets/key-features";
 
 export const HomePage: FC = async ({}) => {
-	// "use server";
-	// const session = await auth.api.getSession({
-	// 	headers: await headers()
-	// });
-
 	const t = await getTranslations("HomePage");
 
 	return (

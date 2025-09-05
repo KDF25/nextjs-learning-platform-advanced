@@ -3,11 +3,11 @@
 import { User } from "@prisma/client";
 import { FC } from "react";
 
-import { LangToggle, ThemeToggle } from "@/shared/ui";
+import { LangToggle, Logo, ThemeToggle } from "@/shared/ui";
 
 import { authClient } from "@/entities/auth";
 
-import { Logo, NavButtons, NavRoutes, UserMenu } from "./ui";
+import { NavButtons, NavRoutes, UserMenu } from "./ui";
 
 export const StudentPublicNavbar: FC = ({}) => {
 	const { data, isPending } = authClient.useSession();

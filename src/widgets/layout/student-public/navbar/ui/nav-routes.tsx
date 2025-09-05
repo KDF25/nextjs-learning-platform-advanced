@@ -6,7 +6,7 @@ import { NavItem } from "./nav-item";
 
 export const NavRoutes: FC = ({}) => {
 	return (
-		<div className="flex items-center space-x-2">
+		<div className="flex items-center">
 			{NAVBAR_ITEMS_LIST.map((item, index) => (
 				<NavItem key={index} {...item} />
 			))}

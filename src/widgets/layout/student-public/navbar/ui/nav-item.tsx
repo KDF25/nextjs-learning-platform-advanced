@@ -9,7 +9,7 @@ export const NavItem: FC<INavItem> = ({ name, href }) => {
 	return (
 		<Link
 			href={href}
-			className="text-sm font-medium transition-colors hover:text-primary"
+			className="text-sm font-medium transition-colors py-1 px-3  rounded-md hover:bg-accent hover:text-accent-foreground"
 		>
 			{t(name)}
 		</Link>

@@ -1,0 +1,31 @@
+import { useTranslations } from "next-intl";
+import Link from "next/link";
+import { FC } from "react";
+
+import { IFooterSection } from "../model";
+
+interface IFooterSectionProps {
+	section: IFooterSection;
+}
+
+export const FooterSection: FC<IFooterSectionProps> = ({ section }) => {
+	const t = useTranslations();
+	return (
+		<div>
+			<h3 className="text-sm font-semibold text-gray-900 mb-4">
+				{t(section.title)}
+			</h3>
+			<div className="flex flex-col gap-2">
+				{section.items.map((item) => (
+					<Link
+						key={item.label}
+						href={item.href}
+						className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+					>
+						{t(item.label)}
+					</Link>
+				))}
+			</div>
+		</div>
+	);
+};

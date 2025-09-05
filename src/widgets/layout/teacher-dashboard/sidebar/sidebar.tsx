@@ -1,18 +1,12 @@
 "use client";
 
 import {
-	IconCamera,
-	IconChartBar,
 	IconDashboard,
-	IconFileAi,
-	IconFileDescription,
-	IconFolder,
 	IconHelp,
 	IconInnerShadowTop,
 	IconListDetails,
 	IconSearch,
-	IconSettings,
-	IconUsers
+	IconSettings
 } from "@tabler/icons-react";
 import Link from "next/link";
 import * as React from "react";
@@ -41,69 +35,6 @@ const data = {
 			title: "Courses",
 			url: ENUM_PATHS.TEACHER.COURSES,
 			icon: IconListDetails
-		},
-		{
-			title: "Analytics",
-			url: "#",
-			icon: IconChartBar
-		},
-		{
-			title: "Projects",
-			url: "#",
-			icon: IconFolder
-		},
-		{
-			title: "Team",
-			url: "#",
-			icon: IconUsers
-		}
-	],
-	navClouds: [
-		{
-			title: "Capture",
-			icon: IconCamera,
-			isActive: true,
-			url: "#",
-			items: [
-				{
-					title: "Active Proposals",
-					url: "#"
-				},
-				{
-					title: "Archived",
-					url: "#"
-				}
-			]
-		},
-		{
-			title: "Proposal",
-			icon: IconFileDescription,
-			url: "#",
-			items: [
-				{
-					title: "Active Proposals",
-					url: "#"
-				},
-				{
-					title: "Archived",
-					url: "#"
-				}
-			]
-		},
-		{
-			title: "Prompts",
-			icon: IconFileAi,
-			url: "#",
-			items: [
-				{
-					title: "Active Proposals",
-					url: "#"
-				},
-				{
-					title: "Archived",
-					url: "#"
-				}
-			]
 		}
 	],
 	navSecondary: [

@@ -95,6 +95,40 @@ declare const messages: {
 		}
 	},
 
+	"Footer": {
+		"text": "The future of online education. Discover a new way to learn with our modern, interactive learning management system.",
+		"product": {
+			"title": "Product",
+			"items": {
+				"courses": "Courses",
+				"dashboard": "Dashboard",
+				"progressTracking": "Progress Tracking",
+				"certificates": "Certificates",
+				"mobileApp": "Mobile App"
+			}
+		},
+		"support": {
+			"title": "Support",
+			"items": {
+				"helpCenter": "Help Center",
+				"community": "Community",
+				"contactUs": "Contact Us",
+				"apiDocs": "API Docs",
+				"status": "Status"
+			}
+		},
+		"company": {
+			"title": "Company",
+			"items": {
+				"about": "About",
+				"blog": "Blog",
+				"careers": "Careers",
+				"press": "Press",
+				"partners": "Partners"
+			}
+		}
+	},
+
 	"HomePage": {
 		"badge": "The Future of Online Education",
 		"title": "Elevate your Learning Experience",
