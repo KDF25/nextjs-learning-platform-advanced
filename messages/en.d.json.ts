@@ -3,12 +3,13 @@
 
 declare const messages: {
 	"LocaleLayout": {
-		"title": "Example App Router"
+		"title": "Mindshift - Transform Your Career with Online Courses",
+		"siteName": "Mindshift",
+		"description": "Learn new skills and advance your career with expert-led online courses. Join thousands of students mastering programming, design, business, and more on Mindshift.",
+		"keywords": "online courses, learning platform, skill development, career growth, programming courses, design courses, business courses, professional development, e-learning"
 	},
 
-	"Manifest": {
-		"name": "Example App Router"
-	},
+	"Manifest": { "name": "Manifest" },
 
 	"common": {
 		"buttons": {

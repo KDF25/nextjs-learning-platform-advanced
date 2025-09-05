@@ -1,0 +1,61 @@
+{
+  "name": "MindShift",
+  "short_name": "MindShift",
+  "description": "MindShift is a learning platform designed to help you master new skills, expand your knowledge, and grow personally through expert-led courses and interactive tools.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay"],
+  "orientation": "portrait",
+  "theme_color": "#6366f1",
+  "background_color": "#ffffff",
+      "screenshots": [
+        {
+            "src": "./screens/wide1.png",
+            "type": "image/jpeg",
+            "sizes": "800x583",
+            "form_factor": "wide"
+        }],
+  "icons": [
+    {
+      "src": "/icons/icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Courses",
+      "url": "/courses"
+    },
+    {
+      "name": "My Learning",
+      "url": "/dashboard"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://mindshift-site.vercel.app/manifest.json"
+    }
+  ],
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  },
+  "capture_links": "existing_client_event",
+  "url_handlers": [
+    {
+      "origin": "https://mindshift-site.vercel.app"
+    }
+  ]
+}

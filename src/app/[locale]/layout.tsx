@@ -20,11 +20,40 @@ export function generateStaticParams() {
 
 export async function generateMetadata(props: Omit<Props, "children">) {
 	const { locale } = await props.params;
-
 	const t = await getTranslations({ locale, namespace: "LocaleLayout" });
 
 	return {
-		title: t("title")
+		title: {
+			default: t("title"),
+			template: `%s | ${t("siteName")}`
+		},
+		manifest: "/manifest.json",
+		metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || ""),
+		description: t("description"),
+		keywords: t("keywords"),
+		authors: [{ name: "Mindshift Team" }],
+		creator: "Mindshift",
+		publisher: "Mindshift",
+		category: "Education",
+		openGraph: {
+			title: t("title"),
+			description: t("description"),
+			type: "website",
+			locale: locale,
+			alternateLocale: routing.locales.filter((l) => l !== locale),
+			siteName: t("siteName"),
+			images: [
+				{
+					url: "images/og-image.jpg",
+					width: 1200,
+					height: 630,
+					alt: t("siteName")
+				}
+			]
+		},
+		icons: {
+			icon: "/icons/icon-512.png"
+		}
 	};
 }
 
