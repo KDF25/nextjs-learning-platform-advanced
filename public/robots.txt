@@ -5,6 +5,7 @@ Disallow: /_next/
 Disallow: /api/
 Disallow: /static/
 Disallow: /preview/
+Disallow: /payment/
 
 # Указываем карту сайта, которая генерируется sitemap.ts
 Sitemap: https://mindshift-site.vercel.app/sitemap.xml
