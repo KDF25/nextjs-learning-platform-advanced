@@ -3,7 +3,7 @@ import { HomeIcon, Tv2 } from "lucide-react";
 
 import { ENUM_PATHS } from "@/shared/config";
 
-import { IAdminNavItem } from "./types";
+import { IAdminNavItem } from "../types";
 
 export const ADMIN_NAV_USER_LIST: IAdminNavItem[] = [
 	{
@@ -14,7 +14,7 @@ export const ADMIN_NAV_USER_LIST: IAdminNavItem[] = [
 	{
 		name: "path.dashboard",
 		icon: IconDashboard,
-		href: ENUM_PATHS.DASHBOARD.ROOT
+		href: ENUM_PATHS.TEACHER.ROOT
 	},
 	{
 		name: "path.courses",

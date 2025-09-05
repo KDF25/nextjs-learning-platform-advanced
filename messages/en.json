@@ -92,6 +92,31 @@
 		}
 	},
 
+	"SidebarStudent": {
+		"main": {
+			"dashboard": "Dashboard",
+			"courses": "Courses"
+		},
+		"secondary": {
+			"settings": "Settings",
+			"help": "Get Help",
+			"search": "Search"
+		}
+	},
+
+	"SidebarTeacher": {
+		"main": {
+			"create": "Quick Create",
+			"dashboard": "Dashboard",
+			"courses": "Courses"
+		},
+		"secondary": {
+			"settings": "Settings",
+			"help": "Get Help",
+			"search": "Search"
+		}
+	},
+
 	"Footer": {
 		"text": "The future of online education. Discover a new way to learn with our modern, interactive learning management system.",
 		"product": {

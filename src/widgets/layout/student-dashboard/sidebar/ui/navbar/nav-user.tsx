@@ -28,7 +28,7 @@ import {
 
 import { authClient, useSignOut } from "@/entities/auth";
 
-import { ADMIN_NAV_USER_LIST } from "../../model";
+import { NAV_USER_LIST } from "../../model";
 
 export function NavUser() {
 	const { isMobile } = useSidebar();
@@ -111,7 +111,7 @@ export function NavUser() {
 						</DropdownMenuLabel>
 						<DropdownMenuSeparator />
 						<DropdownMenuGroup>
-							{ADMIN_NAV_USER_LIST.map((item) => (
+							{NAV_USER_LIST.map((item) => (
 								<DropdownMenuItem key={item.name} asChild>
 									<Link href={item.href}>
 										<item.icon className="mr-2 h-4 w-4" />

@@ -1,7 +1,7 @@
 "use client";
 
-import { type Icon } from "@tabler/icons-react";
-import * as React from "react";
+import { useTranslations } from "next-intl";
+import { ComponentPropsWithoutRef, FC } from "react";
 
 import {
 	SidebarGroup,
@@ -11,16 +11,15 @@ import {
 	SidebarMenuItem
 } from "@/shared/ui";
 
-export function NavSecondary({
-	items,
-	...props
-}: {
-	items: {
-		title: string;
-		url: string;
-		icon: Icon;
-	}[];
-} & React.ComponentPropsWithoutRef<typeof SidebarGroup>) {
+import { ISidebarItem } from "../../model";
+
+interface INavSecondaryProps
+	extends ComponentPropsWithoutRef<typeof SidebarGroup> {
+	items: ISidebarItem[];
+}
+
+export const NavSecondary: FC<INavSecondaryProps> = ({ items, ...props }) => {
+	const t = useTranslations("SidebarStudent");
 	return (
 		<SidebarGroup {...props}>
 			<SidebarGroupContent>
@@ -30,7 +29,7 @@ export function NavSecondary({
 							<SidebarMenuButton asChild>
 								<a href={item.url}>
 									<item.icon />
-									<span>{item.title}</span>
+									<span>{t(item.title)}</span>
 								</a>
 							</SidebarMenuButton>
 						</SidebarMenuItem>
@@ -39,4 +38,4 @@ export function NavSecondary({
 			</SidebarGroupContent>
 		</SidebarGroup>
 	);
-}
+};

@@ -1,7 +1,8 @@
 "use client";
 
-import { type Icon } from "@tabler/icons-react";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
+import { FC } from "react";
 
 import {
 	SidebarGroup,
@@ -11,15 +12,14 @@ import {
 	SidebarMenuItem
 } from "@/shared/ui";
 
-export function NavMain({
-	items
-}: {
-	items: {
-		title: string;
-		url: string;
-		icon?: Icon;
-	}[];
-}) {
+import { ISidebarItem } from "../../model";
+
+interface INavMainProps {
+	items: ISidebarItem[];
+}
+
+export const NavMain: FC<INavMainProps> = ({ items }) => {
+	const t = useTranslations("SidebarStudent");
 	return (
 		<SidebarGroup>
 			<SidebarGroupContent className="flex flex-col gap-2">
@@ -29,7 +29,7 @@ export function NavMain({
 							<SidebarMenuButton tooltip={item.title} asChild>
 								<Link href={item.url}>
 									{item.icon && <item.icon />}
-									<span>{item.title}</span>
+									<span>{t(item.title)}</span>
 								</Link>
 							</SidebarMenuButton>
 						</SidebarMenuItem>
@@ -38,4 +38,4 @@ export function NavMain({
 			</SidebarGroupContent>
 		</SidebarGroup>
 	);
-}
+};

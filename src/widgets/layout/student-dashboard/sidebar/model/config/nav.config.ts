@@ -3,9 +3,9 @@ import { HomeIcon, Tv2 } from "lucide-react";
 
 import { ENUM_PATHS } from "@/shared/config";
 
-import { IAdminNavItem } from "./types";
+import { IAdminNavItem } from "../types";
 
-export const ADMIN_NAV_USER_LIST: IAdminNavItem[] = [
+export const NAV_USER_LIST: IAdminNavItem[] = [
 	{
 		name: "path.main",
 		icon: HomeIcon,
@@ -14,7 +14,7 @@ export const ADMIN_NAV_USER_LIST: IAdminNavItem[] = [
 	{
 		name: "path.dashboard",
 		icon: IconDashboard,
-		href: ENUM_PATHS.TEACHER.ROOT
+		href: ENUM_PATHS.DASHBOARD.ROOT
 	},
 	{
 		name: "path.courses",

@@ -1,13 +1,6 @@
 "use client";
 
-import {
-	IconDashboard,
-	IconHelp,
-	IconInnerShadowTop,
-	IconListDetails,
-	IconSearch,
-	IconSettings
-} from "@tabler/icons-react";
+import { IconInnerShadowTop } from "@tabler/icons-react";
 import Link from "next/link";
 import * as React from "react";
 
@@ -22,39 +15,8 @@ import {
 	SidebarMenuItem
 } from "@/shared/ui";
 
+import { SIDEBAR_MAIN_USER_LIST, SIDEBAR_SECONDARY_USER_LIST } from "./model";
 import { NavMain, NavSecondary, NavUser } from "./ui";
-
-const data = {
-	navMain: [
-		{
-			title: "Dashboard",
-			url: ENUM_PATHS.DASHBOARD.ROOT,
-			icon: IconDashboard
-		},
-		{
-			title: "Courses",
-			url: ENUM_PATHS.COURSES.ROOT,
-			icon: IconListDetails
-		}
-	],
-	navSecondary: [
-		{
-			title: "Settings",
-			url: "#",
-			icon: IconSettings
-		},
-		{
-			title: "Get Help",
-			url: "#",
-			icon: IconHelp
-		},
-		{
-			title: "Search",
-			url: "#",
-			icon: IconSearch
-		}
-	]
-};
 
 export function StudentDashboardSidebar({
 	...props
@@ -79,8 +41,11 @@ export function StudentDashboardSidebar({
 				</SidebarMenu>
 			</SidebarHeader>
 			<SidebarContent>
-				<NavMain items={data.navMain} />
-				<NavSecondary items={data.navSecondary} className="mt-auto" />
+				<NavMain items={SIDEBAR_MAIN_USER_LIST} />
+				<NavSecondary
+					items={SIDEBAR_SECONDARY_USER_LIST}
+					className="mt-auto"
+				/>
 			</SidebarContent>
 			<SidebarFooter>
 				<NavUser />

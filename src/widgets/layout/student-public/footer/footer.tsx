@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import { FC } from "react";
 
 import { Logo } from "@/shared/ui";
@@ -6,6 +7,7 @@ import { FOOTER_SECTIONS_LIST } from "./model";
 import { FooterSection, SocialLinks } from "./ui";
 
 export const StudentPublicFooter: FC = ({}) => {
+	const t = useTranslations();
 	return (
 		<footer className="bg-white border-t border-gray-100">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -15,9 +17,7 @@ export const StudentPublicFooter: FC = ({}) => {
 					<div className="col-span-1 md:col-span-1 flex flex-col gap-2">
 						<Logo />
 						<p className="text-gray-600 text-sm leading-relaxed mb-2">
-							The future of online education. Discover a new way
-							to learn with our modern, interactive learning
-							management system.
+							{t("Footer.text")}
 						</p>
 						<SocialLinks />
 					</div>
