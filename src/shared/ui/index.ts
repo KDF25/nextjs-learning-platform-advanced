@@ -1,4 +1,5 @@
 export * from "./editor";
+export * from "./confetti";
 export * from "./info-card-list";
 export * from "./shadcn-ui";
 export * from "./theme-toggle";

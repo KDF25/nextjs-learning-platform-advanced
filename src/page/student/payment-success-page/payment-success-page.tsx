@@ -1,41 +1,24 @@
-"use client";
+import { CheckIcon } from "lucide-react";
+import { getTranslations } from "next-intl/server";
+import { FC } from "react";
 
-import { ArrowLeft, CheckIcon } from "lucide-react";
-import { useTranslations } from "next-intl";
-import Link from "next/link";
-import { FC, useEffect } from "react";
+import { Confetti, InfoCardList } from "@/shared/ui";
 
-import { ENUM_PATHS } from "@/shared/config";
-import { useConfetti } from "@/shared/hooks";
-import { Button, InfoCardList } from "@/shared/ui";
+import { CoursePaymentSuccessButton } from "@/entities/course";
 
-export const PaymentSuccessPage: FC = ({}) => {
-	const { triggerConfetti } = useConfetti();
-	const t = useTranslations("PaymentPage.success");
-
-	useEffect(() => {
-		triggerConfetti();
-	}, [triggerConfetti]);
+export const PaymentSuccessPage: FC = async ({}) => {
+	const t = await getTranslations("PaymentPage.success");
 
 	return (
-		<InfoCardList
-			title={t("title")}
-			button={<RenderButton />}
-			description={t("description")}
-			icon={CheckIcon}
-			classNameIcon="text-green-500"
-		/>
-	);
-};
-
-const RenderButton = () => {
-	const t = useTranslations("PaymentPage.success");
-	return (
-		<Button asChild>
-			<Link href={ENUM_PATHS.MAIN}>
-				<ArrowLeft size={16} />
-				{t("button")}
-			</Link>
-		</Button>
+		<>
+			<Confetti />
+			<InfoCardList
+				title={t("title")}
+				button={<CoursePaymentSuccessButton />}
+				description={t("description")}
+				icon={CheckIcon}
+				classNameIcon="text-green-500"
+			/>
+		</>
 	);
 };
