@@ -664,6 +664,13 @@ declare const messages: {
 		}
 	},
 
+	"StudentDashboardCoursePage": {
+		"empty": {
+			"title": "No lessons added yet",
+			"description": "This course doesn’t have any available lessons yet. They will appear here once the instructor adds them."
+		}
+	},
+
 	"StudentDashboardLessonPage": {
 		"buttons": {
 			"complete": "Complete",

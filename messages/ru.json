@@ -637,6 +637,13 @@
 		}
 	},
 
+	"StudentDashboardCoursePage": {
+		"empty": {
+			"title": "Уроки пока не добавлены",
+			"description": "В курсе пока нет доступных уроков. Они появятся здесь, как только будут добавлены преподавателем."
+		}
+	},
+
 	"StudentDashboardLessonPage": {
 		"buttons": {
 			"complete": "Завершен",

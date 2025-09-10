@@ -1,4 +1,6 @@
-import { FC } from "react";
+import { FC, Suspense } from "react";
+
+import { SkeletonLessonPage } from "@/entities/lesson";
 
 import { DashboardLessonPage } from "@/page/student";
 
@@ -7,7 +9,11 @@ interface IPageProps {
 }
 
 const Page: FC<IPageProps> = async ({ params }) => {
-	return <DashboardLessonPage {...await params} />;
+	return (
+		<Suspense fallback={<SkeletonLessonPage />}>
+			<DashboardLessonPage {...await params} />
+		</Suspense>
+	);
 };
 
 export default Page;
