@@ -61,7 +61,7 @@ export const UserMenu: FC<IUserMenu> = ({ user: { name, email, image } }) => {
 				<DropdownMenuGroup>
 					{USER_MENU_ITEMS_LIST.map((item) => (
 						<DropdownMenuItem asChild key={item.name}>
-							<Link href={item.href} className="cursor-pointer">
+							<Link href={item.href}>
 								<item.icon
 									size={16}
 									className="opacity-60"
@@ -73,7 +73,7 @@ export const UserMenu: FC<IUserMenu> = ({ user: { name, email, image } }) => {
 					))}
 				</DropdownMenuGroup>
 				<DropdownMenuSeparator />
-				<DropdownMenuItem onClick={signOut} className="cursor-pointer">
+				<DropdownMenuItem onClick={signOut}>
 					{isPending ? (
 						<Loader size={16} className="animate-spin" />
 					) : (

@@ -13,12 +13,12 @@ import { ISidebarItem } from "../types";
 export const SIDEBAR_MAIN_USER_LIST: ISidebarItem[] = [
 	{
 		title: "main.dashboard",
-		url: ENUM_PATHS.DASHBOARD.ROOT,
+		url: ENUM_PATHS.TEACHER.ROOT,
 		icon: IconDashboard
 	},
 	{
 		title: "main.courses",
-		url: ENUM_PATHS.COURSES.ROOT,
+		url: ENUM_PATHS.TEACHER.COURSES,
 		icon: IconListDetails
 	}
 ];
