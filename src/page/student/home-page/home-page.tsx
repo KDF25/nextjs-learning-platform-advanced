@@ -1,14 +1,18 @@
 import { getTranslations } from "next-intl/server";
+import { headers } from "next/headers";
 import Link from "next/link";
 import { FC } from "react";
 
 import { ENUM_PATHS } from "@/shared/config";
 import { Badge, Button } from "@/shared/ui";
 
+import { auth } from "@/entities/auth";
+
 import { KeyFeatures } from "@/widgets/key-features";
 
 export const HomePage: FC = async ({}) => {
 	const t = await getTranslations("HomePage");
+	const session = await auth.api.getSession({ headers: await headers() });
 
 	return (
 		<>
@@ -27,11 +31,13 @@ export const HomePage: FC = async ({}) => {
 								{t("buttons.explore")}
 							</Link>
 						</Button>
-						<Button asChild size={"lg"} variant={"outline"}>
-							<Link href={ENUM_PATHS.LOGIN}>
-								{t("buttons.login")}
-							</Link>
-						</Button>
+						{!session?.user && (
+							<Button asChild size={"lg"} variant={"outline"}>
+								<Link href={ENUM_PATHS.LOGIN}>
+									{t("buttons.login")}
+								</Link>
+							</Button>
+						)}
 					</div>
 				</div>
 			</section>

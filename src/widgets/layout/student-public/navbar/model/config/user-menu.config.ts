@@ -17,7 +17,7 @@ export const USER_MENU_ITEMS_LIST: IUserMenuItem[] = [
 	},
 	{
 		icon: LayoutDashboardIcon,
-		name: "path.dashboard",
+		name: "path.teacher",
 		href: ENUM_PATHS.TEACHER.ROOT
 	}
 ];

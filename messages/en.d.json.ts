@@ -9,7 +9,16 @@ declare const messages: {
 		"keywords": "online courses, learning platform, skill development, career growth, programming courses, design courses, business courses, professional development, e-learning"
 	},
 
-	"Manifest": { "name": "Manifest" },
+	"Manifest": {
+		"name": "Mindshift - Transform Your Career with Online Courses",
+		"short_name": "Mindshift",
+		"description": "Learn new skills and advance your career with expert-led online courses. Join thousands of students mastering programming, design, business, and more on Mindshift.",
+
+		"shortcuts": {
+			"courses": "Courses",
+			"dashboard": "My Learning"
+		}
+	},
 
 	"common": {
 		"buttons": {
@@ -86,7 +95,8 @@ declare const messages: {
 		"path": {
 			"main": "Home",
 			"courses": "Courses",
-			"dashboard": "Dashboard"
+			"user": "My Learning",
+			"teacher": "Dashboard"
 		},
 
 		"buttons": {
@@ -98,7 +108,7 @@ declare const messages: {
 
 	"SidebarStudent": {
 		"main": {
-			"dashboard": "Dashboard",
+			"dashboard": "My Learning",
 			"courses": "Courses"
 		},
 		"secondary": {

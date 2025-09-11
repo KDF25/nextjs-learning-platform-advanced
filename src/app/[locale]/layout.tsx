@@ -30,7 +30,6 @@ export async function generateMetadata(props: Omit<Props, "children">) {
 			default: t("title"),
 			template: `%s | ${t("siteName")}`
 		},
-		manifest: "/manifest.json",
 		metadataBase: new URL(baseUrl),
 		description: t("description"),
 		keywords: t("keywords"),

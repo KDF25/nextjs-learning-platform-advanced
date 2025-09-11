@@ -12,7 +12,7 @@ export const NAVBAR_ITEMS_LIST: INavItem[] = [
 		href: ENUM_PATHS.COURSES.ROOT
 	},
 	{
-		name: "path.dashboard",
+		name: "path.user",
 		href: ENUM_PATHS.DASHBOARD.ROOT
 	}
 ];
