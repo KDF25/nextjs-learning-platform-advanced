@@ -40,16 +40,18 @@ export async function CreateLesson(
 					position: "desc"
 				}
 			});
+			console.log("maxPos", maxPos, maxPos?.position);
 
 			await tx.lesson.create({
 				data: {
-					position: maxPos?.position ? maxPos?.position + 1 : 0,
+					position: maxPos?.position ? maxPos?.position + 1 : 1,
 					title: data?.title,
 					description: data?.description,
 					imageUrl: data?.imageUrl,
 					imageKey: data?.imageKey,
 					videoUrl: data?.videoUrl,
-					videoKey: data?.videoKey
+					videoKey: data?.videoKey,
+					chapterId: data?.chapterId
 				}
 			});
 		});

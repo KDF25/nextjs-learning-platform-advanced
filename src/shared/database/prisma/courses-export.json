@@ -1,0 +1,1326 @@
+[
+  {
+    "title": "Mastering C++: From Fundamentals to Advanced Programming",
+    "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"This course is designed to take you from a beginner to a confident C++ developer, providing both a strong theoretical foundation and practical coding experience. Starting with the basics of variables, data types, control structures, and functions, you will gradually move into object-oriented programming, exploring classes, inheritance, polymorphism, and encapsulation.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"As you progress, you will dive deeper into more advanced topics such as pointers, references, dynamic memory allocation, and resource management. The course also covers templates, the Standard Template Library (STL), and best practices for writing clean and efficient code.\"}]}]}",
+    "imageUrl": "https://utfs.io/f/3yHpL8ecIjWBP8WtOgqyMSFKb7vrYqLQxCO86Jg1WdmUuBs2",
+    "imageKey": "3yHpL8ecIjWBP8WtOgqyMSFKb7vrYqLQxCO86Jg1WdmUuBs2",
+    "price": 100,
+    "duration": 60,
+    "level": "Advanced",
+    "category": "Development",
+    "smallDescription": "Learn C++ step by step — from core syntax and object-oriented programming to advanced features like templates, memory management, and modern C++ standards.",
+    "slug": "C-Advanced-Programming333",
+    "status": "Published",
+    "user": {
+      "connect": {
+        "id": "HTM7QY5q4cgyUEe86KFwtXkWoKVdYWHk"
+      }
+    },
+    "chapters": {
+      "create": [
+        {
+          "title": "C++ Foundations",
+          "position": 1,
+          "lessons": {
+            "create": [
+              {
+                "title": "Variables, Data Types, and Operators",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Understand primitive types, type conversions, and how operators work in mathematical and logical expressions.\"}]}]}",
+                "position": 1,
+                "imageUrl": "https://utfs.io/f/3yHpL8ecIjWBtFGCTnj9cg6yo1sKq5meNpdAfibDtkwRPUX2",
+                "imageKey": "3yHpL8ecIjWBtFGCTnj9cg6yo1sKq5meNpdAfibDtkwRPUX2",
+                "videoUrl": "https://utfs.io/f/3yHpL8ecIjWBFexW6Y5FpkghzoWqm93cARVMYdDLjlK6NQEy",
+                "videoKey": "3yHpL8ecIjWBFexW6Y5FpkghzoWqm93cARVMYdDLjlK6NQEy"
+              },
+              {
+                "title": "Control Flow: If, Switch, and Loops",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Master decision-making structures and iterative loops to build logic-driven programs.\"}]}]}",
+                "position": 2,
+                "imageUrl": "https://utfs.io/f/3yHpL8ecIjWBMwdv6DJPZt5zABUH7jNFK4RaLiwqr3XTnDGc",
+                "imageKey": "3yHpL8ecIjWBMwdv6DJPZt5zABUH7jNFK4RaLiwqr3XTnDGc",
+                "videoUrl": "https://utfs.io/f/3yHpL8ecIjWB6W82Eu4fRATFUBbuhm43oetkNQ5fZODa2jrG",
+                "videoKey": "3yHpL8ecIjWB6W82Eu4fRATFUBbuhm43oetkNQ5fZODa2jrG"
+              },
+              {
+                "title": "Understanding Scope and Lifetime",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Discover how variable scope, static variables, and lifetime affect memory and program structure.\"}]}]}",
+                "position": 3,
+                "imageUrl": "https://utfs.io/f/3yHpL8ecIjWB5meHpWEOSjC9XQJuy3TNPiAzqHGkW2bfwVeZ",
+                "imageKey": "3yHpL8ecIjWB5meHpWEOSjC9XQJuy3TNPiAzqHGkW2bfwVeZ",
+                "videoUrl": "https://utfs.io/f/3yHpL8ecIjWBHUhdtsFRe4bgJ2K3CZoBzO8nExjvl5WDL1ds",
+                "videoKey": "3yHpL8ecIjWBHUhdtsFRe4bgJ2K3CZoBzO8nExjvl5WDL1ds"
+              },
+              {
+                "title": "Introduction to C++ and Development Environment",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Learn about the history of C++, its role in modern software, and how to set up your development environment with compilers and IDEs.\"}]}]}",
+                "position": 4,
+                "imageUrl": "https://utfs.io/f/3yHpL8ecIjWBDDyPiohu10pZdvWOqenF4KXAlS9tgxyVYRki",
+                "imageKey": "3yHpL8ecIjWBDDyPiohu10pZdvWOqenF4KXAlS9tgxyVYRki",
+                "videoUrl": "https://utfs.io/f/3yHpL8ecIjWBgL0iqNIsEBqPX7Vp3N10DQSfHtwTkAiMbhsJ",
+                "videoKey": "3yHpL8ecIjWBgL0iqNIsEBqPX7Vp3N10DQSfHtwTkAiMbhsJ"
+              },
+              {
+                "title": "Functions and Parameters",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Explore how to break your code into reusable blocks using functions, arguments, and return values.\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}]}]}",
+                "position": 5,
+                "imageUrl": "https://utfs.io/f/3yHpL8ecIjWBUa8U4dNvk7uaiS8QlztDYGNUmPIfBeXAH9ps",
+                "imageKey": "3yHpL8ecIjWBUa8U4dNvk7uaiS8QlztDYGNUmPIfBeXAH9ps",
+                "videoUrl": "https://utfs.io/f/3yHpL8ecIjWBiLxKydJp06GaMdDJcHKLYojI83uwBAeRS5hs",
+                "videoKey": "3yHpL8ecIjWBiLxKydJp06GaMdDJcHKLYojI83uwBAeRS5hs"
+              },
+              {
+                "title": "Input and Output Basics",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Learn how to interact with the console using \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"cin\"},{\"type\":\"text\",\"text\":\", \"},{\"type\":\"text\",\"marks\":[{\"type\":\"code\"}],\"text\":\"cout\"},{\"type\":\"text\",\"text\":\", and formatting options.\"}]}]}",
+                "position": 6,
+                "imageUrl": "https://utfs.io/f/3yHpL8ecIjWBFJn8Ly5FpkghzoWqm93cARVMYdDLjlK6NQEy",
+                "imageKey": "3yHpL8ecIjWBFJn8Ly5FpkghzoWqm93cARVMYdDLjlK6NQEy",
+                "videoUrl": "https://utfs.io/f/3yHpL8ecIjWB5S194aOSjC9XQJuy3TNPiAzqHGkW2bfwVeZR",
+                "videoKey": "3yHpL8ecIjWB5S194aOSjC9XQJuy3TNPiAzqHGkW2bfwVeZR"
+              }
+            ]
+          }
+        },
+        {
+          "title": "Object-Oriented Programming",
+          "position": 2,
+          "lessons": {
+            "create": [
+              {
+                "title": "Introduction to Classes and Objects",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Learn how to model real-world entities with C++ classes and create object instances.\"}]}]}",
+                "position": 1,
+                "imageUrl": "https://utfs.io/f/3yHpL8ecIjWBqsLFQ1Wwub5oht14mjdXcgPr9xkI0C3HnADT",
+                "imageKey": "3yHpL8ecIjWBqsLFQ1Wwub5oht14mjdXcgPr9xkI0C3HnADT",
+                "videoUrl": "https://utfs.io/f/3yHpL8ecIjWBFexW6Y5FpkghzoWqm93cARVMYdDLjlK6NQEy",
+                "videoKey": "3yHpL8ecIjWBFexW6Y5FpkghzoWqm93cARVMYdDLjlK6NQEy"
+              },
+              {
+                "title": "Operator Overloading Basics",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Learn how to redefine operators for custom types to make your classes more intuitive and expressive.\"}]}]}",
+                "position": 2,
+                "imageUrl": "https://utfs.io/f/3yHpL8ecIjWBtFGCTnj9cg6yo1sKq5meNpdAfibDtkwRPUX2",
+                "imageKey": "3yHpL8ecIjWBtFGCTnj9cg6yo1sKq5meNpdAfibDtkwRPUX2",
+                "videoUrl": "https://utfs.io/f/3yHpL8ecIjWB6W82Eu4fRATFUBbuhm43oetkNQ5fZODa2jrG",
+                "videoKey": "3yHpL8ecIjWB6W82Eu4fRATFUBbuhm43oetkNQ5fZODa2jrG"
+              },
+              {
+                "title": "Constructors and Destructors",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Understand how constructors initialize objects and destructors clean up resources when objects are destroyed.\"}]}]}",
+                "position": 3,
+                "imageUrl": "https://utfs.io/f/3yHpL8ecIjWBMwdv6DJPZt5zABUH7jNFK4RaLiwqr3XTnDGc",
+                "imageKey": "3yHpL8ecIjWBMwdv6DJPZt5zABUH7jNFK4RaLiwqr3XTnDGc",
+                "videoUrl": "https://utfs.io/f/3yHpL8ecIjWBHUhdtsFRe4bgJ2K3CZoBzO8nExjvl5WDL1ds",
+                "videoKey": "3yHpL8ecIjWBHUhdtsFRe4bgJ2K3CZoBzO8nExjvl5WDL1ds"
+              },
+              {
+                "title": "Inheritance and Code Reusability",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Explore how inheritance allows you to create new classes based on existing ones, promoting code reuse and hierarchy.\"}]}]}",
+                "position": 4,
+                "imageUrl": "https://utfs.io/f/3yHpL8ecIjWB5meHpWEOSjC9XQJuy3TNPiAzqHGkW2bfwVeZ",
+                "imageKey": "3yHpL8ecIjWB5meHpWEOSjC9XQJuy3TNPiAzqHGkW2bfwVeZ",
+                "videoUrl": "https://utfs.io/f/3yHpL8ecIjWBgL0iqNIsEBqPX7Vp3N10DQSfHtwTkAiMbhsJ",
+                "videoKey": "3yHpL8ecIjWBgL0iqNIsEBqPX7Vp3N10DQSfHtwTkAiMbhsJ"
+              },
+              {
+                "title": "Polymorphism: Virtual Functions and Interfaces",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Discover how polymorphism enables objects of different classes to be treated as objects of a common base class through virtual functions.\"}]}]}",
+                "position": 5,
+                "imageUrl": "https://utfs.io/f/3yHpL8ecIjWBDDyPiohu10pZdvWOqenF4KXAlS9tgxyVYRki",
+                "imageKey": "3yHpL8ecIjWBDDyPiohu10pZdvWOqenF4KXAlS9tgxyVYRki",
+                "videoUrl": "https://utfs.io/f/3yHpL8ecIjWBiLxKydJp06GaMdDJcHKLYojI83uwBAeRS5hs",
+                "videoKey": "3yHpL8ecIjWBiLxKydJp06GaMdDJcHKLYojI83uwBAeRS5hs"
+              },
+              {
+                "title": "Encapsulation and Abstraction in Practice",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Learn how to hide implementation details and expose only necessary interfaces, making your code more maintainable and secure.\"}]}]}",
+                "position": 6,
+                "imageUrl": "https://utfs.io/f/3yHpL8ecIjWBUa8U4dNvk7uaiS8QlztDYGNUmPIfBeXAH9ps",
+                "imageKey": "3yHpL8ecIjWBUa8U4dNvk7uaiS8QlztDYGNUmPIfBeXAH9ps",
+                "videoUrl": "https://utfs.io/f/3yHpL8ecIjWB5S194aOSjC9XQJuy3TNPiAzqHGkW2bfwVeZR",
+                "videoKey": "3yHpL8ecIjWB5S194aOSjC9XQJuy3TNPiAzqHGkW2bfwVeZR"
+              }
+            ]
+          }
+        },
+        {
+          "title": "Advanced C++ Concepts",
+          "position": 3,
+          "lessons": {
+            "create": [
+              {
+                "title": "File Handling in C++",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Learn how to read from and write to files using C++ streams for persistent data storage and retrieval.\"}]}]}",
+                "position": 1,
+                "imageUrl": "https://utfs.io/f/3yHpL8ecIjWBFJn8Ly5FpkghzoWqm93cARVMYdDLjlK6NQEy",
+                "imageKey": "3yHpL8ecIjWBFJn8Ly5FpkghzoWqm93cARVMYdDLjlK6NQEy",
+                "videoUrl": "https://utfs.io/f/3yHpL8ecIjWBFexW6Y5FpkghzoWqm93cARVMYdDLjlK6NQEy",
+                "videoKey": "3yHpL8ecIjWBFexW6Y5FpkghzoWqm93cARVMYdDLjlK6NQEy"
+              },
+              {
+                "title": "Pointers and References Explained",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Master the concepts of pointers and references, understanding memory addresses, dereferencing, and their practical applications.\"}]}]}",
+                "position": 2,
+                "imageUrl": "https://utfs.io/f/3yHpL8ecIjWBtFGCTnj9cg6yo1sKq5meNpdAfibDtkwRPUX2",
+                "imageKey": "3yHpL8ecIjWBtFGCTnj9cg6yo1sKq5meNpdAfibDtkwRPUX2",
+                "videoUrl": "https://utfs.io/f/3yHpL8ecIjWB6W82Eu4fRATFUBbuhm43oetkNQ5fZODa2jrG",
+                "videoKey": "3yHpL8ecIjWB6W82Eu4fRATFUBbuhm43oetkNQ5fZODa2jrG"
+              },
+              {
+                "title": "Exception Handling and Error Management",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Learn how to handle runtime errors gracefully using try-catch blocks and create robust, fault-tolerant applications.\"}]}]}",
+                "position": 3,
+                "imageUrl": "https://utfs.io/f/3yHpL8ecIjWBMwdv6DJPZt5zABUH7jNFK4RaLiwqr3XTnDGc",
+                "imageKey": "3yHpL8ecIjWBMwdv6DJPZt5zABUH7jNFK4RaLiwqr3XTnDGc",
+                "videoUrl": "https://utfs.io/f/3yHpL8ecIjWBHUhdtsFRe4bgJ2K3CZoBzO8nExjvl5WDL1ds",
+                "videoKey": "3yHpL8ecIjWBHUhdtsFRe4bgJ2K3CZoBzO8nExjvl5WDL1ds"
+              },
+              {
+                "title": "The Standard Template Library (STL)",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Explore the powerful STL containers, algorithms, and iterators that provide ready-to-use solutions for common programming tasks.\"}]}]}",
+                "position": 4,
+                "imageUrl": "https://utfs.io/f/3yHpL8ecIjWB5meHpWEOSjC9XQJuy3TNPiAzqHGkW2bfwVeZ",
+                "imageKey": "3yHpL8ecIjWB5meHpWEOSjC9XQJuy3TNPiAzqHGkW2bfwVeZ",
+                "videoUrl": "https://utfs.io/f/3yHpL8ecIjWBgL0iqNIsEBqPX7Vp3N10DQSfHtwTkAiMbhsJ",
+                "videoKey": "3yHpL8ecIjWBgL0iqNIsEBqPX7Vp3N10DQSfHtwTkAiMbhsJ"
+              },
+              {
+                "title": "Templates and Generic Programming",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Understand how templates enable writing generic, type-independent code that works with any data type.\"}]}]}",
+                "position": 5,
+                "imageUrl": "https://utfs.io/f/3yHpL8ecIjWBDDyPiohu10pZdvWOqenF4KXAlS9tgxyVYRki",
+                "imageKey": "3yHpL8ecIjWBDDyPiohu10pZdvWOqenF4KXAlS9tgxyVYRki",
+                "videoUrl": "https://utfs.io/f/3yHpL8ecIjWBiLxKydJp06GaMdDJcHKLYojI83uwBAeRS5hs",
+                "videoKey": "3yHpL8ecIjWBiLxKydJp06GaMdDJcHKLYojI83uwBAeRS5hs"
+              },
+              {
+                "title": "Dynamic Memory Allocation (new, delete)",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Learn how to allocate and deallocate memory dynamically during runtime using new and delete operators.\"}]}]}",
+                "position": 6,
+                "imageUrl": "https://utfs.io/f/3yHpL8ecIjWBUa8U4dNvk7uaiS8QlztDYGNUmPIfBeXAH9ps",
+                "imageKey": "3yHpL8ecIjWBUa8U4dNvk7uaiS8QlztDYGNUmPIfBeXAH9ps",
+                "videoUrl": "https://utfs.io/f/3yHpL8ecIjWB5S194aOSjC9XQJuy3TNPiAzqHGkW2bfwVeZR",
+                "videoKey": "3yHpL8ecIjWB5S194aOSjC9XQJuy3TNPiAzqHGkW2bfwVeZR"
+              }
+            ]
+          }
+        },
+        {
+          "title": "Modern C++ in Action",
+          "position": 4,
+          "lessons": {
+            "create": [
+              {
+                "title": "Smart Pointers and Resource Management (RAII)",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Discover how smart pointers automate memory management and implement the RAII pattern for exception-safe resource handling.\"}]}]}",
+                "position": 1,
+                "imageUrl": "https://utfs.io/f/3yHpL8ecIjWBFJn8Ly5FpkghzoWqm93cARVMYdDLjlK6NQEy",
+                "imageKey": "3yHpL8ecIjWBFJn8Ly5FpkghzoWqm93cARVMYdDLjlK6NQEy",
+                "videoUrl": "https://utfs.io/f/3yHpL8ecIjWBFexW6Y5FpkghzoWqm93cARVMYdDLjlK6NQEy",
+                "videoKey": "3yHpL8ecIjWBFexW6Y5FpkghzoWqm93cARVMYdDLjlK6NQEy"
+              },
+              {
+                "title": "Lambda Expressions and Functional Style",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Learn how to write concise anonymous functions using lambda expressions and apply functional programming techniques in C++.\"}]}]}",
+                "position": 2,
+                "imageUrl": "https://utfs.io/f/3yHpL8ecIjWBtFGCTnj9cg6yo1sKq5meNpdAfibDtkwRPUX2",
+                "imageKey": "3yHpL8ecIjWBtFGCTnj9cg6yo1sKq5meNpdAfibDtkwRPUX2",
+                "videoUrl": "https://utfs.io/f/3yHpL8ecIjWB6W82Eu4fRATFUBbuhm43oetkNQ5fZODa2jrG",
+                "videoKey": "3yHpL8ecIjWB6W82Eu4fRATFUBbuhm43oetkNQ5fZODa2jrG"
+              },
+              {
+                "title": "Move Semantics and rvalue References",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Understand move semantics and rvalue references to optimize performance by avoiding unnecessary copying of objects.\"}]}]}",
+                "position": 3,
+                "imageUrl": "https://utfs.io/f/3yHpL8ecIjWBMwdv6DJPZt5zABUH7jNFK4RaLiwqr3XTnDGc",
+                "imageKey": "3yHpL8ecIjWBMwdv6DJPZt5zABUH7jNFK4RaLiwqr3XTnDGc",
+                "videoUrl": "https://utfs.io/f/3yHpL8ecIjWBHUhdtsFRe4bgJ2K3CZoBzO8nExjvl5WDL1ds",
+                "videoKey": "3yHpL8ecIjWBHUhdtsFRe4bgJ2K3CZoBzO8nExjvl5WDL1ds"
+              },
+              {
+                "title": "Concurrency and Multithreading Basics",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Explore how to write concurrent programs using threads, mutexes, and other synchronization mechanisms for parallel execution.\"}]}]}",
+                "position": 4,
+                "imageUrl": "https://utfs.io/f/3yHpL8ecIjWB5meHpWEOSjC9XQJuy3TNPiAzqHGkW2bfwVeZ",
+                "imageKey": "3yHpL8ecIjWB5meHpWEOSjC9XQJuy3TNPiAzqHGkW2bfwVeZ",
+                "videoUrl": "https://utfs.io/f/3yHpL8ecIjWBgL0iqNIsEBqPX7Vp3N10DQSfHtwTkAiMbhsJ",
+                "videoKey": "3yHpL8ecIjWBgL0iqNIsEBqPX7Vp3N10DQSfHtwTkAiMbhsJ"
+              },
+              {
+                "title": "Working with C++17/20 Features",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Discover the latest C++ features including structured bindings, if constexpr, concepts, and other modern language enhancements.\"}]}]}",
+                "position": 5,
+                "imageUrl": "https://utfs.io/f/3yHpL8ecIjWBDDyPiohu10pZdvWOqenF4KXAlS9tgxyVYRki",
+                "imageKey": "3yHpL8ecIjWBDDyPiohu10pZdvWOqenF4KXAlS9tgxyVYRki",
+                "videoUrl": "https://utfs.io/f/3yHpL8ecIjWBiLxKydJp06GaMdDJcHKLYojI83uwBAeRS5hs",
+                "videoKey": "3yHpL8ecIjWBiLxKydJp06GaMdDJcHKLYojI83uwBAeRS5hs"
+              },
+              {
+                "title": "Final Project: Building a Real-World Application",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Apply all the concepts learned throughout the course to build a comprehensive C++ application demonstrating modern programming techniques.\"}]}]}",
+                "position": 6,
+                "imageUrl": "https://utfs.io/f/3yHpL8ecIjWBUa8U4dNvk7uaiS8QlztDYGNUmPIfBeXAH9ps",
+                "imageKey": "3yHpL8ecIjWBUa8U4dNvk7uaiS8QlztDYGNUmPIfBeXAH9ps",
+                "videoUrl": "https://utfs.io/f/3yHpL8ecIjWB5S194aOSjC9XQJuy3TNPiAzqHGkW2bfwVeZR",
+                "videoKey": "3yHpL8ecIjWB5S194aOSjC9XQJuy3TNPiAzqHGkW2bfwVeZR"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+
+  {
+    "title": "Parenting in the Digital Age",
+    "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Technology is shaping our children's world — are you prepared to guide them? This course explores parenting techniques that blend love, structure, and tech literacy to help raise confident and resilient digital natives.\"}]}]}",
+    "imageUrl": "https://utfs.io/f/5VMVggWXb9pmvg1pgnmNzrBQqpHK68uOoGfSTUYhJZXRgwbM",
+    "imageKey": "5VMVggWXb9pmvg1pgnmNzrBQqpHK68uOoGfSTUYhJZXRgwbM",
+    "price": 59,
+    "duration": 60,
+    "level": "Advanced",
+    "category": "Parenting & Relationships",
+    "smallDescription": "Learn parenting techniques that blend love, structure, and tech literacy to help raise confident digital natives.",
+    "slug": "parenting-digital-age",
+    "status": "Published",
+    "user": {
+      "connect": {
+        "id": "user_2xis9eFWImMhDqMklAPUcZyQOHc"
+      }
+    },
+    "chapters": {
+      "create": [
+        {
+          "title": "Screen Time & Mental Health",
+          "position": 1,
+          "lessons": {
+            "create": [
+              {
+                "title": "Understanding Screen Time Impact",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"How much is too much? Understand the science behind screen exposure and its impact on focus, anxiety, and emotional regulation in kids.\"}]}]}",
+                "position": 1,
+                "imageUrl": "https://utfs.io/f/5VMVggWXb9pmvg1pgnmNzrBQqpHK68uOoGfSTUYhJZXRgwbM",
+                "imageKey": "5VMVggWXb9pmvg1pgnmNzrBQqpHK68uOoGfSTUYhJZXRgwbM",
+                "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+                "videoKey": "5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp"
+              },
+              {
+                "title": "Digital Wellness Strategies",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Practical approaches to maintain mental health while using digital devices and creating healthy screen time habits for children.\"}]}]}",
+                "position": 2,
+                "imageUrl": "https://utfs.io/f/5VMVggWXb9pmvg1pgnmNzrBQqpHK68uOoGfSTUYhJZXRgwbM",
+                "imageKey": "5VMVggWXb9pmvg1pgnmNzrBQqpHK68uOoGfSTUYhJZXRgwbM",
+                "videoUrl": "https://utfs.io/f/5VMVggWXb9pmKk9Gi1kDjcbPoZJHaT98HbApRJdeFFtfEehU",
+                "videoKey": "5VMVggWXb9pmKk9Gi1kDjcbPoZJHaT98HbApRJdeFFtfEehU"
+              }
+            ]
+          }
+        },
+        {
+          "title": "Raising Responsible Tech Users",
+          "position": 2,
+          "lessons": {
+            "create": [
+              {
+                "title": "Teaching Digital Boundaries",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Discover how to teach digital boundaries, introduce ethical tech use, and build routines that encourage offline bonding and responsible technology usage.\"}]}]}",
+                "position": 1,
+                "imageUrl": "https://utfs.io/f/5VMVggWXb9pmvg1pgnmNzrBQqpHK68uOoGfSTUYhJZXRgwbM",
+                "imageKey": "5VMVggWXb9pmvg1pgnmNzrBQqpHK68uOoGfSTUYhJZXRgwbM",
+                "videoUrl": "https://utfs.io/f/5VMVggWXb9pmvT7wJkPtR8yXE5MshyKfeR3cc2eFgYPQ6FBo",
+                "videoKey": "5VMVggWXb9pmvT7wJkPtR8yXE5MshyKfeR3cc2eFgYPQ6FBo"
+              },
+              {
+                "title": "Ethical Tech Education",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Learn methods to educate children about digital citizenship, online safety, and the ethical implications of technology use in daily life.\"}]}]}",
+                "position": 2,
+                "imageUrl": "https://utfs.io/f/5VMVggWXb9pmvg1pgnmNzrBQqpHK68uOoGfSTUYhJZXRgwbM",
+                "imageKey": "5VMVggWXb9pmvg1pgnmNzrBQqpHK68uOoGfSTUYhJZXRgwbM",
+                "videoUrl": "https://utfs.io/f/5VMVggWXb9pmUXdMtJ9DoK9u32YasrDMzog6TnZFV1Hp5Dxj",
+                "videoKey": "5VMVggWXb9pmUXdMtJ9DoK9u32YasrDMzog6TnZFV1Hp5Dxj"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+  ,
+
+  {
+    "title": "Cultural Intelligence for Global Travelers",
+    "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Gain a deeper understanding of global customs, traditions, and social norms to travel respectfully and meaningfully. Whether you're a digital nomad or an occasional tourist, this course empowers you to navigate diverse cultures with empathy and awareness.\"}]}]}",
+    "imageUrl": "https://utfs.io/f/5VMVggWXb9pmAdFJNYO1SpTZnefRwbckLsvD5K3GV6MyJYEC",
+    "imageKey": "5VMVggWXb9pmAdFJNYO1SpTZnefRwbckLsvD5K3GV6MyJYEC",
+    "price": 45,
+    "duration": 60,
+    "level": "Advanced",
+    "category": "Travel & Culture",
+    "smallDescription": "Understand customs and communicate respectfully across cultures while traveling.",
+    "slug": "cultural-intelligence-global-travelers",
+    "status": "Published",
+    "user": {
+      "connect": {
+        "id": "user_2xis9eFWImMhDqMklAPUcZyQOHc"
+      }
+    },
+    "chapters": {
+      "create": [
+        {
+          "title": "Foundations of Cultural Intelligence",
+          "position": 1,
+          "lessons": {
+            "create": [
+              {
+                "title": "Understanding Cultural Norms",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Explore why behaviors that feel natural to you may be interpreted differently elsewhere. Understand the difference between high-context and low-context cultures and how that affects communication.\"}]}]}",
+                "position": 1,
+                "imageUrl": "https://utfs.io/f/5VMVggWXb9pmAdFJNYO1SpTZnefRwbckLsvD5K3GV6MyJYEC",
+                "imageKey": "5VMVggWXb9pmAdFJNYO1SpTZnefRwbckLsvD5K3GV6MyJYEC",
+                "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+                "videoKey": "5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp"
+              },
+              {
+                "title": "Travel Ethics and Local Respect",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Learn how to respect sacred spaces, dress appropriately, and avoid common tourist faux pas. This lesson includes case studies from Southeast Asia, Europe, and the Middle East.\"}]}]}",
+                "position": 2,
+                "imageUrl": "https://utfs.io/f/5VMVggWXb9pmAdFJNYO1SpTZnefRwbckLsvD5K3GV6MyJYEC",
+                "imageKey": "5VMVggWXb9pmAdFJNYO1SpTZnefRwbckLsvD5K3GV6MyJYEC",
+                "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+                "videoKey": "5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu"
+              },
+              {
+                "title": "Cross-Cultural Communication Tips",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Practice listening beyond words. Use tone, gestures, and eye contact more intentionally. Plus, master greetings, small talk, and non-verbal etiquette around the world.\"}]}]}",
+                "position": 3,
+                "imageUrl": "https://utfs.io/f/5VMVggWXb9pmAdFJNYO1SpTZnefRwbckLsvD5K3GV6MyJYEC",
+                "imageKey": "5VMVggWXb9pmAdFJNYO1SpTZnefRwbckLsvD5K3GV6MyJYEC",
+                "videoUrl": "https://utfs.io/f/5VMVggWXb9pmQFt6tL0QdW7dIMMi92rETcnFhTzmhSk2SzK5",
+                "videoKey": "5VMVggWXb9pmQFt6tL0QdW7dIMMi92rETcnFhTzmhSk2SzK5"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+  ,
+
+  {
+    "title": "Everyday Psychology for Better Decisions",
+    "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Discover how basic psychological principles can help you understand people and make smarter personal and business decisions.\"}]}]}",
+    "imageUrl": "https://utfs.io/f/5VMVggWXb9pmpDH6MJy31uUGHgCBzjsIZrtO5vJhiyLNbexo",
+    "imageKey": "5VMVggWXb9pmpDH6MJy31uUGHgCBzjsIZrtO5vJhiyLNbexo",
+    "price": 29,
+    "duration": 60,
+    "level": "Beginner",
+    "category": "Psychology & Self-help",
+    "smallDescription": "Use psychology to reduce bias and make better daily decisions.",
+    "slug": "everyday-psychology-better-decisions",
+    "status": "Published",
+    "user": {
+      "connect": {
+        "id": "user_2xis9eFWImMhDqMklAPUcZyQOHc"
+      }
+    },
+    "chapters": {
+      "create": [
+        {
+          "title": "Cognitive Biases in Daily Life",
+          "position": 1,
+          "lessons": {
+            "create": [
+              {
+                "title": "Anchoring and Availability Heuristics",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Recognize how first impressions and recent memories bias your decisions.\"}]}]}",
+                "position": 1,
+                "imageUrl": "https://utfs.io/f/5VMVggWXb9pmpDH6MJy31uUGHgCBzjsIZrtO5vJhiyLNbexo",
+                "imageKey": "5VMVggWXb9pmpDH6MJy31uUGHgCBzjsIZrtO5vJhiyLNbexo",
+                "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+                "videoKey": "5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp"
+              },
+              {
+                "title": "Confirmation Bias and Overconfidence",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Spot patterns that confirm beliefs and build safeguards for objective choices.\"}]}]}",
+                "position": 2,
+                "imageUrl": "https://utfs.io/f/5VMVggWXb9pmpDH6MJy31uUGHgCBzjsIZrtO5vJhiyLNbexo",
+                "imageKey": "5VMVggWXb9pmpDH6MJy31uUGHgCBzjsIZrtO5vJhiyLNbexo",
+                "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+                "videoKey": "5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu"
+              },
+              {
+                "title": "Practical Debiasing Techniques",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Use checklists and premortems to counter cognitive traps in work and life.\"}]}]}",
+                "position": 3,
+                "imageUrl": "https://utfs.io/f/5VMVggWXb9pmpDH6MJy31uUGHgCBzjsIZrtO5vJhiyLNbexo",
+                "imageKey": "5VMVggWXb9pmpDH6MJy31uUGHgCBzjsIZrtO5vJhiyLNbexo",
+                "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+                "videoKey": "5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp"
+              }
+            ]
+          }
+        },
+        {
+          "title": "Psychology of Habits",
+          "position": 2,
+          "lessons": {
+            "create": [
+              {
+                "title": "How Habits Form: Triggers and Rewards",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Understand the habit loop and design effective triggers.\"}]}]}",
+                "position": 1,
+                "imageUrl": "https://utfs.io/f/5VMVggWXb9pmpDH6MJy31uUGHgCBzjsIZrtO5vJhiyLNbexo",
+                "imageKey": "5VMVggWXb9pmpDH6MJy31uUGHgCBzjsIZrtO5vJhiyLNbexo",
+                "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+                "videoKey": "5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu"
+              },
+              {
+                "title": "Habit Stacking and Replacement",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Build routines that stick by anchoring to existing habits.\"}]}]}",
+                "position": 2,
+                "imageUrl": "https://utfs.io/f/5VMVggWXb9pmpDH6MJy31uUGHgCBzjsIZrtO5vJhiyLNbexo",
+                "imageKey": "5VMVggWXb9pmpDH6MJy31uUGHgCBzjsIZrtO5vJhiyLNbexo",
+                "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+                "videoKey": "5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp"
+              },
+              {
+                "title": "Breaking Bad Habits",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Use replacement strategies and environment design to change behavior.\"}]}]}",
+                "position": 3,
+                "imageUrl": "https://utfs.io/f/5VMVggWXb9pmpDH6MJy31uUGHgCBzjsIZrtO5vJhiyLNbexo",
+                "imageKey": "5VMVggWXb9pmpDH6MJy31uUGHgCBzjsIZrtO5vJhiyLNbexo",
+                "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+                "videoKey": "5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu"
+              }
+            ]
+          }
+        },
+        {
+          "title": "Decision-Making Frameworks",
+          "position": 3,
+          "lessons": {
+            "create": [
+              {
+                "title": "Pros-Cons, Cost-Benefit, and Second-Order Effects",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Apply simple frameworks to evaluate choices with clarity.\"}]}]}",
+                "position": 1,
+                "imageUrl": "https://utfs.io/f/5VMVggWXb9pmpDH6MJy31uUGHgCBzjsIZrtO5vJhiyLNbexo",
+                "imageKey": "5VMVggWXb9pmpDH6MJy31uUGHgCBzjsIZrtO5vJhiyLNbexo",
+                "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+                "videoKey": "5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp"
+              },
+              {
+                "title": "Expected Value and Regret Minimization",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Quantify uncertainty and pick options that win long term.\"}]}]}",
+                "position": 2,
+                "imageUrl": "https://utfs.io/f/5VMVggWXb9pmpDH6MJy31uUGHgCBzjsIZrtO5vJhiyLNbexo",
+                "imageKey": "5VMVggWXb9pmpDH6MJy31uUGHgCBzjsIZrtO5vJhiyLNbexo",
+                "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+                "videoKey": "5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu"
+              },
+              {
+                "title": "Decision Journals and Feedback Loops",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Track choices to learn from outcomes and improve calibration.\"}]}]}",
+                "position": 3,
+                "imageUrl": "https://utfs.io/f/5VMVggWXb9pmpDH6MJy31uUGHgCBzjsIZrtO5vJhiyLNbexo",
+                "imageKey": "5VMVggWXb9pmpDH6MJy31uUGHgCBzjsIZrtO5vJhiyLNbexo",
+                "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+                "videoKey": "5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+  ,
+  {
+    "title": "Modern UI Design Principles with Figma",
+    "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Learn how to design clean, modern, and user-friendly interfaces using Figma. This course covers essential UI principles, color theory, typography, layout, and real-world design workflows. Perfect for aspiring UI/UX designers and product creators.\"}]}]}",
+    "imageUrl": "https://utfs.io/f/5VMVggWXb9pmKBos1ulxdEPMqV0BUI7uRaHiQgStAcCJkemT",
+    "imageKey": "5VMVggWXb9pmKBos1ulxdEPMqV0BUI7uRaHiQgStAcCJkemT",
+    "price": 49,
+    "duration": 60,
+    "level": "Intermediate",
+    "category": "Design & Creativity",
+    "smallDescription": "Design modern, accessible UIs in Figma using solid principles.",
+    "slug": "modern-ui-design-figma",
+    "status": "Published",
+    "user": {
+      "connect": {
+        "id": "user_2xis9eFWImMhDqMklAPUcZyQOHc"
+      }
+    },
+    "chapters": {
+      "create": [
+        {
+          "title": "Typography and Layout Fundamentals",
+          "position": 1,
+          "lessons": {
+            "create": [
+              {
+                "title": "Font Pairing and Hierarchy",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Choose complementary typefaces and set clear hierarchy for readability.\"}]}]}",
+                "position": 1,
+                "imageUrl": "https://utfs.io/f/5VMVggWXb9pmKBos1ulxdEPMqV0BUI7uRaHiQgStAcCJkemT",
+                "imageKey": "5VMVggWXb9pmKBos1ulxdEPMqV0BUI7uRaHiQgStAcCJkemT",
+                "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+                "videoKey": "5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp"
+              },
+              {
+                "title": "Grid Systems and Spacing",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Use grids, constraints, and spacing tokens to organize layouts.\"}]}]}",
+                "position": 2,
+                "imageUrl": "https://utfs.io/f/5VMVggWXb9pmKBos1ulxdEPMqV0BUI7uRaHiQgStAcCJkemT",
+                "imageKey": "5VMVggWXb9pmKBos1ulxdEPMqV0BUI7uRaHiQgStAcCJkemT",
+                "videoUrl": "https://utfs.io/f/5VMVggWXb9pmKBos1ulxdEPMqV0BUI7uRaHiQgStAcCJkemT",
+                "videoKey": "5VMVggWXb9pmKBos1ulxdEPMqV0BUI7uRaHiQgStAcCJkemT"
+              },
+              {
+                "title": "Responsive Typescale",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Create scalable typography systems that adapt to screens.\"}]}]}",
+                "position": 3,
+                "imageUrl": "https://utfs.io/f/5VMVggWXb9pmKBos1ulxdEPMqV0BUI7uRaHiQgStAcCJkemT",
+                "imageKey": "5VMVggWXb9pmKBos1ulxdEPMqV0BUI7uRaHiQgStAcCJkemT",
+                "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+                "videoKey": "5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp"
+              }
+            ]
+          }
+        },
+        {
+          "title": "Color and Visual Language",
+          "position": 2,
+          "lessons": {
+            "create": [
+              {
+                "title": "Color Systems and Contrast",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Build palettes, ensure contrast ratios, and use semantic color.\"}]}]}",
+                "position": 1,
+                "imageUrl": "https://utfs.io/f/5VMVggWXb9pmKBos1ulxdEPMqV0BUI7uRaHiQgStAcCJkemT",
+                "imageKey": "5VMVggWXb9pmKBos1ulxdEPMqV0BUI7uRaHiQgStAcCJkemT",
+                "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+                "videoKey": "5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp"
+              },
+              {
+                "title": "Branding with Color and Shape",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Translate brand values into consistent visual language.\"}]}]}",
+                "position": 2,
+                "imageUrl": "https://utfs.io/f/5VMVggWXb9pmKBos1ulxdEPMqV0BUI7uRaHiQgStAcCJkemT",
+                "imageKey": "5VMVggWXb9pmKBos1ulxdEPMqV0BUI7uRaHiQgStAcCJkemT",
+                "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+                "videoKey": "5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp"
+              },
+              {
+                "title": "Accessibility in Color Usage",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Design for color blindness and meet WCAG requirements.\"}]}]}",
+                "position": 3,
+                "imageUrl": "https://utfs.io/f/5VMVggWXb9pmKBos1ulxdEPMqV0BUI7uRaHiQgStAcCJkemT",
+                "imageKey": "5VMVggWXb9pmKBos1ulxdEPMqV0BUI7uRaHiQgStAcCJkemT",
+                "videoUrl": "https://utfs.io/f/5VMVggWXb9pmKBos1ulxdEPMqV0BUI7uRaHiQgStAcCJkemT",
+                "videoKey": "5VMVggWXb9pmKBos1ulxdEPMqV0BUI7uRaHiQgStAcCJkemT"
+              }
+            ]
+          }
+        },
+        {
+          "title": "Components and Design Systems",
+          "position": 3,
+          "lessons": {
+            "create": [
+              {
+                "title": "Atomic Design with Variants",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Build scalable component libraries with variants and constraints.\"}]}]}",
+                "position": 1,
+                "imageUrl": "https://utfs.io/f/5VMVggWXb9pmKBos1ulxdEPMqV0BUI7uRaHiQgStAcCJkemT",
+                "imageKey": "5VMVggWXb9pmKBos1ulxdEPMqV0BUI7uRaHiQgStAcCJkemT",
+                "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+                "videoKey": "5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp"
+              },
+              {
+                "title": "Tokens, Styles, and Theming",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Create design tokens for color, type, spacing, and build themes.\"}]}]}",
+                "position": 2,
+                "imageUrl": "https://utfs.io/f/5VMVggWXb9pmKBos1ulxdEPMqV0BUI7uRaHiQgStAcCJkemT",
+                "imageKey": "5VMVggWXb9pmKBos1ulxdEPMqV0BUI7uRaHiQgStAcCJkemT",
+                "videoUrl": "https://utfs.io/f/5VMVggWXb9pmKBos1ulxdEPMqV0BUI7uRaHiQgStAcCJkemT",
+                "videoKey": "5VMVggWXb9pmKBos1ulxdEPMqV0BUI7uRaHiQgStAcCJkemT"
+              },
+              {
+                "title": "Documentation and Handoffs",
+                "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Document components and deliver clear specs to developers.\"}]}]}",
+                "position": 3,
+                "imageUrl": "https://utfs.io/f/5VMVggWXb9pmKBos1ulxdEPMqV0BUI7uRaHiQgStAcCJkemT",
+                "imageKey": "5VMVggWXb9pmKBos1ulxdEPMqV0BUI7uRaHiQgStAcCJkemT",
+                "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+                "videoKey": "5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+  ,
+  {
+    "title": "Full-Stack Web Development with Next.js and Prisma",
+    "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"A complete guide to building full-featured web applications using Next.js, Prisma, and TypeScript. You will learn how to structure scalable architecture, connect to databases, implement authentication, handle media uploads, and deploy your app. This course is ideal for developers familiar with JavaScript and React.\"}]}]}",
+    "imageUrl": "https://utfs.io/f/5VMVggWXb9pm4UV6GbAeNb3RTS61GdIjoxgVrcvWDY9tnu75",
+    "imageKey": "5VMVggWXb9pm4UV6GbAeNb3RTS61GdIjoxgVrcvWDY9tnu75",
+    "price": 79.99,
+    "duration": 120,
+    "level": "Advanced",
+    "category": "Development",
+    "smallDescription": "Build a production-grade Next.js app with Prisma, auth, and deploy.",
+    "slug": "full-stack-nextjs-prisma",
+    "status": "Published",
+    "user": { "connect": { "id": "user_2xis9eFWImMhDqMklAPUcZyQOHc" } },
+    "chapters": { "create": [
+      {
+        "title": "Getting Started with Next.js",
+        "position": 1,
+        "lessons": { "create": [
+          {
+            "title": "Introduction to Full-Stack Development",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Overview of full-stack architecture, why Next.js, and stack components.\"}]}]}",
+            "position": 1,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pm4UV6GbAeNb3RTS61GdIjoxgVrcvWDY9tnu75",
+            "imageKey": "5VMVggWXb9pm4UV6GbAeNb3RTS61GdIjoxgVrcvWDY9tnu75",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+            "videoKey": "5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu"
+          },
+          {
+            "title": "Setting up Next.js with TypeScript",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Initialize project, create pages/components, add styles and fonts, organize codebase.\"}]}]}",
+            "position": 2,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pm4UV6GbAeNb3RTS61GdIjoxgVrcvWDY9tnu75",
+            "imageKey": "5VMVggWXb9pm4UV6GbAeNb3RTS61GdIjoxgVrcvWDY9tnu75",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pmBkANZftdz5bDWk1SiBt6AGVIFYKfm2n90jxl",
+            "videoKey": "5VMVggWXb9pmBkANZftdz5bDWk1SiBt6AGVIFYKfm2n90jxl"
+          }
+        ]}
+      },
+      {
+        "title": "Backend and Data Layer",
+        "position": 2,
+        "lessons": { "create": [
+          {
+            "title": "Database Integration with Prisma",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Install Prisma, define models, run migrations, and connect database.\"}]}]}",
+            "position": 1,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pm4UV6GbAeNb3RTS61GdIjoxgVrcvWDY9tnu75",
+            "imageKey": "5VMVggWXb9pm4UV6GbAeNb3RTS61GdIjoxgVrcvWDY9tnu75",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pm5JyB1NWXb9pmHJ3lnAO6cfZjY8dNiR7e1uEV",
+            "videoKey": "5VMVggWXb9pm5JyB1NWXb9pmHJ3lnAO6cfZjY8dNiR7e1uEV"
+          },
+          {
+            "title": "Implementing User Authentication",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"User model, password hashing, sessions (cookies/JWT), and protected routes.\"}]}]}",
+            "position": 2,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pm4UV6GbAeNb3RTS61GdIjoxgVrcvWDY9tnu75",
+            "imageKey": "5VMVggWXb9pm4UV6GbAeNb3RTS61GdIjoxgVrcvWDY9tnu75",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pmWFfdYljX1lvN0eduLtBkFAQZ5TERCgcPj673",
+            "videoKey": "5VMVggWXb9pmWFfdYljX1lvN0eduLtBkFAQZ5TERCgcPj673"
+          }
+        ]}
+      }
+    ]}
+  }
+  ,
+  {
+    "title": "Design Thinking for Digital Products",
+    "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Master the problem-solving framework used by top tech teams to create intuitive, human-centered digital products.\"}]}]}",
+    "imageUrl": "https://utfs.io/f/5VMVggWXb9pmyBawyD7uDbfA6C1z4Pq08cXSmajYohUTrtix",
+    "imageKey": "5VMVggWXb9pmyBawyD7uDbfA6C1z4Pq08cXSmajYohUTrtix",
+    "price": 59,
+    "duration": 60,
+    "level": "Intermediate",
+    "category": "Design & Creativity",
+    "smallDescription": "Learn empathy, problem definition, ideation, and prototyping for products.",
+    "slug": "design-thinking-digital-products-333",
+    "status": "Published",
+    "user": { "connect": { "id": "user_2xis9eFWImMhDqMklAPUcZyQOHc" } },
+    "chapters": { "create": [
+      {
+        "title": "Empathy and User Research",
+        "position": 1,
+        "lessons": { "create": [
+          {
+            "title": "Interviews, Observation, and Personas",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Techniques: interviews, observation, empathy maps, and persona creation.\"}]}]}",
+            "position": 1,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pmyBawyD7uDbfA6C1z4Pq08cXSmajYohUTrtix",
+            "imageKey": "5VMVggWXb9pmyBawyD7uDbfA6C1z4Pq08cXSmajYohUTrtix",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+            "videoKey": "5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp"
+          }
+        ]}
+      },
+      {
+        "title": "Define the Problem Clearly",
+        "position": 2,
+        "lessons": { "create": [
+          {
+            "title": "Problem Statements and HMW Questions",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"From research to concise problem statements, avoid bias, write HMW.\"}]}]}",
+            "position": 1,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pmyBawyD7uDbfA6C1z4Pq08cXSmajYohUTrtix",
+            "imageKey": "5VMVggWXb9pmyBawyD7uDbfA6C1z4Pq08cXSmajYohUTrtix",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+            "videoKey": "5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu"
+          }
+        ]}
+      },
+      {
+        "title": "Ideate and Prototype",
+        "position": 3,
+        "lessons": { "create": [
+          {
+            "title": "Brainstorming, Wireframes, Early Testing",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Use brainstorming frameworks, build wireframes in Figma, test assumptions early.\"}]}]}",
+            "position": 1,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pmyBawyD7uDbfA6C1z4Pq08cXSmajYohUTrtix",
+            "imageKey": "5VMVggWXb9pmyBawyD7uDbfA6C1z4Pq08cXSmajYohUTrtix",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pmBkANZftdz5bDWk1SiBt6AGVIFYKfm2n90jxl",
+            "videoKey": "5VMVggWXb9pmBkANZftdz5bDWk1SiBt6AGVIFYKfm2n90jxl"
+          }
+        ]}
+      }
+    ]}
+  }
+  ,
+  {
+    "title": "Remote Work Mastery: Building Discipline and Freedom",
+    "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Learn how to thrive in remote work by mastering productivity, communication, and work-life balance. Perfect for freelancers, remote teams, and digital nomads.\"}]}]}",
+    "imageUrl": "https://utfs.io/f/5VMVggWXb9pmOWuFYWaZscM6BCTW9YhNK8gE1joRL4Fwepun",
+    "imageKey": "5VMVggWXb9pmOWuFYWaZscM6BCTW9YhNK8gE1joRL4Fwepun",
+    "price": 45,
+    "duration": 60,
+    "level": "Intermediate",
+    "category": "Career & Productivity",
+    "smallDescription": "Master productivity, async comms, and balance for remote work.",
+    "slug": "remote-work-mastery-building-discipline-and-freedom",
+    "status": "Published",
+    "user": { "connect": { "id": "user_2xis9eFWImMhDqMklAPUcZyQOHc" } },
+    "chapters": { "create": [
+      {
+        "title": "Remote Work Foundations",
+        "position": 1,
+        "lessons": { "create": [
+          {
+            "title": "Designing Your Ideal Remote Workspace",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Create a focused and inspiring environment: lighting, sound, ergonomics, and fewer distractions.\"}]}]}",
+            "position": 1,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pmOWuFYWaZscM6BCTW9YhNK8gE1joRL4Fwepun",
+            "imageKey": "5VMVggWXb9pmOWuFYWaZscM6BCTW9YhNK8gE1joRL4Fwepun",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+            "videoKey": "5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp"
+          },
+          {
+            "title": "Daily Rituals for Peak Performance",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Time-blocking, Pomodoro, focus techniques, and clean shutdown routines.\"}]}]}",
+            "position": 2,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pmOWuFYWaZscM6BCTW9YhNK8gE1joRL4Fwepun",
+            "imageKey": "5VMVggWXb9pmOWuFYWaZscM6BCTW9YhNK8gE1joRL4Fwepun",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+            "videoKey": "5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu"
+          },
+          {
+            "title": "Asynchronous Communication Skills",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Best practices for updates and handoffs, voice/video messages, async-first collaboration tools.\"}]}]}",
+            "position": 3,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pmOWuFYWaZscM6BCTW9YhNK8gE1joRL4Fwepun",
+            "imageKey": "5VMVggWXb9pmOWuFYWaZscM6BCTW9YhNK8gE1joRL4Fwepun",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+            "videoKey": "5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu"
+          },
+          {
+            "title": "Avoiding Isolation and Burnout",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Combat loneliness, set boundaries, and build supportive remote communities.\"}]}]}",
+            "position": 4,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pmOWuFYWaZscM6BCTW9YhNK8gE1joRL4Fwepun",
+            "imageKey": "5VMVggWXb9pmOWuFYWaZscM6BCTW9YhNK8gE1joRL4Fwepun",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+            "videoKey": "5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu"
+          }
+        ]}
+      }
+    ]}
+  }
+  ,
+  {
+    "title": "Mastering API Design with Node.js",
+    "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Build robust, scalable, and maintainable REST APIs using Node.js and Express. This course dives into real-world API design patterns, error handling, versioning, and testing strategies.\"}]}]}",
+    "imageUrl": "https://utfs.io/f/5VMVggWXb9pm9QLCrvnbajKCMBSnzWQ4ZGsH7605e8mAqVhR",
+    "imageKey": "5VMVggWXb9pm9QLCrvnbajKCMBSnzWQ4ZGsH7605e8mAqVhR",
+    "price": 59,
+    "duration": 60,
+    "level": "Intermediate",
+    "category": "Development",
+    "smallDescription": "Design scalable REST APIs with patterns, versioning, and tests.",
+    "slug": "mastering-api-design-with-nodejs",
+    "status": "Published",
+    "user": { "connect": { "id": "user_2xis9eFWImMhDqMklAPUcZyQOHc" } },
+    "chapters": { "create": [
+      {
+        "title": "API Fundamentals",
+        "position": 1,
+        "lessons": { "create": [
+          {
+            "title": "Setting Up Your Node.js API Project",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Project structure best practices, Express setup, env configuration.\"}]}]}",
+            "position": 1,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pm9QLCrvnbajKCMBSnzWQ4ZGsH7605e8mAqVhR",
+            "imageKey": "5VMVggWXb9pm9QLCrvnbajKCMBSnzWQ4ZGsH7605e8mAqVhR",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+            "videoKey": "5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp"
+          },
+          {
+            "title": "Routing, Controllers, and Middlewares",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Organize controllers/routers, use middlewares, handle errors and async flow.\"}]}]}",
+            "position": 2,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pm9QLCrvnbajKCMBSnzWQ4ZGsH7605e8mAqVhR",
+            "imageKey": "5VMVggWXb9pm9QLCrvnbajKCMBSnzWQ4ZGsH7605e8mAqVhR",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+            "videoKey": "5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu"
+          }
+        ]}
+      },
+      {
+        "title": "Advanced API Topics",
+        "position": 2,
+        "lessons": { "create": [
+          {
+            "title": "API Versioning and Documentation",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Versioning strategies (URI vs headers), Swagger and OpenAPI, docs portals.\"}]}]}",
+            "position": 1,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pm9QLCrvnbajKCMBSnzWQ4ZGsH7605e8mAqVhR",
+            "imageKey": "5VMVggWXb9pm9QLCrvnbajKCMBSnzWQ4ZGsH7605e8mAqVhR",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+            "videoKey": "5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu"
+          },
+          {
+            "title": "Testing and Deployment",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Unit/integration tests with Jest, mocking IO, Docker & Railway deployment.\"}]}]}",
+            "position": 2,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pm9QLCrvnbajKCMBSnzWQ4ZGsH7605e8mAqVhR",
+            "imageKey": "5VMVggWXb9pm9QLCrvnbajKCMBSnzWQ4ZGsH7605e8mAqVhR",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+            "videoKey": "5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu"
+          }
+        ]}
+      }
+    ]}
+  }
+  ,
+  {
+    "title": "The Business of Freelance Design",
+    "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Learn how to turn your design skills into a profitable freelance business with real-world strategies and client management tools.\"}]}]}",
+    "imageUrl": "https://utfs.io/f/5VMVggWXb9pmW82v8YVjX1lvN0eduLtBkFAQZ5TERCgcPj67",
+    "imageKey": "5VMVggWXb9pmW82v8YVjX1lvN0eduLtBkFAQZ5TERCgcPj67",
+    "price": 69,
+    "duration": 60,
+    "level": "Intermediate",
+    "category": "Design & Creativity",
+    "smallDescription": "Build a profitable freelance design business with systems and client care.",
+    "slug": "the-business-of-freelance-design",
+    "status": "Published",
+    "user": { "connect": { "id": "user_2xis9eFWImMhDqMklAPUcZyQOHc" } },
+    "chapters": { "create": [
+      {
+        "title": "Freelance Design Foundations",
+        "position": 1,
+        "lessons": { "create": [
+          {
+            "title": "Finding Your First Clients",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Create a strong portfolio (even mock work), leverage platforms, and write cold emails that get replies.\"}]}]}",
+            "position": 1,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pmW82v8YVjX1lvN0eduLtBkFAQZ5TERCgcPj67",
+            "imageKey": "5VMVggWXb9pmW82v8YVjX1lvN0eduLtBkFAQZ5TERCgcPj67",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+            "videoKey": "5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp"
+          },
+          {
+            "title": "Pricing and Negotiation",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Pick pricing models (hourly vs value), set minimums, and negotiate scope changes confidently.\"}]}]}",
+            "position": 2,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pmW82v8YVjX1lvN0eduLtBkFAQZ5TERCgcPj67",
+            "imageKey": "5VMVggWXb9pmW82v8YVjX1lvN0eduLtBkFAQZ5TERCgcPj67",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+            "videoKey": "5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu"
+          },
+          {
+            "title": "Building Long-Term Client Relationships",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Offer ongoing value after launch, use check-ins to upsell ethically, and turn clients into advocates.\"}]}]}",
+            "position": 3,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pmW82v8YVjX1lvN0eduLtBkFAQZ5TERCgcPj67",
+            "imageKey": "5VMVggWXb9pmW82v8YVjX1lvN0eduLtBkFAQZ5TERCgcPj67",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pmWFfdYljX1lvN0eduLtBkFAQZ5TERCgcPj673",
+            "videoKey": "5VMVggWXb9pmWFfdYljX1lvN0eduLtBkFAQZ5TERCgcPj673"
+          },
+          {
+            "title": "Freelance Productivity Systems",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Time-blocking with Notion/Sunsama, tracking tasks and payments, and weekly goal planning.\"}]}]}",
+            "position": 4,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pmW82v8YVjX1lvN0eduLtBkFAQZ5TERCgcPj67",
+            "imageKey": "5VMVggWXb9pmW82v8YVjX1lvN0eduLtBkFAQZ5TERCgcPj67",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pm5JyB1NWXb9pmHJ3lnAO6cfZjY8dNiR7e1uEV",
+            "videoKey": "5VMVggWXb9pm5JyB1NWXb9pmHJ3lnAO6cfZjY8dNiR7e1uEV"
+          }
+        ]}
+      }
+    ]}
+  }
+  ,
+  {
+    "title": "Investing Basics: Start Smart with Your Money",
+    "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"A beginner-friendly course covering investing foundations, risk management, and long-term wealth building.\"}]}]}",
+    "imageUrl": "https://utfs.io/f/5VMVggWXb9pmiG4weofLO01egbS39V8dzjm2FW6olZcEI4Jw",
+    "imageKey": "5VMVggWXb9pmiG4weofLO01egbS39V8dzjm2FW6olZcEI4Jw",
+    "price": 35,
+    "duration": 60,
+    "level": "Beginner",
+    "category": "Finance & Investing",
+    "smallDescription": "Start investing smartly: assets, risk, compounding, and scam avoidance.",
+    "slug": "investing-basics-start-smart-with-your-money",
+    "status": "Published",
+    "user": { "connect": { "id": "user_2xis9eFWImMhDqMklAPUcZyQOHc" } },
+    "chapters": { "create": [
+      {
+        "title": "Investing Foundations",
+        "position": 1,
+        "lessons": { "create": [
+          {
+            "title": "Understanding Investment Types",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Stocks, bonds, ETFs, real estate — differences, benefits, and use cases.\"}]}]}",
+            "position": 1,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pmiG4weofLO01egbS39V8dzjm2FW6olZcEI4Jw",
+            "imageKey": "5VMVggWXb9pmiG4weofLO01egbS39V8dzjm2FW6olZcEI4Jw",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+            "videoKey": "5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp"
+          },
+          {
+            "title": "Risk vs Reward",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Risk management basics, diversification, and avoiding emotional decisions.\"}]}]}",
+            "position": 2,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pmiG4weofLO01egbS39V8dzjm2FW6olZcEI4Jw",
+            "imageKey": "5VMVggWXb9pmiG4weofLO01egbS39V8dzjm2FW6olZcEI4Jw",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+            "videoKey": "5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu"
+          },
+          {
+            "title": "Compound Interest & Long-Term Growth",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"See how small, consistent investments grow over time and how to automate savings/investing.\"}]}]}",
+            "position": 3,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pmiG4weofLO01egbS39V8dzjm2FW6olZcEI4Jw",
+            "imageKey": "5VMVggWXb9pmiG4weofLO01egbS39V8dzjm2FW6olZcEI4Jw",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pmK6mYc1kM6HVfFOp95XazvV6Sm5E6k4w3iTxp",
+            "videoKey": "5VMVggWXb9pmK6mYc1kM6HVfFOp95XazvV6Sm5E6k4w3iTxp"
+          },
+          {
+            "title": "Avoiding Scams and Traps",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Identify red flags, analyze offers, and avoid common scams and hype traps.\"}]}]}",
+            "position": 4,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pmiG4weofLO01egbS39V8dzjm2FW6olZcEI4Jw",
+            "imageKey": "5VMVggWXb9pmiG4weofLO01egbS39V8dzjm2FW6olZcEI4Jw",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pmMNpHFiUB2brVGnPTO4Y23QKJh1rK8mA9GrcF",
+            "videoKey": "5VMVggWXb9pmMNpHFiUB2brVGnPTO4Y23QKJh1rK8mA9GrcF"
+          }
+        ]}
+      }
+    ]}
+  }
+  ,
+  {
+    "title": "Build Realtime Web Apps with WebSockets & Next.js",
+    "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Learn how to create realtime features like chat, notifications, collaborative editing and live updates using WebSockets and modern Next.js architecture.\"}]}]}",
+    "imageUrl": "https://utfs.io/f/5VMVggWXb9pm6GHVJ2IcqXVQhmLW2vTpuocaB6jZCzwU897d",
+    "imageKey": "5VMVggWXb9pm6GHVJ2IcqXVQhmLW2vTpuocaB6jZCzwU897d",
+    "price": 59,
+    "duration": 90,
+    "level": "Intermediate",
+    "category": "Development",
+    "smallDescription": "Add realtime chat, presence, and live updates with WebSockets in Next.js.",
+    "slug": "realtime-web-apps-websockets-nextjs",
+    "status": "Published",
+    "user": { "connect": { "id": "user_2xis9eFWImMhDqMklAPUcZyQOHc" } },
+    "chapters": { "create": [
+      {
+        "title": "Understanding WebSockets & Protocols",
+        "position": 1,
+        "lessons": { "create": [
+          {
+            "title": "WebSocket vs HTTP and SSE",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"When to use WebSockets, protocol differences, and typical use cases.\"}]}]}",
+            "position": 1,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pm6GHVJ2IcqXVQhmLW2vTpuocaB6jZCzwU897d",
+            "imageKey": "5VMVggWXb9pm6GHVJ2IcqXVQhmLW2vTpuocaB6jZCzwU897d",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+            "videoKey": "5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp"
+          },
+          {
+            "title": "Socket.IO vs Native WebSocket",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Feature comparison, trade-offs, and choosing the right approach.\"}]}]}",
+            "position": 2,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pm6GHVJ2IcqXVQhmLW2vTpuocaB6jZCzwU897d",
+            "imageKey": "5VMVggWXb9pm6GHVJ2IcqXVQhmLW2vTpuocaB6jZCzwU897d",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+            "videoKey": "5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu"
+          },
+          {
+            "title": "Heartbeat and Reliability (Ping/Pong)",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Keep connections healthy with heartbeats, reconnection, and backoff.\"}]}]}",
+            "position": 3,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pm6GHVJ2IcqXVQhmLW2vTpuocaB6jZCzwU897d",
+            "imageKey": "5VMVggWXb9pm6GHVJ2IcqXVQhmLW2vTpuocaB6jZCzwU897d",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+            "videoKey": "5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp"
+          }
+        ]}
+      },
+      {
+        "title": "Next.js API Routes + WebSocket Server",
+        "position": 2,
+        "lessons": { "create": [
+          {
+            "title": "Setting up ws in API Routes",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Create a scalable WS server inside Next.js API routes using ws.\"}]}]}",
+            "position": 1,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pm6GHVJ2IcqXVQhmLW2vTpuocaB6jZCzwU897d",
+            "imageKey": "5VMVggWXb9pm6GHVJ2IcqXVQhmLW2vTpuocaB6jZCzwU897d",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+            "videoKey": "5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu"
+          },
+          {
+            "title": "Rooms, Broadcasting, and Presence",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Implement rooms, broadcast messages, and track online users.\"}]}]}",
+            "position": 2,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pm6GHVJ2IcqXVQhmLW2vTpuocaB6jZCzwU897d",
+            "imageKey": "5VMVggWXb9pm6GHVJ2IcqXVQhmLW2vTpuocaB6jZCzwU897d",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+            "videoKey": "5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp"
+          },
+          {
+            "title": "Scaling and Deployment Considerations",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Horizontal scaling, sticky sessions, and serverless caveats.\"}]}]}",
+            "position": 3,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pm6GHVJ2IcqXVQhmLW2vTpuocaB6jZCzwU897d",
+            "imageKey": "5VMVggWXb9pm6GHVJ2IcqXVQhmLW2vTpuocaB6jZCzwU897d",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+            "videoKey": "5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu"
+          }
+        ]}
+      },
+      {
+        "title": "Client Integration & Auth",
+        "position": 3,
+        "lessons": { "create": [
+          {
+            "title": "Client Connection and Token Handshake",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Connect the frontend, pass tokens securely, and join rooms.\"}]}]}",
+            "position": 1,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pm6GHVJ2IcqXVQhmLW2vTpuocaB6jZCzwU897d",
+            "imageKey": "5VMVggWXb9pm6GHVJ2IcqXVQhmLW2vTpuocaB6jZCzwU897d",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+            "videoKey": "5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp"
+          },
+          {
+            "title": "Role-Based Access and Middleware",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Authorize events, secure channels, and validate payloads.\"}]}]}",
+            "position": 2,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pm6GHVJ2IcqXVQhmLW2vTpuocaB6jZCzwU897d",
+            "imageKey": "5VMVggWXb9pm6GHVJ2IcqXVQhmLW2vTpuocaB6jZCzwU897d",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+            "videoKey": "5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu"
+          },
+          {
+            "title": "Realtime Presence and Typing Indicators",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Track presence, typing status, and last-seen with efficient updates.\"}]}]}",
+            "position": 3,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pm6GHVJ2IcqXVQhmLW2vTpuocaB6jZCzwU897d",
+            "imageKey": "5VMVggWXb9pm6GHVJ2IcqXVQhmLW2vTpuocaB6jZCzwU897d",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+            "videoKey": "5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp"
+          }
+        ]}
+      }
+    ]}
+  }
+  ,
+  {
+    "title": "Advanced TypeScript Patterns for Large Applications",
+    "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Master scalable patterns in TypeScript used in enterprise-level applications. Learn generics, discriminated unions, utility types, type guards, and modular architecture.\"}]}]}",
+    "imageUrl": "https://utfs.io/f/5VMVggWXb9pmj3QjgNzJx72KnduUHP3qfSeABOGXtgijZ8ay",
+    "imageKey": "5VMVggWXb9pmj3QjgNzJx72KnduUHP3qfSeABOGXtgijZ8ay",
+    "price": 65,
+    "duration": 90,
+    "level": "Advanced",
+    "category": "Development",
+    "smallDescription": "Use advanced TypeScript types and patterns to scale large apps.",
+    "slug": "advanced-typescript-patterns-large-applications",
+    "status": "Published",
+    "user": { "connect": { "id": "user_2xis9eFWImMhDqMklAPUcZyQOHc" } },
+    "chapters": { "create": [
+      {
+        "title": "Utility Types & Transformations",
+        "position": 1,
+        "lessons": { "create": [
+          {
+            "title": "Pick, Omit, Partial, Record",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Reduce duplication and improve inference using built-in utility types.\"}]}]}",
+            "position": 1,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pmj3QjgNzJx72KnduUHP3qfSeABOGXtgijZ8ay",
+            "imageKey": "5VMVggWXb9pmj3QjgNzJx72KnduUHP3qfSeABOGXtgijZ8ay",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+            "videoKey": "5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp"
+          },
+          {
+            "title": "Mapped and Conditional Types",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Build custom transforms and conditional logic at the type level.\"}]}]}",
+            "position": 2,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pmj3QjgNzJx72KnduUHP3qfSeABOGXtgijZ8ay",
+            "imageKey": "5VMVggWXb9pmj3QjgNzJx72KnduUHP3qfSeABOGXtgijZ8ay",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+            "videoKey": "5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu"
+          }
+        ]}
+      },
+      {
+        "title": "Discriminated Unions & Guards",
+        "position": 2,
+        "lessons": { "create": [
+          {
+            "title": "Designing Tagged Unions",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Model business logic with tagged unions and exhaustive checks.\"}]}]}",
+            "position": 1,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pmj3QjgNzJx72KnduUHP3qfSeABOGXtgijZ8ay",
+            "imageKey": "5VMVggWXb9pmj3QjgNzJx72KnduUHP3qfSeABOGXtgijZ8ay",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+            "videoKey": "5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp"
+          },
+          {
+            "title": "Type Guards and Narrowing",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Write robust guards to narrow types safely across branches.\"}]}]}",
+            "position": 2,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pmj3QjgNzJx72KnduUHP3qfSeABOGXtgijZ8ay",
+            "imageKey": "5VMVggWXb9pmj3QjgNzJx72KnduUHP3qfSeABOGXtgijZ8ay",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+            "videoKey": "5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu"
+          }
+        ]}
+      },
+      {
+        "title": "Generic Components & Factories",
+        "position": 3,
+        "lessons": { "create": [
+          {
+            "title": "Generics with Constraints",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Build reusable components and factories with constrained generics.\"}]}]}",
+            "position": 1,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pmj3QjgNzJx72KnduUHP3qfSeABOGXtgijZ8ay",
+            "imageKey": "5VMVggWXb9pmj3QjgNzJx72KnduUHP3qfSeABOGXtgijZ8ay",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+            "videoKey": "5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp"
+          },
+          {
+            "title": "Overloads and Polymorphic Components",
+            "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Use function overloads and polymorphism to improve API ergonomics.\"}]}]}",
+            "position": 2,
+            "imageUrl": "https://utfs.io/f/5VMVggWXb9pmj3QjgNzJx72KnduUHP3qfSeABOGXtgijZ8ay",
+            "imageKey": "5VMVggWXb9pmj3QjgNzJx72KnduUHP3qfSeABOGXtgijZ8ay",
+            "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+            "videoKey": "5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu"
+          }
+        ]}
+      }
+    ]}
+  }
+
+  ,
+  {
+    "title": "Productivity Habits for Developers",
+    "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Learn how to boost your efficiency as a developer with proven techniques, tools, and routines. This course is ideal for engineers who want to get more done without burnout.\"}]}]}",
+    "imageUrl": "https://utfs.io/f/5VMVggWXb9pmzQrYw08594SmnI0HWt7skYgrxNQRocVfq8yM",
+    "imageKey": "5VMVggWXb9pmzQrYw08594SmnI0HWt7skYgrxNQRocVfq8yM",
+    "price": 39,
+    "duration": 60,
+    "level": "Intermediate",
+    "category": "Design & Creativity",
+    "smallDescription": "Habits, focus systems, and workflows to ship more without burnout.",
+    "slug": "productivity-habits-for-developers",
+    "status": "Published",
+    "user": { "connect": { "id": "user_2xis9eFWImMhDqMklAPUcZyQOHc" } },
+    "chapters": { "create": [
+      {
+        "title": "Morning Routines for Focus",
+        "position": 1,
+        "lessons": { "create": [
+          {"title": "Design Your AM Routine", "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Start with clarity: planning, movement, and energy management for coding days.\"}]}]}", "position": 1, "imageUrl": "https://utfs.io/f/5VMVggWXb9pmzQrYw08594SmnI0HWt7skYgrxNQRocVfq8yM", "imageKey": "5VMVggWXb9pmzQrYw08594SmnI0HWt7skYgrxNQRocVfq8yM", "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp", "videoKey": "5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp"},
+          {"title": "Context Setup and Intent Note", "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Define the one outcome for the day, prep editors and tasks for flow.\"}]}]}", "position": 2, "imageUrl": "https://utfs.io/f/5VMVggWXb9pmzQrYw08594SmnI0HWt7skYgrxNQRocVfq8yM", "imageKey": "5VMVggWXb9pmzQrYw08594SmnI0HWt7skYgrxNQRocVfq8yM", "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu", "videoKey": "5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu"},
+          {"title": "Energy and Focus Priming", "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Light, caffeine timing, and breathing techniques to enter deep work.\"}]}]}", "position": 3, "imageUrl": "https://utfs.io/f/5VMVggWXb9pmzQrYw08594SmnI0HWt7skYgrxNQRocVfq8yM", "imageKey": "5VMVggWXb9pmzQrYw08594SmnI0HWt7skYgrxNQRocVfq8yM", "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp", "videoKey": "5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp"}
+        ]}
+      },
+      {
+        "title": "Eliminating Distractions",
+        "position": 2,
+        "lessons": { "create": [
+          {"title": "Kill Context Switching", "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Batch comms, mute notifications, and structure maker/manager time.\"}]}]}", "position": 1, "imageUrl": "https://utfs.io/f/5VMVggWXb9pmzQrYw08594SmnI0HWt7skYgrxNQRocVfq8yM", "imageKey": "5VMVggWXb9pmzQrYw08594SmnI0HWt7skYgrxNQRocVfq8yM", "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu", "videoKey": "5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu"},
+          {"title": "Focus Techniques (Pomodoro, Timeboxing)", "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Use intervals, sprints, and blockers to maintain deep work.\"}]}]}", "position": 2, "imageUrl": "https://utfs.io/f/5VMVggWXb9pmzQrYw08594SmnI0HWt7skYgrxNQRocVfq8yM", "imageKey": "5VMVggWXb9pmzQrYw08594SmnI0HWt7skYgrxNQRocVfq8yM", "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp", "videoKey": "5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp"},
+          {"title": "Environment Design for Flow", "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Noise, lighting, ergonomics, and minimalism for sustained coding.\"}]}]}", "position": 3, "imageUrl": "https://utfs.io/f/5VMVggWXb9pmzQrYw08594SmnI0HWt7skYgrxNQRocVfq8yM", "imageKey": "5VMVggWXb9pmzQrYw08594SmnI0HWt7skYgrxNQRocVfq8yM", "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu", "videoKey": "5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu"}
+        ]}
+      },
+      {
+        "title": "Task and Code Workflow",
+        "position": 3,
+        "lessons": { "create": [
+          {"title": "Weekly Planning and Daily Big Three", "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Plan sprints, select top outcomes, and review progress effectively.\"}]}]}", "position": 1, "imageUrl": "https://utfs.io/f/5VMVggWXb9pmzQrYw08594SmnI0HWt7skYgrxNQRocVfq8yM", "imageKey": "5VMVggWXb9pmzQrYw08594SmnI0HWt7skYgrxNQRocVfq8yM", "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp", "videoKey": "5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp"},
+          {"title": "Issue Hygiene and Branch Strategy", "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Keep tickets small, branches clean, and pull requests reviewable.\"}]}]}", "position": 2, "imageUrl": "https://utfs.io/f/5VMVggWXb9pmzQrYw08594SmnI0HWt7skYgrxNQRocVfq8yM", "imageKey": "5VMVggWXb9pmzQrYw08594SmnI0HWt7skYgrxNQRocVfq8yM", "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu", "videoKey": "5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu"},
+          {"title": "Automation and Snippets", "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Use templates, scripts, and editor snippets to speed up routine work.\"}]}]}", "position": 3, "imageUrl": "https://utfs.io/f/5VMVggWXb9pmzQrYw08594SmnI0HWt7skYgrxNQRocVfq8yM", "imageKey": "5VMVggWXb9pmzQrYw08594SmnI0HWt7skYgrxNQRocVfq8yM", "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp", "videoKey": "5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp"}
+        ]}
+      },
+      {
+        "title": "Sustainable Performance",
+        "position": 4,
+        "lessons": { "create": [
+          {"title": "Work/Rest Rhythms and Recovery", "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Avoid burnout with cycles, breaks, and boundaries that protect focus.\"}]}]}", "position": 1, "imageUrl": "https://utfs.io/f/5VMVggWXb9pmzQrYw08594SmnI0HWt7skYgrxNQRocVfq8yM", "imageKey": "5VMVggWXb9pmzQrYw08594SmnI0HWt7skYgrxNQRocVfq8yM", "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu", "videoKey": "5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu"},
+          {"title": "Team Agreements and Async Collaboration", "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Set norms for meetings, updates, and deep work protection across teams.\"}]}]}", "position": 2, "imageUrl": "https://utfs.io/f/5VMVggWXb9pmzQrYw08594SmnI0HWt7skYgrxNQRocVfq8yM", "imageKey": "5VMVggWXb9pmzQrYw08594SmnI0HWt7skYgrxNQRocVfq8yM", "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp", "videoKey": "5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp"}
+        ]}
+      }
+    ]}
+  }
+  ,
+  {
+    "title": "Creative Writing Toolkit: Build Better Stories",
+    "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Unlock your creative potential and craft compelling narratives, characters, and dialogues. Ideal for aspiring authors, bloggers, and storytellers.\"}]}]}",
+    "imageUrl": "https://utfs.io/f/5VMVggWXb9pmaqB2bqe1uGfWdAQI2XeL6VSqUETRjk9nvJDY",
+    "imageKey": "5VMVggWXb9pmaqB2bqe1uGfWdAQI2XeL6VSqUETRjk9nvJDY",
+    "price": 25,
+    "duration": 60,
+    "level": "Beginner",
+    "category": "Writing & Content",
+    "smallDescription": "Voice, characters, structure, and dialogue to tell better stories.",
+    "slug": "creative-writing-toolkit-build-better-stories",
+    "status": "Published",
+    "user": { "connect": { "id": "user_2xis9eFWImMhDqMklAPUcZyQOHc" } },
+    "chapters": { "create": [
+      {"title": "Finding Your Voice", "position": 1, "lessons": { "create": [
+        {"title": "Authenticity and Style Exercises", "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Prompts to discover tone, rhythm, and point of view you enjoy.\"}]}]}", "position": 1, "imageUrl": "https://utfs.io/f/5VMVggWXb9pmaqB2bqe1uGfWdAQI2XeL6VSqUETRjk9nvJDY", "imageKey": "5VMVggWXb9pmaqB2bqe1uGfWdAQI2XeL6VSqUETRjk9nvJDY", "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp", "videoKey": "5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp"},
+        {"title": "Reading as a Writer", "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Analyze passages to learn voice techniques and narrative choices.\"}]}]}", "position": 2, "imageUrl": "https://utfs.io/f/5VMVggWXb9pmaqB2bqe1uGfWdAQI2XeL6VSqUETRjk9nvJDY", "imageKey": "5VMVggWXb9pmaqB2bqe1uGfWdAQI2XeL6VSqUETRjk9nvJDY", "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu", "videoKey": "5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu"},
+        {"title": "Editing for Voice Consistency", "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Refine drafts to keep tone and perspective consistent across scenes.\"}]}]}", "position": 3, "imageUrl": "https://utfs.io/f/5VMVggWXb9pmaqB2bqe1uGfWdAQI2XeL6VSqUETRjk9nvJDY", "imageKey": "5VMVggWXb9pmaqB2bqe1uGfWdAQI2XeL6VSqUETRjk9nvJDY", "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp", "videoKey": "5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp"}
+      ]}},
+      {"title": "Character Crafting", "position": 2, "lessons": { "create": [
+        {"title": "Motivations and Flaws", "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Design believable goals and constraints that drive behavior and growth.\"}]}]}", "position": 1, "imageUrl": "https://utfs.io/f/5VMVggWXb9pmaqB2bqe1uGfWdAQI2XeL6VSqUETRjk9nvJDY", "imageKey": "5VMVggWXb9pmaqB2bqe1uGfWdAQI2XeL6VSqUETRjk9nvJDY", "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu", "videoKey": "5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu"},
+        {"title": "Backstory and Arcs", "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Weave history and transformation into the plot without heavy exposition.\"}]}]}", "position": 2, "imageUrl": "https://utfs.io/f/5VMVggWXb9pmaqB2bqe1uGfWdAQI2XeL6VSqUETRjk9nvJDY", "imageKey": "5VMVggWXb9pmaqB2bqe1uGfWdAQI2XeL6VSqUETRjk9nvJDY", "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp", "videoKey": "5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp"},
+        {"title": "Dialogue as Character", "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Let speech patterns reveal personality and subtext naturally.\"}]}]}", "position": 3, "imageUrl": "https://utfs.io/f/5VMVggWXb9pmaqB2bqe1uGfWdAQI2XeL6VSqUETRjk9nvJDY", "imageKey": "5VMVggWXb9pmaqB2bqe1uGfWdAQI2XeL6VSqUETRjk9nvJDY", "videoUrl": "https://utfs.io/f/5VMVggWXb9pmMNpHFiUB2brVGnPTO4Y23QKJh1rK8mA9GrcF", "videoKey": "5VMVggWXb9pmMNpHFiUB2brVGnPTO4Y23QKJh1rK8mA9GrcF"}
+      ]}},
+      {"title": "Plot and Structure", "position": 3, "lessons": { "create": [
+        {"title": "Three-Act and Alternatives", "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Compare 3-act, hero’s journey, and modular structures for pacing.\"}]}]}", "position": 1, "imageUrl": "https://utfs.io/f/5VMVggWXb9pmaqB2bqe1uGfWdAQI2XeL6VSqUETRjk9nvJDY", "imageKey": "5VMVggWXb9pmaqB2bqe1uGfWdAQI2XeL6VSqUETRjk9nvJDY", "videoUrl": "https://utfs.io/f/5VMVggWXb9pmK6mYc1kM6HVfFOp95XazvV6Sm5E6k4w3iTxp", "videoKey": "5VMVggWXb9pmK6mYc1kM6HVfFOp95XazvV6Sm5E6k4w3iTxp"},
+        {"title": "Tension and Stakes", "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Maintain narrative momentum with reveals, reversals, and consequences.\"}]}]}", "position": 2, "imageUrl": "https://utfs.io/f/5VMVggWXb9pmaqB2bqe1uGfWdAQI2XeL6VSqUETRjk9nvJDY", "imageKey": "5VMVggWXb9pmaqB2bqe1uGfWdAQI2XeL6VSqUETRjk9nvJDY", "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp", "videoKey": "5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp"},
+        {"title": "Outlining Efficiently", "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Use beats and scene lists to plan drafts without stifling creativity.\"}]}]}", "position": 3, "imageUrl": "https://utfs.io/f/5VMVggWXb9pmaqB2bqe1uGfWdAQI2XeL6VSqUETRjk9nvJDY", "imageKey": "5VMVggWXb9pmaqB2bqe1uGfWdAQI2XeL6VSqUETRjk9nvJDY", "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu", "videoKey": "5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu"}
+      ]}},
+      {"title": "Dialogue that Pops", "position": 4, "lessons": { "create": [
+        {"title": "Subtext and Pacing", "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Write conversations where what's unsaid matters as much as words.\"}]}]}", "position": 1, "imageUrl": "https://utfs.io/f/5VMVggWXb9pmaqB2bqe1uGfWdAQI2XeL6VSqUETRjk9nvJDY", "imageKey": "5VMVggWXb9pmaqB2bqe1uGfWdAQI2XeL6VSqUETRjk9nvJDY", "videoUrl": "https://utfs.io/f/5VMVggWXb9pmMNpHFiUB2brVGnPTO4Y23QKJh1rK8mA9GrcF", "videoKey": "5VMVggWXb9pmMNpHFiUB2brVGnPTO4Y23QKJh1rK8mA9GrcF"},
+        {"title": "Editing Dialogue", "description": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Tighten exchanges, trim fillers, and give each character distinct voice.\"}]}]}", "position": 2, "imageUrl": "https://utfs.io/f/5VMVggWXb9pmaqB2bqe1uGfWdAQI2XeL6VSqUETRjk9nvJDY", "imageKey": "5VMVggWXb9pmaqB2bqe1uGfWdAQI2XeL6VSqUETRjk9nvJDY", "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp", "videoKey": "5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp"}
+      ]}}
+    ]}
+  }
+]

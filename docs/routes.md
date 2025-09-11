@@ -13,9 +13,6 @@ Login page — allows users to authenticate and access their personal dashboard 
 ## `/courses`
 Courses list page — displays available courses with options to search, filter and browse.
 
-## `/courses/create`
-Create course page — form interface for creating a new course (for instructors/creators).
-
 ## `/courses/[slug]`
 Course detail page (dynamic) — shows full information, syllabus and enrollment options for a specific course identified by `slug`.
 

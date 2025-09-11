@@ -30,7 +30,7 @@ export const TeacherCourseCard: FC<ITeacherCourseCardProps> = ({ course }) => {
 			/>
 			<CardContent className="flex flex-col gap-4 relative">
 				<Link
-					href={ENUM_PATHS.TEACHER.COURSE(course?.id)}
+					href={ENUM_PATHS.TEACHER.EDIT(course?.id)}
 					className="font-medium text-lg line-clamp-2 hover:underline group-hover:text-primary transition-colors"
 				>
 					{course?.title}
