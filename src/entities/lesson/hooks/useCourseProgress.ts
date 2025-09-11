@@ -1,3 +1,5 @@
+"use client";
+
 import { useMemo } from "react";
 
 import { TGetCourseSidebarType, TGetEnrolledCourse } from "@/entities/course";

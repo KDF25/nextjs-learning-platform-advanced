@@ -10,7 +10,7 @@ export const CoursePaymentSuccessButton: FC = ({}) => {
 	const t = useTranslations("PaymentPage.success");
 	return (
 		<Button asChild>
-			<Link href={ENUM_PATHS.MAIN}>
+			<Link href={ENUM_PATHS.DASHBOARD.ROOT}>
 				<ArrowLeft size={16} />
 				{t("button")}
 			</Link>

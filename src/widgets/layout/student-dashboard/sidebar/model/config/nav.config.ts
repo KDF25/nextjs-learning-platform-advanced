@@ -12,13 +12,13 @@ export const NAV_USER_LIST: IAdminNavItem[] = [
 		href: ENUM_PATHS.MAIN
 	},
 	{
-		name: "path.dashboard",
-		icon: IconDashboard,
-		href: ENUM_PATHS.DASHBOARD.ROOT
-	},
-	{
 		name: "path.courses",
 		icon: Tv2,
 		href: ENUM_PATHS.COURSES.ROOT
+	},
+	{
+		name: "path.user",
+		icon: IconDashboard,
+		href: ENUM_PATHS.DASHBOARD.ROOT
 	}
 ];

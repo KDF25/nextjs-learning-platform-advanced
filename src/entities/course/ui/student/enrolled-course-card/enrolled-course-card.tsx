@@ -28,41 +28,43 @@ export const EnrolledCourseCard: FC<IEnrolledCourseCardProps> = ({
 				height={400}
 				className="w-full rounded-t-lg aspect-video h-full object-cover"
 			/>
-			<CardContent className="flex flex-col gap-4 relative">
-				<Link
-					className="font-medium text-lg line-clamp-2 hover: underline group-hover:text-primary transition-colors"
-					href={ENUM_PATHS.COURSES.COURSE(course?.slug)}
-				>
-					{course?.title}
-				</Link>
-
-				<p className="line-clamp-2 text-sm text-muted-foreground leading-tight">
-					{course?.smallDescription}
-				</p>
-
-				<div className="flex items-center gap-x-5">
-					<div className="flex items-center gap-x-2">
-						<TimerIcon className="rounded-md text-primary bg-primary/10 p-1 size-6" />
-						<p className="text-sm text-muted-foreground">
-							{course?.duration}h
-						</p>
-					</div>
-					<div className="flex items-center gap-x-2">
-						<School className="rounded-md text-primary bg-primary/10 p-1 size-6" />
-						<p className="text-sm text-muted-foreground">
-							{course?.level}
-						</p>
-					</div>
-				</div>
-
-				<LessonProgress course={course} />
-
-				<Button asChild>
-					<Link href={ENUM_PATHS.DASHBOARD.COURSE(course?.slug)}>
-						{t("card.buttons.continue")}
-						<ArrowRight className="ml-2 h-4 w-4" />
+			<CardContent className="gap-4 relative grid content-between">
+				<div className="flex flex-col gap-2">
+					<Link
+						className="font-medium text-lg line-clamp-2 hover: underline group-hover:text-primary transition-colors"
+						href={ENUM_PATHS.COURSES.COURSE(course?.slug)}
+					>
+						{course?.title}
 					</Link>
-				</Button>
+
+					<p className="line-clamp-2 text-sm text-muted-foreground leading-tight">
+						{course?.smallDescription}
+					</p>
+				</div>
+				<div className="flex flex-col gap-3">
+					<div className="flex items-center gap-x-5">
+						<div className="flex items-center gap-x-2">
+							<TimerIcon className="rounded-md text-primary bg-primary/10 p-1 size-6" />
+							<p className="text-sm text-muted-foreground">
+								{course?.duration}h
+							</p>
+						</div>
+						<div className="flex items-center gap-x-2">
+							<School className="rounded-md text-primary bg-primary/10 p-1 size-6" />
+							<p className="text-sm text-muted-foreground">
+								{course?.level}
+							</p>
+						</div>
+					</div>
+					<LessonProgress course={course} />
+
+					<Button asChild>
+						<Link href={ENUM_PATHS.DASHBOARD.COURSE(course?.slug)}>
+							{t("card.buttons.continue")}
+							<ArrowRight className="ml-2 h-4 w-4" />
+						</Link>
+					</Button>
+				</div>
 			</CardContent>
 		</Card>
 	);

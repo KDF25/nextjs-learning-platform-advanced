@@ -63,7 +63,7 @@ export const LessonItem: FC<ILessonItemProps> = ({
 							</div>
 						)}
 					</div>
-					<div>
+					<div className="truncate">
 						<p className="text-xs font-medium truncate">
 							№ {lesson?.position}. {lesson?.title}
 						</p>
