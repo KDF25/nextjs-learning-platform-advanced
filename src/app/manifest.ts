@@ -10,6 +10,7 @@ export default async function manifest() {
 		name: t("name"),
 		short_name: t("short_name"),
 		description: t("description"),
+		id: process.env.NEXT_PUBLIC_APP_URL ?? "/",
 		start_url: `/`,
 		scope: `/`,
 		display: "standalone",
@@ -21,8 +22,32 @@ export default async function manifest() {
 			{
 				src: "/screens/wide1.png",
 				type: "image/jpeg",
-				sizes: "800x583",
+				sizes: "800x500",
 				form_factor: "wide"
+			},
+			{
+				src: "/screens/wide2.png",
+				type: "image/jpeg",
+				sizes: "800x500",
+				form_factor: "wide"
+			},
+			{
+				src: "/screens/wide3.png",
+				type: "image/jpeg",
+				sizes: "800x500",
+				form_factor: "wide"
+			},
+			{
+				src: "./screens/mobile1.jpg",
+				type: "image/jpeg",
+				sizes: "590x1280",
+				form_factor: "narrow"
+			},
+			{
+				src: "./screens/mobile2.jpg",
+				type: "image/jpeg",
+				sizes: "590x1280",
+				form_factor: "narrow"
 			}
 		],
 		icons: [
@@ -31,8 +56,28 @@ export default async function manifest() {
 			{ src: "/icons/icon-512.png", sizes: "512x512", type: "image/png" }
 		],
 		shortcuts: [
-			{ name: t("shortcuts.courses"), url: ENUM_PATHS.COURSES.ROOT },
-			{ name: t("shortcuts.dashboard"), url: ENUM_PATHS.DASHBOARD.ROOT }
+			{
+				name: t("shortcuts.courses"),
+				url: ENUM_PATHS.COURSES.ROOT,
+				icons: [
+					{
+						src: "/icons/icon-96.png",
+						sizes: "96x96",
+						type: "image/png"
+					}
+				]
+			},
+			{
+				name: t("shortcuts.dashboard"),
+				url: ENUM_PATHS.DASHBOARD.ROOT,
+				icons: [
+					{
+						src: "/icons/icon-96.png",
+						sizes: "96x96",
+						type: "image/png"
+					}
+				]
+			}
 		],
 		related_applications: [
 			{ platform: "webapp", url: process.env.NEXT_PUBLIC_APP_URL }

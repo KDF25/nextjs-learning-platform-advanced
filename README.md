@@ -1,6 +1,6 @@
 # Learning Platform Advanced
 
-A modern, full-featured learning management system (LMS) built with Next.js, PostgreSQL, Prisma, and a rich set of UI and developer tools.  
+A modern, full-featured adaptive learning management system (LMS) built with Next.js, PostgreSQL, Prisma, and a rich set of UI and developer tools.  
 This platform supports multi-language content, PWA features, secure authentication, payments, and a modular, scalable architecture.
 
 ---
@@ -73,6 +73,8 @@ This platform supports multi-language content, PWA features, secure authenticati
 - [PWA & Offline Support](./docs/pwa.md)
 - [SEO & Metadata](./docs/seo.md)
 - [Deployment Guide](./docs/deployment.md)
+- [Routes Guide](./docs/routes.md)
+- [Pages Guide](./docs/pages.md)
 
 ---
 
@@ -93,7 +95,7 @@ This platform supports multi-language content, PWA features, secure authenticati
 
 - `src/` — Application source code
 - `messages/` — Translation files for i18n
-- `public/` — Static assets, PWA manifest, service worker
+- `public/` — Static assets, service worker
 - `docs/` — Project documentation
 
 
