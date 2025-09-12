@@ -19,7 +19,7 @@ export const courseSchema = z.object({
 		.min(3, {
 			message: "CourseForm.fields.description.min"
 		})
-		.max(1000, {
+		.max(5000, {
 			message: "CourseForm.fields.description.max"
 		}),
 

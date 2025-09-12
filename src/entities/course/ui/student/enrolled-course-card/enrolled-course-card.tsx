@@ -26,9 +26,9 @@ export const EnrolledCourseCard: FC<IEnrolledCourseCardProps> = ({
 				alt={course?.title}
 				width={600}
 				height={400}
-				className="w-full rounded-t-lg aspect-video h-full object-cover"
+				className="w-full rounded-t-lg aspect-video object-cover"
 			/>
-			<CardContent className="gap-4 relative grid content-between">
+			<CardContent className="grid gap-4 relative h-[50%] content-between">
 				<div className="flex flex-col gap-2">
 					<Link
 						className="font-medium text-lg line-clamp-2 hover: underline group-hover:text-primary transition-colors"

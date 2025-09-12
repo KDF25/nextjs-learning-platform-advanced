@@ -15,6 +15,10 @@ export const DashboardSlugPage: FC<IDashboardSlugPageProps> = async ({
 	slug
 }) => {
 	const course = await GetCourseSidebarData(slug);
+	if (!course) {
+		redirect(ENUM_PATHS.DASHBOARD.ROOT);
+	}
+
 	const firstLesson = course?.chapters?.[0]?.lessons?.[0];
 	const t = await getTranslations("StudentDashboardCoursePage.empty");
 

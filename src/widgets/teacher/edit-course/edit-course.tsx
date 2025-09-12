@@ -13,7 +13,6 @@ interface IEditCourseProps {
 
 export const EditCourse: FC<IEditCourseProps> = ({ course }) => {
 	const t = useTranslations("EditCoursePage");
-	console.log(JSON.stringify(course, null, 2));
 	return (
 		<div className="flex flex-col gap-4">
 			<h1 className="text-3xl font-bold ">

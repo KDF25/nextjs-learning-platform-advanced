@@ -35,7 +35,6 @@ export const EditLessonDataForm: FC<ILessonDataFormProps> = ({
 	const t = useTranslations("LessonForm");
 	const { watch, setValue, control, handleSubmit } = form;
 	const formState = watch();
-	console.log(formState);
 
 	return (
 		<Form {...form}>
