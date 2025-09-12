@@ -1,5 +1,9 @@
 import { Locale, NextIntlClientProvider, hasLocale } from "next-intl";
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import {
+	getMessages,
+	getTranslations,
+	setRequestLocale
+} from "next-intl/server";
 import { notFound } from "next/navigation";
 import { ReactNode } from "react";
 
@@ -82,11 +86,20 @@ export default async function LocaleLayout({ children, params }: Props) {
 	// Enable static rendering
 	setRequestLocale(locale);
 
+	// Load messages for the active locale on the server and pass to the provider
+	const messages = await getMessages();
+
 	return (
 		<html className="h-full" lang={locale} suppressHydrationWarning>
 			<body>
 				<Providers>
-					<NextIntlClientProvider>{children}</NextIntlClientProvider>
+					<NextIntlClientProvider
+						messages={messages}
+						locale={locale}
+						timeZone={"UTC"}
+					>
+						{children}
+					</NextIntlClientProvider>
 				</Providers>
 			</body>
 		</html>
