@@ -29,7 +29,7 @@ export const CourseSlugPage: FC<ICourseSlugPageProps> = async ({ slug }) => {
 						course={course}
 						ActionBtn={
 							isEnrolled ? (
-								<WatchCourse courseId={course?.id} />
+								<WatchCourse slug={slug} />
 							) : (
 								<EnrollCourse courseId={course?.id} />
 							)

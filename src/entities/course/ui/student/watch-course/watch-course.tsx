@@ -6,14 +6,16 @@ import { ENUM_PATHS } from "@/shared/config";
 import { Button } from "@/shared/ui";
 
 interface IWatchCourseProps {
-	courseId: string;
+	slug: string;
 }
 
-export const WatchCourse: FC<IWatchCourseProps> = ({}) => {
+export const WatchCourse: FC<IWatchCourseProps> = ({ slug }) => {
 	const t = useTranslations("StudentCoursePage.paymentCard");
 	return (
 		<Button asChild>
-			<Link href={ENUM_PATHS.MAIN}>{t("buttons.watch")}</Link>
+			<Link href={ENUM_PATHS.DASHBOARD.COURSE(slug)}>
+				{t("buttons.watch")}
+			</Link>
 		</Button>
 	);
 };
