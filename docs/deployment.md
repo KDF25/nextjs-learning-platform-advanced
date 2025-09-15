@@ -53,10 +53,12 @@ All sensitive data and configuration are managed via the `.env` file in the proj
 | DATABASE_URL            | PostgreSQL connection string (used by Prisma)           |
 | GITHUB_CLIENT_ID        | GitHub OAuth client ID                                  |
 | GITHUB_CLIENT_SECRET    | GitHub OAuth client secret                              |
+| GOOGLE_CLIENT_ID        | Google OAuth client ID                                  |
+| GOOGLE_CLIENT_SECRET    | Google OAuth client secret                              |
 | UPLOADTHING_TOKEN       | Token for file uploads (UploadThing)                    |
 | STRIPE_SECRET_KEY       | Stripe API secret key                                   |
-| NEXT_PUBLIC_APP_URL     | Public URL of your deployed application                 |
 | STRIPE_WEBHOOK_SECRET   | Stripe webhook signing secret                           |
+| NEXT_PUBLIC_APP_URL     | Public URL of your deployed application                 |
 
 **Example `.env` file:**
 ```env
@@ -68,11 +70,15 @@ DATABASE_URL=postgresql://user:password@host:port/dbname?sslmode=require
 GITHUB_CLIENT_ID=your_github_client_id
 GITHUB_CLIENT_SECRET=your_github_client_secret
 
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+
 UPLOADTHING_TOKEN=your_uploadthing_token
 
 STRIPE_SECRET_KEY=your_stripe_secret_key
-NEXT_PUBLIC_APP_URL=https://your-domain.com
 STRIPE_WEBHOOK_SECRET=your_stripe_webhook_secret
+
+NEXT_PUBLIC_APP_URL=https://your-domain.com
 ```
 
 ---

@@ -56,16 +56,20 @@
 	"LoginPage": {
 		"form": {
 			"title": "Welcome back!",
-			"description": "Login with your GitHub Account",
+			"description": "Choose how you want to sign in.",
 			"buttons": {
 				"github": "Sign with GitHub",
-				"load": "Loading ...",
-				"email": "Continue with email"
+				"google": "Sign with Google",
+				"load": "Signing in..."
 			},
 			"or": "Or continue with",
-			"signIn": {
+			"signInGithub": {
 				"success": "Signed in with GitHub, you will be redirected ...",
 				"error": "Failed to sign in with GitHub, please try again later."
+			},
+			"signInGoogle": {
+				"success": "Signed in with Google, you will be redirected ...",
+				"error": "Failed to sign in with Google, please try again later."
 			},
 			"signOut": {
 				"success": "Signed out successfully",

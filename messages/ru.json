@@ -56,16 +56,20 @@
 	"LoginPage": {
 		"form": {
 			"title": "Добро пожаловать!",
-			"description": "Войдите в свой аккаунт GitHub",
+			"description": "Выберите способ входа",
 			"buttons": {
 				"github": "Войти c GitHub",
-				"load": "Загрузка...",
-				"email": "Продолжить по email"
+				"google": "Войти c Google",
+				"load": "Входим..."
 			},
 			"or": "Или продолжите",
-			"signIn": {
+			"signInGithub": {
 				"success": "Вошли в GitHub, вы будете перенаправлены ...",
 				"error": "Не удалось войти в GitHub, пожалуйста, попробуйте позже."
+			},
+			"signInGoogle": {
+				"success": "Вошли в Google, вы будете перенаправлены ...",
+				"error": "Не удалось войти в Google, пожалуйста, попробуйте позже."
 			},
 			"signOut": {
 				"success": "Выход прошел успешно",

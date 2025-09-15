@@ -11,18 +11,36 @@ export const useSignIn = () => {
 
 	const [isPending, startTransition] = useTransition();
 
-	const signIn = async () => {
+	const signInGithub = async () => {
 		startTransition(async () => {
 			await authClient.signIn.social({
 				provider: "github",
 				callbackURL: "/",
 				fetchOptions: {
 					onSuccess: () => {
-						toast.success(t("form.signIn.success"));
+						toast.success(t("form.signInGithub.success"));
 					},
 					onError: (error) => {
-						toast.error(t("form.signIn.error"));
+						toast.error(t("form.signInGithub.error"));
 						console.error("[Github sign in error]", error);
+					}
+				}
+			});
+		});
+	};
+
+	const signInGoogle = async () => {
+		startTransition(async () => {
+			await authClient.signIn.social({
+				provider: "google",
+				callbackURL: "/",
+				fetchOptions: {
+					onSuccess: () => {
+						toast.success(t("form.signInGoogle.success"));
+					},
+					onError: (error) => {
+						toast.error(t("form.signInGoogle.error"));
+						console.error("[Google sign in error]", error);
 					}
 				}
 			});
@@ -31,6 +49,7 @@ export const useSignIn = () => {
 
 	return {
 		isPending,
-		signIn
+		signInGithub,
+		signInGoogle
 	};
 };

@@ -1,6 +1,7 @@
 "use client";
 
-import { GithubIcon, Loader } from "lucide-react";
+import { IconBrandGoogle } from "@tabler/icons-react";
+import { Loader } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { FC } from "react";
 
@@ -8,10 +9,10 @@ import { Button } from "@/shared/ui";
 
 import { useSignIn } from "@/entities/auth";
 
-export const SignIn: FC = ({}) => {
+export const SignInGoogle: FC = ({}) => {
 	const t = useTranslations("LoginPage");
 
-	const { isPending, signIn } = useSignIn();
+	const { isPending, signInGoogle: signIn } = useSignIn();
 
 	return (
 		<Button
@@ -27,7 +28,7 @@ export const SignIn: FC = ({}) => {
 				</>
 			) : (
 				<>
-					<GithubIcon size={16} />
+					<IconBrandGoogle size={16} />
 					{t("form.buttons.github")}
 				</>
 			)}
