@@ -22,9 +22,10 @@ This document describes how to deploy the Learning Platform Advanced project and
    - Copy the `.env` file template (or create a new `.env` file) in the project root.
    - Fill in all required secrets and connection strings (see [Environment Variables](#environment-variables) below).
 
-4. **Run Database Migrations**
+4. **Run Database Setup**
    ```bash
-   npm run prisma:migrate
+   npm run prisma:push
+   npm run prisma:generate
    ```
 
 5. **Build the Project**

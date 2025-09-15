@@ -53,9 +53,10 @@ This platform supports multi-language content, PWA features, secure authenticati
    ```
 3. **Configure environment variables**  
    See `.env` for required secrets and connection strings.
-4. **Run database migrations**
+4. **Run Database Setup**
    ```bash
-   npm run prisma:migrate
+   npm run prisma:push
+   npm run prisma:generate
    ```
 5. **Start the development server**
    ```bash

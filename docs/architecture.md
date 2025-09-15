@@ -2,10 +2,9 @@
 
 ## Framework and Core Technologies
 
-- **Framework:** Next.js (App Router, React 18)
+- **Framework:** Next.js (App Router, React 19)
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS, CSS Modules
-- **State Management:** React Context, local state, server state via React Query/SWR (if used)
 - **API:** RESTful endpoints, Next.js API routes
 - **ORM/DB:** Prisma (see `shared/database/prisma`)
 - **Internationalization:** next-intl

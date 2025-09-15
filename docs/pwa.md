@@ -6,7 +6,7 @@ This project is configured as a Progressive Web App (PWA), providing offline cap
 
 ## Manifest
 
-- **Location:** `public/manifest.json`
+- **Location:** `src/app/manifest.ts`
 - **Purpose:** Describes the app's name, icons, theme colors, and how it should appear when installed on a device.
 - **Icons:** Provided in multiple sizes in `public/icons/` for various device requirements.
 
@@ -29,7 +29,7 @@ This project is configured as a Progressive Web App (PWA), providing offline cap
 
 ## Installation on Device
 
-- The presence of `manifest.json` and appropriate icons allows users to install the app on their device home screen.
+- The presence of `manifest.ts` and appropriate icons allows users to install the app on their device home screen.
 - On supported browsers, users will see an "Add to Home Screen" prompt.
 
 ---

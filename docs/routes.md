@@ -66,7 +66,7 @@ Authentication API endpoints — handles sign-in, sign-out, session/token operat
 File upload endpoints — receive and process file uploads, returning upload results or references.
 
 ## `/api/webhook`
-Webhook receiver — endpoint for incoming events from external services (notifications, syncs, etc.).
+Webhook API — Stripe processes events.
 
 ---
 
