@@ -6,7 +6,20 @@ The **Student Course Page** is where users access and progress through their enr
 
 ## Screenshot
 
-![MindShift Course Learning Page](../images/student-course-page.png)
+<table>
+  <tr>
+    <td align="center">
+      <img src="../images/student-course-page.png" width="90%"/><br/>
+    </td>
+    <td align="center">
+      <img src="../images/student-course-page-mobile1.png" width="100%"/><br/>
+    </td>
+    <td align="center">
+      <img src="../images/student-course-page-mobile2.png" width="90%"/><br/>
+    </td>
+  </tr>
+</table>
+
 
 ---
 

@@ -29,7 +29,7 @@ export const StudentPublicNavbar: FC = ({}) => {
 							</div>
 						)}
 						<div className="md:hidden block">
-							<MobileNavMenu />
+							<MobileNavMenu isAuth={!!data?.user} />
 						</div>
 					</div>
 				</div>

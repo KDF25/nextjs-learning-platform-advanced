@@ -6,7 +6,17 @@ The **MindShift** platform home page contains the main navigation bar (NavBar) a
 
 ## Screenshot
 
-![MindShift Home Page](../images/home-page.png)
+<table>
+  <tr>
+    <td align="center">
+      <img src="../images/home-page.png" width="100%"/><br/>
+    </td>
+    <td align="center">
+      <img src="../images/home-page-mobile.jpg" width="95%"/><br/>
+    </td>
+  </tr>
+</table>
+
 
 ---
 

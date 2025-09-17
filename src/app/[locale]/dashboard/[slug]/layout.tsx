@@ -13,11 +13,13 @@ const Layout: FC<ILayoutProps> = async ({ children, params }) => {
 	const { slug } = await params;
 	const course = await GetCourseSidebarData(slug);
 	return (
-		<div className="flex flex-1">
-			<div className="w-80 border-r border-border shirk-0">
+		<div className="lg:flex lg:flex-1 grid gap-10">
+			<div className="lg:w-80 lg:border-r border-border shirk-0 md:w-100 w-85">
 				<EnrollCourseSidebar course={course} />
 			</div>
-			<div className="flex-1 overflow-hidden pl-6">{children}</div>
+			<div className="lg:flex-1 overflow-hidden lg:pl-6 lg:mb-10 mb-30">
+				{children}
+			</div>
 		</div>
 	);
 };

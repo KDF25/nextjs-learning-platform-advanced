@@ -6,7 +6,16 @@ The **Student Dashboard** is the main learning hub where authenticated users can
 
 ## Screenshot
 
-![MindShift Student Dashboard](../images/student-dashboard-page.png)
+<table>
+  <tr>
+    <td align="center">
+      <img src="../images/student-dashboard-page.png" width="100%"/><br/>
+    </td>
+    <td align="center">
+      <img src="../images/student-dashboard-page-mobile.jpg" width="95%"/><br/>
+    </td>
+  </tr>
+</table>
 
 ---
 

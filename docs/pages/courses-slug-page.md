@@ -9,6 +9,20 @@ It provides full information about the course and allows users to purchase or en
 
 ![MindShift Course Slug Page](../images/courses-slug-page.png)
 
+<table>
+  <tr>
+    <td align="center">
+      <img src="../images/courses-slug-page-mobile1.jpg" width="95%"/><br/>
+    </td>
+    <td align="center">
+      <img src="../images/courses-slug-page-mobile2.jpg" width="95%"/><br/>
+    </td>
+    <td align="center">
+      <img src="../images/courses-slug-page-mobile3.jpg" width="95%"/><br/>
+    </td>
+  </tr>
+</table>
+
 ---
 
 ## Page Structure

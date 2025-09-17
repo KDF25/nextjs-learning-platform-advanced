@@ -6,31 +6,42 @@ The **Teacher Dashboard Page** is the main analytics and overview interface for 
 
 ## Screenshot
 
-![MindShift Teacher Dashboard](../images/teacher-dashboard-page.png)
+<table>
+  <tr>
+    <td align="center">
+      <img src="../images/teacher-dashboard-page.png" width="100%"/><br/>
+    </td>
+    <td align="center">
+      <img src="../images/teacher-dashboard-page-mobile.jpg" width="95%"/><br/>
+    </td>
+  </tr>
+</table>
 
 ---
 
 ## Page Structure
 
 ### 1. Navigation Sidebar
+
 - **Quick Create button** (highlighted) for rapid course creation
 - **Main navigation sections**:
-  - Dashboard (current active page)
-  - Courses
+    - Dashboard (current active page)
+    - Courses
 - **User profile section** at bottom with instructor avatar and settings access
-
 
 ---
 
 ## Teacher Performance Metrics
 
 ### Key Teaching Statistics:
+
 - **Total Signups**: 1 - Students who registered for teacher's courses
 - **Total Customers**: 1 - Students who completed payment and enrolled
 - **Total Courses**: 16 - Published courses created by this teacher
 - **Total Lessons**: 115 - Individual learning content pieces across all courses
 
 ### Detailed Descriptions:
+
 - **Registered users**: Students who showed interest in teacher's courses
 - **Paying customers**: Revenue-generating enrolled students
 - **Course portfolio**: Total number of published educational content
@@ -41,6 +52,7 @@ The **Teacher Dashboard Page** is the main analytics and overview interface for 
 ## Student Enrollment Analytics
 
 ### Total Enrollments Chart
+
 - **Time Period Selector**: Last 7 days | Last 30 days | Last 3 months
 - **Visual Representation**: Bar chart showing student enrollment trends
 - **Data Range**: February to July with daily tracking
@@ -52,6 +64,7 @@ The **Teacher Dashboard Page** is the main analytics and overview interface for 
 ## Revenue & Payment Tracking
 
 ### Financial Overview:
+
 - **Student Payments**: Track successful course purchases
 - **Revenue Analytics**: Monitor income from course sales
 - **Enrollment Conversions**: Free signup to paid customer ratios
@@ -62,11 +75,13 @@ The **Teacher Dashboard Page** is the main analytics and overview interface for 
 ## Teaching Tools & Quick Actions
 
 ### Content Creation:
+
 - **Quick Create** → Streamlined lesson and course creation
 - **Bulk Upload** → Efficient content management for large courses
 - **Course Templates** → Standardized course structure tools
 
 ### Student Management:
+
 - **Enrollment Tracking** → Monitor student progress across courses
 - **Engagement Analytics** → Student interaction and completion rates
 - **Communication Tools** → Direct messaging and announcement features
@@ -89,4 +104,3 @@ The **Teacher Dashboard Page** is the main analytics and overview interface for 
 - Each course card offers quick access to editing and management tools
 - Visual analytics charts enable data-driven decisions for course optimization
 - Quick Create functionality streamlines new content development workflow
-

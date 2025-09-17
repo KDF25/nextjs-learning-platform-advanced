@@ -19,6 +19,19 @@ The **Teacher Course Edit Page** is where instructors can edit existing courses,
   </tr>
 </table>
 
+<table>
+  <tr>
+    <td align="center">
+      <img src="../images/teacher-course-edit-page-mobile1.jpg" width="50%"/><br/>
+      <strong>📝 Basic Information Tab</strong>
+    </td>
+    <td align="center">
+      <img src="../images/teacher-course-edit-page-mobile2.jpg" width="50%"/><br/>
+      <strong>🏗️ Course Structure Tab</strong>
+    </td>
+  </tr>
+</table>
+
 ---
 
 ## Page Structure

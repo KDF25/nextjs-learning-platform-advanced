@@ -8,7 +8,16 @@ This page serves as the **global catalog** of all courses available on the platf
 
 ## Screenshot
 
-![MindShift Courses Page](../images/courses-page.png)
+<table>
+  <tr>
+    <td align="center">
+      <img src="../images/courses-page.png" width="100%"/><br/>
+    </td>
+    <td align="center">
+      <img src="../images/courses-page-mobile.jpg" width="95%"/><br/>
+    </td>
+  </tr>
+</table>
 
 ---
 
