@@ -24,7 +24,7 @@ export const Editor = <T extends FieldValues>({
 
 		editorProps: {
 			attributes: {
-				class: "flex-1 overflow-auto min-h-[290px] p-4 rounded-t-lg prose prose-sm sm:prose lg:lg-prose-lg xl:prose-xl dark:prose-invert !w-full !max-w-none"
+				class: "flex-1 overflow-auto min-h-[290px] p-4 rounded-t-lg [&_ul]:list-disc [&_ul]:ml-4 [&_ol]:list-decimal [&_ol]:ml-4 w-full [&_h1]:text-4xl [&_h1]:font-bold [&_h2]:text-3xl [&_h2]:font-semibold [&_h3]:text-2xl [&_h3]:font-semibold [&_h4]:text-xl [&_h4]:font-semibold"
 			}
 		},
 
