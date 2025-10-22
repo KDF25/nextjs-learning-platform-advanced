@@ -9,13 +9,13 @@ The **Student Course Page** is where users access and progress through their enr
 <table>
   <tr>
     <td align="center">
-      <img src="../images/student-course-page.png" width="90%"/><br/>
+      <img src="../images/student-course-page.png" width="100%"/><br/>
     </td>
     <td align="center">
-      <img src="../images/student-course-page-mobile1.png" width="100%"/><br/>
+      <img src="../images/student-course-page-mobile1.jpg" width="90%"/><br/>
     </td>
     <td align="center">
-      <img src="../images/student-course-page-mobile2.png" width="90%"/><br/>
+      <img src="../images/student-course-page-mobile2.jpg" width="90%"/><br/>
     </td>
   </tr>
 </table>

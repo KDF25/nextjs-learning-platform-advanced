@@ -2,7 +2,7 @@
 
 This document lists all application routes with a short description of each page's purpose. Dynamic routes are noted and explained when they display data for a specific item.
 
-![Routes map](images/routes.png)
+![Routes map](./images/routes.png)
 
 ## `/`
 Home page — overview of the platform with featured content, calls to action and links to sign in or browse courses.

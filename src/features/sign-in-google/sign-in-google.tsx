@@ -29,7 +29,7 @@ export const SignInGoogle: FC = ({}) => {
 			) : (
 				<>
 					<IconBrandGoogle size={16} />
-					{t("form.buttons.github")}
+					{t("form.buttons.google")}
 				</>
 			)}
 		</Button>
